@@ -1,6 +1,6 @@
 {
   "name": "ai-galaxy",
-  "private": true,
+  "private": true,`n  "packageManager": "pnpm@11.7.0",
   "version": "0.1.0",
   "type": "module",
   "description": "AI 发展星图：把人工智能七十年的历史画成一片可以一起添星的星系",
@@ -28,3 +28,4 @@
     "vite": "^7.1.0"
   }
 }
+

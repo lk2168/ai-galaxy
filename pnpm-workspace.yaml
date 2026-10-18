@@ -1,2 +1,11 @@
+# pnpm 工作区配置
+# packages 必须存在，否则 pnpm 9 会报 "packages field missing or empty"
+packages:
+  - '.'
+
+# pnpm 10+ 的构建脚本白名单（esbuild 需要下载二进制）
 allowBuilds:
   esbuild: true
+
+onlyBuiltDependencies:
+  - esbuild
