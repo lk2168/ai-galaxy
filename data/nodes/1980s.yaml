@@ -1,0 +1,145 @@
+# 1980s —— 反向传播让神经网络重新能训练
+
+- id: backpropagation
+  type: paper
+  name: 反向传播
+  year: 1986
+  weight: 94
+  summary: 把误差从输出层一层层往回传，算出每个权重该怎么改。多层网络第一次有了可行的训练方法，深度学习的地基就是这一步。
+  tags: [论文, 训练, 奠基]
+  sources: ["https://www.nature.com/articles/323533a0"]
+
+- id: geoffrey-hinton
+  type: person
+  name: 杰弗里·辛顿
+  year: 1986
+  weight: 97
+  summary: 反向传播的推广者之一，此后四十年几乎没离开过这个领域。在没人相信神经网络的年代坚持做，2018 年拿到图灵奖。
+  tags: [人物, 连接主义]
+  sources: ["https://en.wikipedia.org/wiki/Geoffrey_Hinton"]
+
+- id: david-rumelhart
+  type: person
+  name: 大卫·鲁梅尔哈特
+  year: 1986
+  weight: 72
+  summary: 与辛顿、威廉姆斯合写那篇反向传播论文。他关心的是人怎么学习，把神经网络当作认知的模型。
+  tags: [人物, 认知科学]
+  sources: ["https://en.wikipedia.org/wiki/David_Rumelhart"]
+
+- id: hopfield-network
+  type: paper
+  name: 霍普菲尔德网络
+  year: 1982
+  weight: 76
+  summary: 用物理学里的能量函数描述神经网络，证明它能存储并恢复记忆。它让物理学家开始认真看待神经网络。
+  tags: [论文, 理论]
+  sources: ["https://en.wikipedia.org/wiki/Hopfield_network"]
+
+- id: john-hopfield
+  type: person
+  name: 约翰·霍普菲尔德
+  year: 1982
+  weight: 66
+  summary: 物理学家。他把自旋玻璃的想法搬到神经网络上，2024 年与辛顿共享诺贝尔物理学奖。
+  tags: [人物, 物理]
+  sources: ["https://en.wikipedia.org/wiki/John_Hopfield"]
+
+- id: lenet
+  type: model
+  name: LeNet
+  year: 1989
+  weight: 80
+  summary: 乐昆用卷积加反向传播识别手写邮编，美国邮政真的用过。今天所有图像模型的骨架都能追到它。
+  tags: [模型, 卷积]
+  sources: ["https://en.wikipedia.org/wiki/LeNet"]
+
+- id: yann-lecun
+  type: person
+  name: 杨立昆
+  year: 1989
+  weight: 92
+  summary: 卷积网络的主要推动者。在 AT&T 贝尔实验室做出 LeNet，后来在 Meta 做 FAIR，2018 年图灵奖得主之一。
+  tags: [人物, 卷积]
+  sources: ["https://en.wikipedia.org/wiki/Yann_LeCun"]
+
+- id: neocognitron
+  type: model
+  name: 神经认知机
+  year: 1980
+  weight: 70
+  summary: 福岛邦彦模仿视觉皮层设计的分层网络，已经有卷积和池化的雏形。比 LeNet 早九年。
+  tags: [模型, 卷积]
+  sources: ["https://en.wikipedia.org/wiki/Neocognitron"]
+
+- id: kunihiko-fukushima
+  type: person
+  name: 福岛邦彦
+  year: 1980
+  weight: 60
+  summary: 日本研究者。他的神经认知机是卷积网络真正的前身，但因为没有可用的训练方法，长期被忽视。
+  tags: [人物, 卷积]
+  sources: ["https://en.wikipedia.org/wiki/Kunihiko_Fukushima"]
+
+- id: second-ai-winter
+  type: event
+  name: 第二次 AI 寒冬
+  year: 1987
+  weight: 78
+  summary: LISP 机器市场崩盘，专家系统维护成本失控，日本第五代计划没兑现。资金第二次撤走，神经网络也跟着受冷。
+  tags: [事件, 寒冬]
+  sources: ["https://en.wikipedia.org/wiki/AI_winter"]
+
+- id: fifth-generation
+  type: event
+  name: 日本第五代计算机计划
+  year: 1982
+  weight: 68
+  summary: 投入巨资想造出会推理的并行计算机。十年后目标没达成，但它逼着美国和欧洲加大了对 AI 的投入。
+  tags: [事件, 政策]
+  sources: ["https://en.wikipedia.org/wiki/Fifth_Generation_Computer_Systems"]
+
+- id: reinforcement-learning
+  type: concept
+  name: 强化学习
+  year: 1989
+  weight: 88
+  summary: 不告诉机器正确答案，只给奖励，让它自己试。它后来和深度学习合流，成了 AlphaGo 与今天对齐训练的核心工具。
+  tags: [概念, 学习范式]
+  sources: ["https://en.wikipedia.org/wiki/Reinforcement_learning"]
+
+- id: rich-sutton
+  type: person
+  name: 理查德·萨顿
+  year: 1988
+  weight: 76
+  summary: 强化学习的集大成者。他坚持「靠奖励学」这条线和监督学习不一样，2024 年与巴托共享图灵奖。
+  tags: [人物, 强化学习]
+  sources: ["https://en.wikipedia.org/wiki/Richard_Sutton"]
+
+- id: td-learning
+  type: paper
+  name: 时序差分学习
+  year: 1988
+  weight: 74
+  summary: 用下一步的估计去修正这一步的估计，不必等最终结果。这是强化学习里最基础的一招，也是 Q 学习的前身。
+  tags: [论文, 强化学习]
+  sources: ["https://en.wikipedia.org/wiki/Temporal_difference_learning"]
+
+- id: bayesian-network
+  type: concept
+  name: 贝叶斯网络
+  year: 1988
+  weight: 82
+  summary: 用有向图表示变量之间的概率依赖，把不确定性写进推理。机器学习的另一条主干，与神经网络长期并行。
+  tags: [概念, 概率]
+  sources: ["https://en.wikipedia.org/wiki/Bayesian_network"]
+
+- id: judea-pearl
+  type: person
+  name: 朱迪亚·珀尔
+  year: 1988
+  weight: 76
+  summary: 贝叶斯网络与因果推断的奠基人。他认为今天的大模型只会拟合相关性，不懂因果，这个批评至今没被驳倒。
+  tags: [人物, 因果]
+  sources: ["https://en.wikipedia.org/wiki/Judea_Pearl"]

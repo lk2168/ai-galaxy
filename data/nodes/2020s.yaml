@@ -1,0 +1,251 @@
+# 2020s —— 规模定律、对话界面，与推理
+
+- id: gpt-3
+  type: model
+  name: GPT-3
+  year: 2020
+  weight: 96
+  family: openai
+  summary: 一千七百五十亿参数。它没为任何任务专门训练，却靠「把任务写进提示词」就能做很多事，上下文学习从此成了常识。
+  tags: [模型, 大模型, 里程碑]
+  sources: ["https://arxiv.org/abs/2005.14165"]
+
+- id: scaling-laws
+  type: paper
+  name: 规模定律
+  year: 2020
+  weight: 90
+  summary: 参数量、数据量、算力与损失之间是平滑的幂律关系。它把「把模型做大」从赌博变成了可以预算的工程决策。
+  tags: [论文, 理论, 大模型]
+  sources: ["https://arxiv.org/abs/2001.08361"]
+
+- id: vit
+  type: model
+  name: ViT
+  year: 2020
+  weight: 82
+  summary: 把图片切成小块，当成词一样喂给 Transformer。视觉与语言从此共用一套架构，多模态的门就这么开了。
+  tags: [模型, 视觉, 架构]
+  sources: ["https://arxiv.org/abs/2010.11929"]
+
+- id: ddpm
+  type: paper
+  name: 扩散模型
+  year: 2020
+  weight: 82
+  summary: 先一步步加噪把图毁掉，再学着一步步去噪还原。它取代 GAN 成为生成图像的主流，稳定得多。
+  tags: [论文, 生成]
+  sources: ["https://arxiv.org/abs/2006.11239"]
+
+- id: alphafold2
+  type: model
+  name: AlphaFold 2
+  year: 2020
+  weight: 90
+  family: google
+  summary: 从氨基酸序列直接预测蛋白质三维结构，精度接近实验方法。它被称作「解决了生物学五十年的问题」。
+  tags: [模型, 科学, 里程碑]
+  sources: ["https://www.nature.com/articles/s41586-021-03819-2"]
+
+- id: clip
+  type: model
+  name: CLIP
+  year: 2021
+  weight: 88
+  summary: 用四亿对图文把图片和文字对齐到同一个空间。它让「用一句话找图」和后来的文生图都成了可能。
+  tags: [模型, 多模态]
+  sources: ["https://arxiv.org/abs/2103.00020"]
+
+- id: dall-e
+  type: model
+  name: DALL·E
+  year: 2021
+  weight: 82
+  family: openai
+  summary: 把文字描述变成图像。第一版还很粗糙，但它让公众第一次直观感到「模型能创造不存在的东西」。
+  tags: [模型, 生成, 多模态]
+  sources: ["https://arxiv.org/abs/2102.12092"]
+
+- id: anthropic
+  type: org
+  name: Anthropic
+  year: 2021
+  weight: 86
+  summary: 由一批 OpenAI 前成员创办，主打「可解释与可控」。它提出的宪法式对齐，成了另一条与 RLHF 并行的安全路线。
+  tags: [机构, 企业]
+  sources: ["https://en.wikipedia.org/wiki/Anthropic"]
+
+- id: stable-diffusion
+  type: model
+  name: Stable Diffusion
+  year: 2022
+  weight: 87
+  family: stability
+  summary: 把扩散过程压到潜空间里跑，一张消费级显卡就能出图，权重还公开。AI 绘画从这时起彻底出圈。
+  tags: [模型, 生成, 开源]
+  sources: ["https://arxiv.org/abs/2112.10752"]
+
+- id: instructgpt
+  type: paper
+  name: InstructGPT
+  year: 2022
+  weight: 86
+  family: openai
+  summary: 用人类偏好把「会续写的模型」调成「会听话的助手」。参数只有 GPT-3 的百分之一，却更受人喜欢。
+  tags: [论文, 对齐]
+  sources: ["https://arxiv.org/abs/2203.02155"]
+
+- id: chatgpt
+  type: model
+  name: ChatGPT
+  year: 2022
+  weight: 99
+  family: openai
+  summary: 一个对话框，五天一百万用户，两个月一亿。它没有新技术，只是把已有的能力包成了普通人能用的形状。
+  tags: [模型, 产品, 里程碑]
+  sources: ["https://openai.com/index/chatgpt/"]
+
+- id: gpt-4
+  type: model
+  name: GPT-4
+  year: 2023
+  weight: 96
+  family: openai
+  summary: 能看图、能考试、能在很多专业测试上接近人类前列。技术报告里第一次几乎不写模型细节，理由是竞争与安全。
+  tags: [模型, 大模型, 多模态]
+  sources: ["https://arxiv.org/abs/2303.08774"]
+
+- id: llama
+  type: model
+  name: LLaMA
+  year: 2023
+  weight: 90
+  family: meta
+  summary: Meta 放出的开源权重模型。它的泄漏与后续版本催生了整个开源生态，让「自己部署一个大模型」成为常态。
+  tags: [模型, 开源, 大模型]
+  sources: ["https://arxiv.org/abs/2302.13971"]
+
+- id: claude
+  type: model
+  name: Claude
+  year: 2023
+  weight: 88
+  family: anthropic
+  summary: Anthropic 的助手模型，以长文本和写作见长。它把「模型可以有稳定的价值观」当作产品差异点。
+  tags: [模型, 大模型]
+  sources: ["https://www.anthropic.com/claude"]
+
+- id: gemini
+  type: model
+  name: Gemini
+  year: 2023
+  weight: 82
+  family: google
+  summary: 谷歌把 DeepMind 与大脑团队合并后推出的多模态模型。它要回答的问题是：搜索公司怎么在对话时代活下去。
+  tags: [模型, 多模态]
+  sources: ["https://deepmind.google/technologies/gemini/"]
+
+- id: mamba
+  type: paper
+  name: Mamba
+  year: 2023
+  weight: 78
+  summary: 用状态空间模型替代注意力，把计算量从平方降到线性。它是「Transformer 之后」最被认真对待的候选之一。
+  tags: [论文, 架构]
+  sources: ["https://arxiv.org/abs/2312.00752"]
+
+- id: ai-agent
+  type: concept
+  name: AI Agent
+  year: 2023
+  weight: 86
+  summary: 不只回答，还会自己拆任务、调工具、看结果再改下一步。它把大模型从「会说话」推向「会办事」。
+  tags: [概念, 智能体]
+  sources: ["https://en.wikipedia.org/wiki/Intelligent_agent"]
+
+- id: deepseek
+  type: org
+  name: 深度求索
+  year: 2023
+  weight: 88
+  family: deepseek
+  summary: 杭州的团队，用远低于同行的成本训练出第一梯队模型，并把权重开源。它改变了这个行业对「需要多少钱」的估计。
+  tags: [机构, 企业, 中国]
+  sources: ["https://www.deepseek.com/"]
+
+- id: sora
+  type: model
+  name: Sora
+  year: 2024
+  weight: 86
+  family: openai
+  summary: 从一句话直接生成一分钟视频，物理与镜头运动都还像那么回事。它被拿来讨论「世界模型」到底意味着什么。
+  tags: [模型, 视频, 多模态]
+  sources: ["https://openai.com/index/video-generation-models-as-world-simulators/"]
+
+- id: o1
+  type: model
+  name: OpenAI o1
+  year: 2024
+  weight: 88
+  family: openai
+  summary: 回答前先在心里推演一大段，用更多推理时间换正确率。它开启了「测试时计算」这条新的扩展方向。
+  tags: [模型, 推理]
+  sources: ["https://openai.com/index/learning-to-reason-with-llms/"]
+
+- id: deepseek-v3
+  type: model
+  name: DeepSeek-V3
+  year: 2024
+  weight: 88
+  family: deepseek
+  summary: 六千七百亿参数的混合专家模型，训练成本公开写在论文里。它让「大模型很贵」这个前提第一次被认真质疑。
+  tags: [模型, 大模型, 中国]
+  sources: ["https://arxiv.org/abs/2412.19437"]
+
+- id: mcp
+  type: concept
+  name: 模型上下文协议
+  year: 2024
+  weight: 80
+  summary: 给模型接外部工具定一个统一接口，免得每个应用各写一套。协议本身很小，但它决定了智能体能不能规模化。
+  tags: [概念, 协议, 智能体]
+  sources: ["https://www.anthropic.com/news/model-context-protocol"]
+
+- id: deepseek-r1
+  type: model
+  name: DeepSeek-R1
+  year: 2025
+  weight: 92
+  family: deepseek
+  summary: 用强化学习让模型自己长出长链推理，权重开源、成本公开。它把「推理模型」从少数公司的特权变成公共品。
+  tags: [模型, 推理, 开源, 中国]
+  sources: ["https://arxiv.org/abs/2501.12948"]
+
+- id: reasoning-model
+  type: concept
+  name: 推理模型
+  year: 2025
+  weight: 88
+  summary: 把算力花在「想」上而不是「答」上。这条路线让模型在数学与代码上跳了一档，也带来了新的成本与可控性问题。
+  tags: [概念, 推理]
+  sources: ["https://arxiv.org/abs/2501.12948"]
+
+- id: agentic-coding
+  type: concept
+  name: 智能体编程
+  year: 2025
+  weight: 80
+  summary: 模型直接读写代码库、跑测试、自己改到通过。写代码的方式正在从「人写、机器补全」变成「人说、机器执行」。
+  tags: [概念, 智能体, 工程]
+  sources: ["https://en.wikipedia.org/wiki/Intelligent_agent"]
+
+- id: deepseek-harness
+  type: project
+  name: DeepSeek Harness
+  year: 2026
+  weight: 74
+  family: deepseek
+  summary: 把模型、工具、插件装进同一个可编排环境的开源框架。社区围绕它长出了近六千个插件，是这张图上唯一的「生态星团」。
+  tags: [工具, 智能体, 工程, 生态]
+  sources: ["https://github.com/deepseek-ai/deepseek-harness"]

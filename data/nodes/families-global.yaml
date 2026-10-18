@@ -1,0 +1,451 @@
+# 全球模型家族（第二辑）：美国、中国、欧洲与其他地区
+# 小到只有两个模型的家族也单独成团——它们各自代表一个国家或一家公司的押注
+
+# ══ 美国 ══════════════════════════════════════════════════════════════
+
+# —— Microsoft Phi：用小模型打大模型的路线 ——
+- id: phi-1
+  type: model
+  name: Phi-1
+  year: 2023
+  weight: 70
+  family: microsoft
+  summary: 十三亿参数，专攻代码。用教科书级的高质量合成数据训练，证明了数据质量可以替代一部分参数量。
+  tags: [模型, 小模型, 代码]
+  sources: ["https://arxiv.org/abs/2306.11644"]
+
+- id: phi-3
+  type: model
+  name: Phi-3
+  year: 2024
+  weight: 72
+  family: microsoft
+  summary: 三十八亿参数，在手机上就能跑，多项测试接近十倍大的模型。端侧模型从这时开始被认为真的可用。
+  tags: [模型, 小模型, 端侧]
+  sources: ["https://arxiv.org/abs/2404.14219"]
+
+- id: phi-4
+  type: model
+  name: Phi-4
+  year: 2024
+  weight: 70
+  family: microsoft
+  summary: 一百四十亿参数，重点放在数学推理上。微软用它说明：小模型不必只是大模型的廉价替代品。
+  tags: [模型, 小模型, 推理]
+  sources: ["https://arxiv.org/abs/2412.08905"]
+
+# —— NVIDIA：把算力卖成模型 ——
+- id: nemotron-4
+  type: model
+  name: Nemotron-4
+  year: 2024
+  weight: 68
+  family: nvidia
+  summary: 英伟达自己训练的模型，主要用途是生成合成数据。卖铲子的人开始顺手卖原料。
+  tags: [模型, 数据]
+  sources: ["https://arxiv.org/abs/2406.11704"]
+
+# —— Amazon ——
+- id: titan
+  type: model
+  name: Amazon Titan
+  year: 2023
+  weight: 64
+  family: amazon
+  summary: AWS 的自研模型，藏在 Bedrock 里按调用收费。它的价值不在能力，在于让企业客户不用自己运维。
+  tags: [模型, 云服务]
+  sources: ["https://aws.amazon.com/bedrock/titan/"]
+
+- id: nova
+  type: model
+  name: Amazon Nova
+  year: 2024
+  weight: 64
+  family: amazon
+  summary: 一整套多模态模型，从纯文本到视频生成都有。亚马逊第一次把模型做成完整的产品线。
+  tags: [模型, 多模态]
+  sources: ["https://aws.amazon.com/ai/generative-ai/nova/"]
+
+# —— Cohere（加拿大起家）——
+- id: command-r
+  type: model
+  name: Command R
+  year: 2024
+  weight: 66
+  family: cohere
+  summary: 主打企业检索增强（RAG）与工具调用，上下文拉到十二万八。它不做通用聊天，只做企业落地。
+  tags: [模型, 企业, 检索]
+  sources: ["https://cohere.com/command"]
+
+# —— AI21（以色列）——
+- id: jamba
+  type: model
+  name: Jamba
+  year: 2024
+  weight: 68
+  family: ai21
+  summary: 把 Transformer 和状态空间模型混在一起，上下文能到二十五万。架构混合是它最大的卖点。
+  tags: [模型, 架构]
+  sources: ["https://arxiv.org/abs/2403.19887"]
+
+# —— Inflection ——
+- id: pi
+  type: model
+  name: Pi
+  year: 2023
+  weight: 62
+  family: inflection
+  summary: 主打情绪陪伴的对话模型。它证明模型可以卖「性格」而不是卖跑分，但商业上没能撑住。
+  tags: [模型, 对话]
+  sources: ["https://inflection.ai/"]
+
+# —— Allen AI ——
+- id: olmo
+  type: model
+  name: OLMo
+  year: 2024
+  weight: 70
+  family: allenai
+  summary: 完全开放：权重、训练数据、训练代码、日志全部公开。它是研究「模型到底怎么学会的」的底本。
+  tags: [模型, 开源, 研究]
+  sources: ["https://arxiv.org/abs/2402.00838"]
+
+# —— EleutherAI ——
+- id: pythia
+  type: model
+  name: Pythia
+  year: 2023
+  weight: 66
+  family: eleuther
+  summary: 一整套同数据、同顺序、只改规模的小模型，专门用来研究训练过程。做可解释性研究的人几乎都用它。
+  tags: [模型, 开源, 研究]
+  sources: ["https://arxiv.org/abs/2304.01373"]
+
+# —— Runway ——
+- id: gen-3
+  type: model
+  name: Gen-3 Alpha
+  year: 2024
+  weight: 68
+  family: runway
+  summary: 面向影视制作的视频生成模型，强调镜头运动与一致性。它把 AI 视频从演示推到了能用。
+  tags: [模型, 视频, 生成]
+  sources: ["https://runwayml.com/research/introducing-gen-3-alpha"]
+
+# ══ 中国 ══════════════════════════════════════════════════════════════
+
+# —— 字节跳动 豆包 ——
+- id: doubao
+  type: model
+  name: 豆包大模型
+  year: 2023
+  weight: 74
+  family: bytedance
+  summary: 字节的模型家族，主打极低的调用价格。它把国内大模型的 API 价格直接打下来一个数量级。
+  tags: [模型, 中文, 大模型]
+  sources: ["https://www.volcengine.com/product/doubao"]
+
+- id: seed-1-6
+  type: model
+  name: Seed 1.6
+  year: 2025
+  weight: 70
+  family: bytedance
+  summary: 字节的推理模型，长链思考加多模态。豆包从「便宜」转向「也能打硬题」。
+  tags: [模型, 推理, 中文]
+  sources: ["https://www.volcengine.com/product/doubao"]
+
+# —— 腾讯 混元 ——
+- id: hunyuan-large
+  type: model
+  name: 混元 Large
+  year: 2024
+  weight: 70
+  family: tencent
+  summary: 三千八百九十亿参数的混合专家模型，开放权重。腾讯第一次把自家最大的模型放出来。
+  tags: [模型, 开源, 中文]
+  sources: ["https://arxiv.org/abs/2411.02265"]
+
+- id: hunyuan-video
+  type: model
+  name: 混元视频
+  year: 2024
+  weight: 72
+  family: tencent
+  summary: 开源视频生成模型，画面稳定性和运动幅度在当时是开源里最好的之一。
+  tags: [模型, 视频, 开源]
+  sources: ["https://arxiv.org/abs/2412.03603"]
+
+# —— MiniMax ——
+- id: minimax-01
+  type: model
+  name: MiniMax-01
+  year: 2025
+  weight: 72
+  family: minimax
+  summary: 用线性注意力把上下文推到四百万 token，训练成本却压得很低。长上下文是它唯一的赌注，也是全部卖点。
+  tags: [模型, 长文本, 开源]
+  sources: ["https://arxiv.org/abs/2501.08313"]
+
+# —— 百度 文心 ——
+- id: ernie-1
+  type: model
+  name: 文心 ERNIE 1.0
+  year: 2019
+  weight: 70
+  family: baidu
+  summary: 国内最早把预训练模型做成产品的一批。它把知识增强写进架构，做中文理解时确实受益。
+  tags: [模型, 中文, 预训练]
+  sources: ["https://arxiv.org/abs/1904.09223"]
+
+- id: ernie-4
+  type: model
+  name: 文心 ERNIE 4.0
+  year: 2023
+  weight: 72
+  family: baidu
+  summary: 百度的旗舰模型，接在搜索与文库上。它的优势不是跑分，是背后有真实的中文语料与产品入口。
+  tags: [模型, 中文, 大模型]
+  sources: ["https://yiyan.baidu.com/"]
+
+# —— 商汤 ——
+- id: sensenova
+  type: model
+  name: 日日新 SenseNova
+  year: 2023
+  weight: 62
+  family: sensetime
+  summary: 商汤的模型体系，从视觉起家再补语言。它的路线是把模型塞进城市与汽车的摄像头里。
+  tags: [模型, 视觉, 中文]
+  sources: ["https://www.sensetime.com/cn/sensenova"]
+
+# —— 科大讯飞 ——
+- id: spark
+  type: model
+  name: 讯飞星火
+  year: 2023
+  weight: 66
+  family: iflytek
+  summary: 语音起家的公司做的大模型，强项是语音输入与教育场景。它在国产芯片上跑通了自己的训练。
+  tags: [模型, 语音, 中文]
+  sources: ["https://xinghuo.xfyun.cn/"]
+
+# —— 百川智能 ——
+- id: baichuan-2
+  type: model
+  name: Baichuan 2
+  year: 2023
+  weight: 66
+  family: baichuan
+  summary: 开源的中文大模型，一百三十亿与七百亿两档。它是国内开源社区微调最常用的底模之一。
+  tags: [模型, 开源, 中文]
+  sources: ["https://arxiv.org/abs/2309.10305"]
+
+# —— 零一万物 ——
+- id: yi
+  type: model
+  name: Yi
+  year: 2023
+  weight: 64
+  family: yi
+  summary: 李开复团队的模型，从 6B 到 34B 全线开源。它在中文榜单上一度是开源里最强的。
+  tags: [模型, 开源, 中文]
+  sources: ["https://arxiv.org/abs/2403.04652"]
+
+# —— 阶跃星辰 ——
+- id: step-1
+  type: model
+  name: Step-1
+  year: 2024
+  weight: 62
+  family: stepfun
+  summary: 阶跃星辰的千亿级模型，主打多模态与智能体。它把「终端」当作主要落地点。
+  tags: [模型, 多模态, 中文]
+  sources: ["https://www.stepfun.com/"]
+
+# —— 上海 AI Lab ——
+- id: internlm
+  type: model
+  name: InternLM
+  year: 2023
+  weight: 70
+  family: shanghai-ai-lab
+  summary: 书生·浦语，高校与实验室联合开源的中文模型。它培养了一大批国内做模型微调的人。
+  tags: [模型, 开源, 中文]
+  sources: ["https://arxiv.org/abs/2403.17297"]
+
+- id: internvl
+  type: model
+  name: InternVL
+  year: 2024
+  weight: 70
+  family: shanghai-ai-lab
+  summary: 开源多模态模型，在图文理解上长期排开源第一梯队。它是国内视觉语言模型的主要底座之一。
+  tags: [模型, 多模态, 开源]
+  sources: ["https://arxiv.org/abs/2312.14238"]
+
+# —— 面壁智能 ——
+- id: minicpm
+  type: model
+  name: MiniCPM
+  year: 2024
+  weight: 66
+  family: modelbest
+  summary: 二十多亿参数，能跑在手机上，还能看图。它把「端侧多模态」做成了可下载的产品。
+  tags: [模型, 小模型, 端侧]
+  sources: ["https://arxiv.org/abs/2404.06395"]
+
+# —— 华为 盘古 ——
+- id: pangu
+  type: model
+  name: 盘古大模型
+  year: 2020
+  weight: 70
+  family: huawei
+  summary: 华为的模型体系，重点是行业落地：气象、矿山、制造。它走的是「不做通用聊天，只做行业」的路。
+  tags: [模型, 行业, 中文]
+  sources: ["https://www.huaweicloud.com/product/pangu.html"]
+
+# ══ 欧洲 ══════════════════════════════════════════════════════════════
+
+# —— Aleph Alpha（德国）——
+- id: luminous
+  type: model
+  name: Luminous
+  year: 2022
+  weight: 58
+  family: aleph-alpha
+  summary: 德国最有名的自主大模型，主打欧洲主权 AI 与可解释性。能力不算顶尖，但它是欧洲「不用美国模型」的象征。
+  tags: [模型, 欧洲]
+  sources: ["https://aleph-alpha.com/luminous/"]
+
+# —— BigScience（法国牵头，国际协作）——
+- id: bloom
+  type: model
+  name: BLOOM
+  year: 2022
+  weight: 74
+  family: bigscience
+  summary: 一千多人协作训练的一千七百六十亿参数开源模型，覆盖四十六种语言。它是「大模型也能众筹着做」的证明。
+  tags: [模型, 开源, 多语言]
+  sources: ["https://arxiv.org/abs/2211.05100"]
+
+# ══ 其他地区 ══════════════════════════════════════════════════════════
+
+# —— 阿联酋 TII ——
+- id: falcon
+  type: model
+  name: Falcon
+  year: 2023
+  weight: 70
+  family: uae
+  summary: 阿联酋国家队做的开源模型，一度是开源榜第一。它让「非中美也能训练大模型」变成了事实。
+  tags: [模型, 开源]
+  sources: ["https://arxiv.org/abs/2311.16867"]
+
+- id: falcon-3
+  type: model
+  name: Falcon 3
+  year: 2024
+  weight: 62
+  family: uae
+  summary: 小参数家族，从 1B 到 10B，主打在单张显卡上跑。阿联酋的路线转向了轻量。
+  tags: [模型, 小模型, 开源]
+  sources: ["https://falconllm.tii.ae/"]
+
+# —— 阿联酋 G42 ——
+- id: jais
+  type: model
+  name: Jais
+  year: 2023
+  weight: 58
+  family: uae
+  summary: 专攻阿拉伯语的开源模型，覆盖阿拉伯语与英语双语。小语种模型里它是做得最认真的一批。
+  tags: [模型, 开源, 多语言]
+  sources: ["https://www.jais.chat/"]
+
+# —— 印度 ——
+- id: sarvam-1
+  type: model
+  name: Sarvam-1
+  year: 2023
+  weight: 54
+  family: sarvam
+  summary: 印度团队的印地语与多语言模型，专注本地语言。它代表的是「非英语世界的模型主权」这条线。
+  tags: [模型, 多语言]
+  sources: ["https://www.sarvam.ai/"]
+
+# —— 韩国 Naver ——
+- id: hyperclova-x
+  type: model
+  name: HyperCLOVA X
+  year: 2023
+  weight: 60
+  family: korea
+  summary: 韩国最大的搜索公司做的模型，韩语数据量是它的护城河。它没打算跟美国模型比英文。
+  tags: [模型, 多语言]
+  sources: ["https://clova.ai/hyperclova"]
+
+# —— 韩国 LG ——
+- id: exaone
+  type: model
+  name: EXAONE
+  year: 2024
+  weight: 58
+  family: korea
+  summary: LG 的开源模型，韩英双语，权重可下载。韩国的第二家押注，路线更偏研究与开源。
+  tags: [模型, 开源, 多语言]
+  sources: ["https://arxiv.org/abs/2408.03560"]
+
+# —— 日本 ——
+- id: rakuten-ai
+  type: model
+  name: Rakuten AI 7B
+  year: 2023
+  weight: 54
+  family: japan
+  summary: 乐天做的日语模型，开放权重。日本的大模型投入比中美小得多，但一直没停。
+  tags: [模型, 多语言]
+  sources: ["https://huggingface.co/Rakuten/RakutenAI-7B"]
+
+- id: tsuzumi
+  type: model
+  name: tsuzumi
+  year: 2023
+  weight: 52
+  family: japan
+  summary: NTT 的日语模型，主打轻量与商业可用。它代表日本「用自家数据做自家模型」的路径。
+  tags: [模型, 多语言]
+  sources: ["https://www.ntt.com/"]
+
+# —— 俄罗斯 ——
+- id: yalm
+  type: model
+  name: YaLM
+  year: 2023
+  weight: 54
+  family: russia
+  summary: Yandex 的俄语模型，开放权重。在制裁与算力受限的条件下做出来的东西。
+  tags: [模型, 多语言]
+  sources: ["https://huggingface.co/yandex/yalm"]
+
+- id: gigachat
+  type: model
+  name: GigaChat
+  year: 2023
+  weight: 52
+  family: russia
+  summary: 俄罗斯联邦储蓄银行的模型，接进本国政务与银行系统。它更像是国家级基础设施而非产品。
+  tags: [模型, 多语言]
+  sources: ["https://giga.chat/"]
+
+# —— 沙特 ——
+- id: allam
+  type: model
+  name: ALLaM
+  year: 2024
+  weight: 52
+  family: allam
+  summary: 沙特阿美等机构做的阿拉伯语模型。能源国家开始把石油收入往模型上投。
+  tags: [模型, 多语言]
+  sources: ["https://huggingface.co/ALLaM-AI/ALLaM-7B-Instruct-preview"]

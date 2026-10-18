@@ -1,0 +1,5762 @@
+{
+  "nodes": [
+    {
+      "id": "neural-network",
+      "type": "concept",
+      "name": "神经网络",
+      "year": 1943,
+      "weight": 96,
+      "summary": "用大量简单单元互相连接来计算的思路。此后八十年，AI 的每一次起落几乎都绕着它转。",
+      "tags": [
+        "连接主义",
+        "思想"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Artificial_neural_network"
+      ],
+      "degree": 9
+    },
+    {
+      "id": "mcculloch-pitts-neuron",
+      "type": "paper",
+      "name": "麦卡洛克-皮茨神经元",
+      "year": 1943,
+      "weight": 88,
+      "summary": "把神经细胞抽象成一个阈值开关，证明这种开关组成的网络能实现逻辑运算。第一个可计算的神经元模型。",
+      "tags": [
+        "论文",
+        "奠基"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Artificial_neuron"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "warren-mcculloch",
+      "type": "person",
+      "name": "沃伦·麦卡洛克",
+      "year": 1943,
+      "weight": 68,
+      "summary": "神经生理学家，与皮茨一起写下第一个神经元数学模型。他关心的是大脑怎么算，不是机器怎么算。",
+      "tags": [
+        "人物",
+        "奠基"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Warren_Sturgis_McCulloch"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "walter-pitts",
+      "type": "person",
+      "name": "沃尔特·皮茨",
+      "year": 1943,
+      "weight": 62,
+      "summary": "二十岁出头就给出神经元的逻辑模型。后来与麦卡洛克分道扬镳，贡献长期被低估。",
+      "tags": [
+        "人物",
+        "奠基"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Walter_Pitts"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "connectionism",
+      "type": "concept",
+      "name": "连接主义",
+      "year": 1943,
+      "weight": 90,
+      "summary": "认为智能来自大量单元的连接方式，而不是符号规则。与符号主义争了半个世纪，2012 年后胜出。",
+      "tags": [
+        "思想",
+        "学派"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Connectionism"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "claude-shannon",
+      "type": "person",
+      "name": "克劳德·香农",
+      "year": 1948,
+      "weight": 90,
+      "summary": "信息论之父。他在 1950 年那篇讲下棋程序的论文里，第一次把「让机器思考」写成了工程问题。",
+      "tags": [
+        "人物",
+        "信息论"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Claude_Shannon"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "hebbian-learning",
+      "type": "concept",
+      "name": "赫布学习规则",
+      "year": 1949,
+      "weight": 78,
+      "summary": "「一起放电的神经元会连得更紧」。第一个说得清的学习机制，今天所有神经网络的训练都还带着它的影子。",
+      "tags": [
+        "学习规则",
+        "思想"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hebbian_theory"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "donald-hebb",
+      "type": "person",
+      "name": "唐纳德·赫布",
+      "year": 1949,
+      "weight": 58,
+      "summary": "加拿大心理学家。他从行为实验推出学习发生在突触上，给了后来的神经网络一个可实现的假设。",
+      "tags": [
+        "人物",
+        "心理学"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Donald_O._Hebb"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "alan-turing",
+      "type": "person",
+      "name": "艾伦·图灵",
+      "year": 1950,
+      "weight": 97,
+      "summary": "1936 年给出「可计算」的定义，1950 年又问「机器能思考吗」。AI 的问题意识基本由他设定。",
+      "tags": [
+        "人物",
+        "奠基"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alan_Turing"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "turing-test",
+      "type": "concept",
+      "name": "图灵测试",
+      "year": 1950,
+      "weight": 92,
+      "summary": "把「机器有没有智能」换成一个可操作的问题：人隔着屏幕分不清对面是人是机器，就算它通过了。",
+      "tags": [
+        "思想",
+        "评测"
+      ],
+      "sources": [
+        "https://academic.oup.com/mind/article/LIX/236/433/986238"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "dartmouth-workshop",
+      "type": "event",
+      "name": "达特茅斯会议",
+      "year": 1956,
+      "weight": 95,
+      "summary": "十来个年轻人在夏天聚了两个月，给这门学科起了名字。会上并没有做出什么，但它把散落的想法变成了一个领域。",
+      "tags": [
+        "事件",
+        "起源"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dartmouth_workshop"
+      ],
+      "degree": 5
+    },
+    {
+      "id": "artificial-intelligence-term",
+      "type": "concept",
+      "name": "人工智能（这个词）",
+      "year": 1956,
+      "weight": 86,
+      "summary": "麦卡锡坚持用 artificial intelligence 而不是 cybernetics，从此这门学科有了自己的招牌。",
+      "tags": [
+        "命名",
+        "思想"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dartmouth_workshop"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "john-mccarthy",
+      "type": "person",
+      "name": "约翰·麦卡锡",
+      "year": 1956,
+      "weight": 92,
+      "summary": "发明 LISP、提出「人工智能」这个名字、创办 MIT 与斯坦福的 AI 实验室。符号主义时代的组织者。",
+      "tags": [
+        "人物",
+        "符号主义"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)"
+      ],
+      "degree": 4
+    },
+    {
+      "id": "marvin-minsky",
+      "type": "person",
+      "name": "马文·明斯基",
+      "year": 1969,
+      "weight": 90,
+      "summary": "MIT AI 实验室的联合创始人。写《感知机》一书压住了神经网络研究近十年，也因此背上「寒冬制造者」的名声。",
+      "tags": [
+        "人物",
+        "符号主义"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Marvin_Minsky"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "symbol-ai",
+      "type": "concept",
+      "name": "符号主义",
+      "year": 1956,
+      "weight": 88,
+      "summary": "认为智能就是符号操作，把知识写成规则再推理。从 1956 年统治到 1980 年代末，然后被统计方法取代。",
+      "tags": [
+        "思想",
+        "学派"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence"
+      ],
+      "degree": 7
+    },
+    {
+      "id": "perceptron",
+      "type": "model",
+      "name": "感知机",
+      "year": 1958,
+      "weight": 91,
+      "summary": "第一个能从数据里自己学出权重的分类器。它能学会线性可分的东西，但学不会异或，这个局限后来被放大成一场误会。",
+      "tags": [
+        "模型",
+        "奠基"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Perceptron"
+      ],
+      "degree": 5
+    },
+    {
+      "id": "frank-rosenblatt",
+      "type": "person",
+      "name": "弗兰克·罗森布拉特",
+      "year": 1958,
+      "weight": 80,
+      "summary": "造出感知机并用硬件实现。他相信这已经摸到了智能的门，可惜 1971 年意外去世，方向随之冷掉。",
+      "tags": [
+        "人物",
+        "连接主义"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Frank_Rosenblatt"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "lisp",
+      "type": "concept",
+      "name": "LISP",
+      "year": 1958,
+      "weight": 76,
+      "summary": "为符号推理设计的语言，代码即数据。之后三十年 AI 程序几乎都用它写，也顺手发明了垃圾回收。",
+      "tags": [
+        "语言",
+        "工具"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lisp_(programming_language)"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "machine-learning-term",
+      "type": "concept",
+      "name": "机器学习（这个词）",
+      "year": 1959,
+      "weight": 88,
+      "summary": "塞缪尔在跳棋程序里提出「不靠人写规则，让程序自己从经验里变强」。这句话后来成了整个领域的路线。",
+      "tags": [
+        "命名",
+        "思想"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Machine_learning"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "arthur-samuel",
+      "type": "person",
+      "name": "亚瑟·塞缪尔",
+      "year": 1959,
+      "weight": 66,
+      "summary": "IBM 工程师。他写的跳棋程序能打败自己，也是「机器学习」这个词的出处。",
+      "tags": [
+        "人物",
+        "机器学习"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Arthur_Samuel"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "mit-ai-lab",
+      "type": "org",
+      "name": "MIT 人工智能实验室",
+      "year": 1959,
+      "weight": 84,
+      "summary": "麦卡锡与明斯基创立，符号主义的大本营。后来与计算机科学实验室合并，成为今天的 CSAIL。",
+      "tags": [
+        "机构",
+        "学术"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/MIT_Computer_Science_and_Artificial_Intelligence_Laboratory"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "ibm",
+      "type": "org",
+      "name": "IBM",
+      "year": 1956,
+      "weight": 82,
+      "summary": "从塞缪尔的跳棋到深蓝，再到沃森。企业研究院养了 AI 很多年，也两次在寒冬里裁员砍项目。",
+      "tags": [
+        "机构",
+        "企业"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/IBM"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "eliza",
+      "type": "model",
+      "name": "ELIZA",
+      "year": 1966,
+      "weight": 82,
+      "summary": "一个模仿心理医生的聊天程序。它只做句式替换，却让不少人说出了心里话，也让作者自己被吓到了。",
+      "tags": [
+        "模型",
+        "对话"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/ELIZA"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "joseph-weizenbaum",
+      "type": "person",
+      "name": "约瑟夫·魏泽鲍姆",
+      "year": 1966,
+      "weight": 64,
+      "summary": "ELIZA 的作者。他后来成了最激烈的批评者之一，写了《计算机能力与人类理性》，提醒人别把机器的回应当理解。",
+      "tags": [
+        "人物",
+        "批判"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Joseph_Weizenbaum"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "eliza-effect",
+      "type": "concept",
+      "name": "ELIZA 效应",
+      "year": 1966,
+      "weight": 78,
+      "summary": "人会把机器的输出自动补成「它懂我」。今天每个聊天机器人都在赚这个效应的红利，也都在冒它的风险。",
+      "tags": [
+        "概念",
+        "人机交互"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/ELIZA_effect"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "shakey",
+      "type": "model",
+      "name": "Shakey 机器人",
+      "year": 1966,
+      "weight": 68,
+      "summary": "第一个能自己规划路线、搬东西的移动机器人。它走一米要算半天，但把感知、规划、行动串成了一条完整链路。",
+      "tags": [
+        "机器人",
+        "具身"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shakey_the_robot"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "perceptrons-book",
+      "type": "paper",
+      "name": "《感知机》",
+      "year": 1969,
+      "weight": 84,
+      "summary": "明斯基与佩珀特用数学证明单层感知机连异或都学不会。结论本身没错，但被读成了「神经网络这条路走不通」。",
+      "tags": [
+        "论文",
+        "争议"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Perceptrons_(book)"
+      ],
+      "degree": 4
+    },
+    {
+      "id": "seymour-papert",
+      "type": "person",
+      "name": "西摩·佩珀特",
+      "year": 1969,
+      "weight": 58,
+      "summary": "与明斯基合著《感知机》。后来转向教育，发明 Logo 语言，相信孩子可以通过编程学会思考。",
+      "tags": [
+        "人物",
+        "教育"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Seymour_Papert"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "stanford-ai-lab",
+      "type": "org",
+      "name": "斯坦福 AI 实验室",
+      "year": 1963,
+      "weight": 86,
+      "summary": "麦卡锡从 MIT 过来创办。后来与视觉实验室合并成 SAIL，是深度学习时代人才与论文的主要源头之一。",
+      "tags": [
+        "机构",
+        "学术"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Stanford_Artificial_Intelligence_Laboratory"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "edinburgh-ai",
+      "type": "org",
+      "name": "爱丁堡大学 AI 系",
+      "year": 1963,
+      "weight": 62,
+      "summary": "欧洲最早的一批 AI 研究据点之一，唐纳德·米基在这里做机器人与学习研究。后来成了英国 AI 的根据地。",
+      "tags": [
+        "机构",
+        "学术"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/School_of_Informatics,_University_of_Edinburgh"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "first-ai-winter",
+      "type": "event",
+      "name": "第一次 AI 寒冬",
+      "year": 1974,
+      "weight": 80,
+      "summary": "英国 Lighthill 报告否定 AI 的进展，美国 DARPA 收紧资助。十年间这个领域的钱和人都退了大半。",
+      "tags": [
+        "事件",
+        "寒冬"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/AI_winter"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "lighthill-report",
+      "type": "paper",
+      "name": "Lighthill 报告",
+      "year": 1973,
+      "weight": 72,
+      "summary": "英国政府委托的评估，结论是 AI 只在小玩具问题上成功，撑不起「组合爆炸」。直接导致英国大幅砍掉 AI 经费。",
+      "tags": [
+        "论文",
+        "政策"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lighthill_report"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "james-lighthill",
+      "type": "person",
+      "name": "詹姆斯·莱特希尔",
+      "year": 1973,
+      "weight": 52,
+      "summary": "流体力学出身的数学家，被请去评估 AI。他的判断在当时被同行骂，但资助方信了。",
+      "tags": [
+        "人物",
+        "政策"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/James_Lighthill"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "expert-system",
+      "type": "concept",
+      "name": "专家系统",
+      "year": 1976,
+      "weight": 84,
+      "summary": "把领域专家的判断写成几百条 if-then 规则。它在医学、地质勘探上真的赚到了钱，是符号主义最后一次大规模成功。",
+      "tags": [
+        "概念",
+        "符号主义"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Expert_system"
+      ],
+      "degree": 8
+    },
+    {
+      "id": "mycin",
+      "type": "model",
+      "name": "MYCIN",
+      "year": 1976,
+      "weight": 74,
+      "summary": "斯坦福做的血液感染诊断系统，准确率超过一般医生。但它从没真正进过病房，因为没人愿意为它的错误负责。",
+      "tags": [
+        "模型",
+        "专家系统"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mycin"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "edward-feigenbaum",
+      "type": "person",
+      "name": "爱德华·费根鲍姆",
+      "year": 1976,
+      "weight": 66,
+      "summary": "专家系统之父。他把 AI 从「通用推理」拉向「灌知识」，也是「知识就是力量」这句口号在 AI 里的搬运工。",
+      "tags": [
+        "人物",
+        "专家系统"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Edward_Feigenbaum"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "backprop-1974",
+      "type": "paper",
+      "name": "反向传播的雏形",
+      "year": 1974,
+      "weight": 70,
+      "summary": "沃博斯在博士论文里写出了多层网络求梯度的递推公式。当时没人重视，直到 1986 年才被重新发现。",
+      "tags": [
+        "论文",
+        "训练"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Backpropagation"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "paul-werbos",
+      "type": "person",
+      "name": "保罗·沃博斯",
+      "year": 1974,
+      "weight": 58,
+      "summary": "他在论文里已经把反向传播写完了，但发表在一份没人读的报告里。AI 圈后来把这个功劳记给了别人。",
+      "tags": [
+        "人物",
+        "训练"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Paul_Werbos"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "cmu-ai",
+      "type": "org",
+      "name": "CMU 机器人研究所",
+      "year": 1979,
+      "weight": 76,
+      "summary": "美国最早的机器人研究机构之一。自动驾驶、语音识别、专家系统都有它的份，也是「AI 要能动手」这一派的据点。",
+      "tags": [
+        "机构",
+        "学术"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Robotics_Institute"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "xcon",
+      "type": "model",
+      "name": "XCON",
+      "year": 1980,
+      "weight": 62,
+      "summary": "DEC 用来配置计算机订单的专家系统，每年替公司省下几千万美元。它证明了规则系统能挣钱，也暴露了维护成本。",
+      "tags": [
+        "模型",
+        "商业化"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Xcon"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "backpropagation",
+      "type": "paper",
+      "name": "反向传播",
+      "year": 1986,
+      "weight": 94,
+      "summary": "把误差从输出层一层层往回传，算出每个权重该怎么改。多层网络第一次有了可行的训练方法，深度学习的地基就是这一步。",
+      "tags": [
+        "论文",
+        "训练",
+        "奠基"
+      ],
+      "sources": [
+        "https://www.nature.com/articles/323533a0"
+      ],
+      "degree": 8
+    },
+    {
+      "id": "geoffrey-hinton",
+      "type": "person",
+      "name": "杰弗里·辛顿",
+      "year": 1986,
+      "weight": 97,
+      "summary": "反向传播的推广者之一，此后四十年几乎没离开过这个领域。在没人相信神经网络的年代坚持做，2018 年拿到图灵奖。",
+      "tags": [
+        "人物",
+        "连接主义"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Geoffrey_Hinton"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "david-rumelhart",
+      "type": "person",
+      "name": "大卫·鲁梅尔哈特",
+      "year": 1986,
+      "weight": 72,
+      "summary": "与辛顿、威廉姆斯合写那篇反向传播论文。他关心的是人怎么学习，把神经网络当作认知的模型。",
+      "tags": [
+        "人物",
+        "认知科学"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/David_Rumelhart"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "hopfield-network",
+      "type": "paper",
+      "name": "霍普菲尔德网络",
+      "year": 1982,
+      "weight": 76,
+      "summary": "用物理学里的能量函数描述神经网络，证明它能存储并恢复记忆。它让物理学家开始认真看待神经网络。",
+      "tags": [
+        "论文",
+        "理论"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hopfield_network"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "john-hopfield",
+      "type": "person",
+      "name": "约翰·霍普菲尔德",
+      "year": 1982,
+      "weight": 66,
+      "summary": "物理学家。他把自旋玻璃的想法搬到神经网络上，2024 年与辛顿共享诺贝尔物理学奖。",
+      "tags": [
+        "人物",
+        "物理"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/John_Hopfield"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "lenet",
+      "type": "model",
+      "name": "LeNet",
+      "year": 1989,
+      "weight": 80,
+      "summary": "乐昆用卷积加反向传播识别手写邮编，美国邮政真的用过。今天所有图像模型的骨架都能追到它。",
+      "tags": [
+        "模型",
+        "卷积"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/LeNet"
+      ],
+      "degree": 5
+    },
+    {
+      "id": "yann-lecun",
+      "type": "person",
+      "name": "杨立昆",
+      "year": 1989,
+      "weight": 92,
+      "summary": "卷积网络的主要推动者。在 AT&T 贝尔实验室做出 LeNet，后来在 Meta 做 FAIR，2018 年图灵奖得主之一。",
+      "tags": [
+        "人物",
+        "卷积"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Yann_LeCun"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "neocognitron",
+      "type": "model",
+      "name": "神经认知机",
+      "year": 1980,
+      "weight": 70,
+      "summary": "福岛邦彦模仿视觉皮层设计的分层网络，已经有卷积和池化的雏形。比 LeNet 早九年。",
+      "tags": [
+        "模型",
+        "卷积"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Neocognitron"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "kunihiko-fukushima",
+      "type": "person",
+      "name": "福岛邦彦",
+      "year": 1980,
+      "weight": 60,
+      "summary": "日本研究者。他的神经认知机是卷积网络真正的前身，但因为没有可用的训练方法，长期被忽视。",
+      "tags": [
+        "人物",
+        "卷积"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kunihiko_Fukushima"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "second-ai-winter",
+      "type": "event",
+      "name": "第二次 AI 寒冬",
+      "year": 1987,
+      "weight": 78,
+      "summary": "LISP 机器市场崩盘，专家系统维护成本失控，日本第五代计划没兑现。资金第二次撤走，神经网络也跟着受冷。",
+      "tags": [
+        "事件",
+        "寒冬"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/AI_winter"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "fifth-generation",
+      "type": "event",
+      "name": "日本第五代计算机计划",
+      "year": 1982,
+      "weight": 68,
+      "summary": "投入巨资想造出会推理的并行计算机。十年后目标没达成，但它逼着美国和欧洲加大了对 AI 的投入。",
+      "tags": [
+        "事件",
+        "政策"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fifth_Generation_Computer_Systems"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "reinforcement-learning",
+      "type": "concept",
+      "name": "强化学习",
+      "year": 1989,
+      "weight": 88,
+      "summary": "不告诉机器正确答案，只给奖励，让它自己试。它后来和深度学习合流，成了 AlphaGo 与今天对齐训练的核心工具。",
+      "tags": [
+        "概念",
+        "学习范式"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Reinforcement_learning"
+      ],
+      "degree": 6
+    },
+    {
+      "id": "rich-sutton",
+      "type": "person",
+      "name": "理查德·萨顿",
+      "year": 1988,
+      "weight": 76,
+      "summary": "强化学习的集大成者。他坚持「靠奖励学」这条线和监督学习不一样，2024 年与巴托共享图灵奖。",
+      "tags": [
+        "人物",
+        "强化学习"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Richard_Sutton"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "td-learning",
+      "type": "paper",
+      "name": "时序差分学习",
+      "year": 1988,
+      "weight": 74,
+      "summary": "用下一步的估计去修正这一步的估计，不必等最终结果。这是强化学习里最基础的一招，也是 Q 学习的前身。",
+      "tags": [
+        "论文",
+        "强化学习"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Temporal_difference_learning"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "bayesian-network",
+      "type": "concept",
+      "name": "贝叶斯网络",
+      "year": 1988,
+      "weight": 82,
+      "summary": "用有向图表示变量之间的概率依赖，把不确定性写进推理。机器学习的另一条主干，与神经网络长期并行。",
+      "tags": [
+        "概念",
+        "概率"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bayesian_network"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "judea-pearl",
+      "type": "person",
+      "name": "朱迪亚·珀尔",
+      "year": 1988,
+      "weight": 76,
+      "summary": "贝叶斯网络与因果推断的奠基人。他认为今天的大模型只会拟合相关性，不懂因果，这个批评至今没被驳倒。",
+      "tags": [
+        "人物",
+        "因果"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Judea_Pearl"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "statistical-learning",
+      "type": "concept",
+      "name": "统计学习",
+      "year": 1995,
+      "weight": 82,
+      "summary": "用概率和凸优化做学习，强调泛化误差有界。它统治了 1990 年代的机器学习，也让「调模型」有了理论依据。",
+      "tags": [
+        "概念",
+        "学派"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Statistical_learning_theory"
+      ],
+      "degree": 4
+    },
+    {
+      "id": "svm",
+      "type": "model",
+      "name": "支持向量机",
+      "year": 1995,
+      "weight": 84,
+      "summary": "找一个间隔最大的分界面，再用核函数把它弯到高维。1990 年代到 2000 年代初，它是最能打的分类器。",
+      "tags": [
+        "模型",
+        "统计学习"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Support_vector_machine"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "vladimir-vapnik",
+      "type": "person",
+      "name": "弗拉基米尔·万普尼克",
+      "year": 1995,
+      "weight": 76,
+      "summary": "统计学习理论的主要建立者，SVM 出自他手。他坚持「不要用比数据复杂度更高的模型」，与深度学习立场相反。",
+      "tags": [
+        "人物",
+        "统计学习"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vladimir_Vapnik"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "boosting",
+      "type": "model",
+      "name": "AdaBoost",
+      "year": 1997,
+      "weight": 74,
+      "summary": "把一堆很弱的分类器加权组合成强分类器。思路简单到可以手算，却在很多表格数据上赢了神经网络二十年。",
+      "tags": [
+        "模型",
+        "集成"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/AdaBoost"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "lstm",
+      "type": "model",
+      "name": "LSTM",
+      "year": 1997,
+      "weight": 92,
+      "summary": "给循环网络加了门控，让它能记住很久以前的信息。此后近二十年，它是语音识别和机器翻译的主力。",
+      "tags": [
+        "模型",
+        "序列"
+      ],
+      "sources": [
+        "https://www.bioinf.jku.at/publications/older/2604.pdf"
+      ],
+      "degree": 4
+    },
+    {
+      "id": "sepp-hochreiter",
+      "type": "person",
+      "name": "塞普·霍赫赖特",
+      "year": 1997,
+      "weight": 68,
+      "summary": "LSTM 的第一作者。他在论文里就写清了梯度消失问题，这一条后来被 Transformer 用另一种方式绕开。",
+      "tags": [
+        "人物",
+        "序列"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sepp_Hochreiter"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "jurgen-schmidhuber",
+      "type": "person",
+      "name": "于尔根·施密德胡伯",
+      "year": 1997,
+      "weight": 70,
+      "summary": "LSTM 的合作者之一，也是「深度学习早就有」的最积极主张者。他对功劳归属的争论很有名。",
+      "tags": [
+        "人物",
+        "序列"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/J%C3%BCrgen_Schmidhuber"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "deep-blue",
+      "type": "event",
+      "name": "深蓝战胜卡斯帕罗夫",
+      "year": 1997,
+      "weight": 86,
+      "summary": "IBM 的专用机器在六局比赛里赢了国际象棋世界冠军。它靠的是暴力搜索加人工评估，不是学习。",
+      "tags": [
+        "事件",
+        "里程碑"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Deep_Blue_versus_Garry_Kasparov"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "lenet-5",
+      "type": "model",
+      "name": "LeNet-5",
+      "year": 1998,
+      "weight": 78,
+      "summary": "七层的卷积网络，能稳定识别手写数字。它证明了卷积加梯度训练这套组合真的能上生产线。",
+      "tags": [
+        "模型",
+        "卷积"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/LeNet"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "mnist",
+      "type": "concept",
+      "name": "MNIST",
+      "year": 1998,
+      "weight": 76,
+      "summary": "六万张手写数字的数据集。此后二十年，它是每个入门者跑通的第一个模型，也是模型论文的标准靶子。",
+      "tags": [
+        "数据集",
+        "评测"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/MNIST_database"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "yoshua-bengio",
+      "type": "person",
+      "name": "约书亚·本吉奥",
+      "year": 2003,
+      "weight": 90,
+      "summary": "把神经网络拉回语言领域的人。2003 年用神经网络做语言模型，后来与辛顿、乐昆同获 2018 年图灵奖。",
+      "tags": [
+        "人物",
+        "语言"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Yoshua_Bengio"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "neural-probabilistic-language-model",
+      "type": "paper",
+      "name": "神经概率语言模型",
+      "year": 2003,
+      "weight": 82,
+      "summary": "用神经网络预测下一个词，第一次让词向量和学习绑在一起。今天所有大语言模型做的都是同一件事，只是规模不同。",
+      "tags": [
+        "论文",
+        "语言"
+      ],
+      "sources": [
+        "https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "deep-belief-network",
+      "type": "paper",
+      "name": "深度信念网络",
+      "year": 2006,
+      "weight": 86,
+      "summary": "辛顿用逐层预训练让深层网络重新训得动，并把这件事命名为「深度学习」。这一年通常被当作复兴的起点。",
+      "tags": [
+        "论文",
+        "深度学习"
+      ],
+      "sources": [
+        "https://www.cs.toronto.edu/~hinton/absps/fastnc.pdf"
+      ],
+      "degree": 4
+    },
+    {
+      "id": "deep-learning-term",
+      "type": "concept",
+      "name": "深度学习（这个词）",
+      "year": 2006,
+      "weight": 88,
+      "summary": "从「神经网络」改叫「深度学习」，不只是换名字。新名字强调的是层数带来的表示能力，也更容易拿到资助。",
+      "tags": [
+        "命名",
+        "思想"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Deep_learning"
+      ],
+      "degree": 4
+    },
+    {
+      "id": "imagenet",
+      "type": "concept",
+      "name": "ImageNet",
+      "year": 2009,
+      "weight": 94,
+      "summary": "一千四百多万张人工标注的图片，两万多个类别。没有它，2012 年那次突破根本无从谈起。",
+      "tags": [
+        "数据集",
+        "视觉"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/ImageNet"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "fei-fei-li",
+      "type": "person",
+      "name": "李飞飞",
+      "year": 2009,
+      "weight": 92,
+      "summary": "用众包把 ImageNet 标出来。她当时被同行劝「这种苦活没人做」，但正是这份数据把视觉研究推过了临界点。",
+      "tags": [
+        "人物",
+        "数据",
+        "华人"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fei-Fei_Li"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "nvidia",
+      "type": "org",
+      "name": "英伟达",
+      "year": 2006,
+      "weight": 88,
+      "summary": "做显卡的公司。它把并行计算接口开放给通用计算，十年后成了整个 AI 行业唯一绕不开的硬件供应商。",
+      "tags": [
+        "机构",
+        "硬件"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nvidia"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "cuda",
+      "type": "concept",
+      "name": "CUDA",
+      "year": 2007,
+      "weight": 84,
+      "summary": "让程序员用类 C 的语法直接在显卡上跑通用计算。训练神经网络的算力，从这一步开始变得便宜。",
+      "tags": [
+        "工具",
+        "硬件"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/CUDA"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "gpu-computing",
+      "type": "concept",
+      "name": "GPU 计算",
+      "year": 2007,
+      "weight": 86,
+      "summary": "图像处理器天生擅长大量重复的乘加运算，而神经网络训练正好就是这件事。算力的形状刚好对上了算法的形状。",
+      "tags": [
+        "概念",
+        "硬件"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "random-forest",
+      "type": "model",
+      "name": "随机森林",
+      "year": 2001,
+      "weight": 72,
+      "summary": "训练很多棵决策树再投票。它在表格数据上又稳又省事，直到今天仍是最常用的基线之一。",
+      "tags": [
+        "模型",
+        "集成"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Random_forest"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "leo-breiman",
+      "type": "person",
+      "name": "利奥·布雷曼",
+      "year": 2001,
+      "weight": 58,
+      "summary": "统计学家，随机森林的作者。他一生做出 CART、bagging、随机森林三件在工业界被用烂了的东西。",
+      "tags": [
+        "人物",
+        "统计学习"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Leo_Breiman"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "big-data",
+      "type": "concept",
+      "name": "大数据",
+      "year": 2008,
+      "weight": 70,
+      "summary": "互联网把可标注的数据量推高了好几个数量级。深度学习的胜负手从来不只是模型结构，还有能不能喂饱它。",
+      "tags": [
+        "概念",
+        "数据"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Big_data"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "deepmind",
+      "type": "org",
+      "name": "DeepMind",
+      "year": 2010,
+      "weight": 90,
+      "summary": "伦敦的实验室，2014 年被谷歌收购。它的路线一直很清楚：先让智能在游戏里学会，再推到科学问题上。",
+      "tags": [
+        "机构",
+        "研究"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Google_DeepMind"
+      ],
+      "degree": 5
+    },
+    {
+      "id": "imagenet-challenge",
+      "type": "event",
+      "name": "ImageNet 竞赛",
+      "year": 2010,
+      "weight": 80,
+      "summary": "每年比一次图像分类的错误率。2012 年那个数字被砍掉近一半，整个领域的注意力就在那一届转了向。",
+      "tags": [
+        "事件",
+        "评测"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/ImageNet"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "google-brain",
+      "type": "org",
+      "name": "Google Brain",
+      "year": 2011,
+      "weight": 84,
+      "summary": "谷歌内部做深度学习的团队。它把神经网络直接推进了搜索、翻译、相册这些几十亿人用的产品里。",
+      "tags": [
+        "机构",
+        "工业"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Google_Brain"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "andrew-ng",
+      "type": "person",
+      "name": "吴恩达",
+      "year": 2011,
+      "weight": 80,
+      "summary": "谷歌大脑的联合创始人，后来在百度、Coursera 推动 AI 教育。他的机器学习课让一代人入了门。",
+      "tags": [
+        "人物",
+        "教育",
+        "华人"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Andrew_Ng"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "alexnet",
+      "type": "model",
+      "name": "AlexNet",
+      "year": 2012,
+      "weight": 98,
+      "summary": "两块显卡训练八层卷积网络，在 ImageNet 上把错误率从 26% 压到 15%。这一届比赛之后，所有人都换了方向。",
+      "tags": [
+        "模型",
+        "视觉",
+        "里程碑"
+      ],
+      "sources": [
+        "https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
+      ],
+      "degree": 13
+    },
+    {
+      "id": "alex-krizhevsky",
+      "type": "person",
+      "name": "亚历克斯·克里热夫斯基",
+      "year": 2012,
+      "weight": 64,
+      "summary": "AlexNet 的第一作者，辛顿的学生。他手写的那份 CUDA 卷积代码后来被无数人当作起点。",
+      "tags": [
+        "人物",
+        "视觉"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/AlexNet"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "ilya-sutskever",
+      "type": "person",
+      "name": "伊利亚·苏茨克维",
+      "year": 2012,
+      "weight": 90,
+      "summary": "AlexNet 的合作者，后来成为 OpenAI 的首席科学家。他从 AlexNet 到 GPT 系列，一路都在赌「规模会赢」。",
+      "tags": [
+        "人物",
+        "大模型"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ilya_Sutskever"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "dropout",
+      "type": "paper",
+      "name": "Dropout",
+      "year": 2012,
+      "weight": 72,
+      "summary": "训练时随机关掉一部分神经元，逼网络不依赖任何单点。这个粗暴的正则化方法至今还在用。",
+      "tags": [
+        "论文",
+        "训练"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1207.0580"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "word2vec",
+      "type": "model",
+      "name": "word2vec",
+      "year": 2013,
+      "weight": 88,
+      "summary": "用上下文把词压成向量，并且压出了语义关系：king 减 man 加 woman 约等于 queen。语言第一次变成了可以算的东西。",
+      "tags": [
+        "模型",
+        "语言"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1301.3781"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "tomas-mikolov",
+      "type": "person",
+      "name": "托马斯·米科洛夫",
+      "year": 2013,
+      "weight": 62,
+      "summary": "word2vec 的作者。他后来认为「把词压扁成静态向量」这条路已经走到头，转向了更长的上下文。",
+      "tags": [
+        "人物",
+        "语言"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Word2vec"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "vae",
+      "type": "paper",
+      "name": "变分自编码器",
+      "year": 2013,
+      "weight": 74,
+      "summary": "把数据压进一个概率分布再采样重建。它是生成模型的基础方法之一，也是今天扩散模型之前最重要的一步。",
+      "tags": [
+        "论文",
+        "生成"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1312.6114"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "gan",
+      "type": "model",
+      "name": "生成对抗网络",
+      "year": 2014,
+      "weight": 88,
+      "summary": "用两个网络互相骗：一个造假，一个鉴别。古德费洛在酒吧里想到这个点子，深度学习从此会「画」东西了。",
+      "tags": [
+        "模型",
+        "生成"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1406.2661"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "ian-goodfellow",
+      "type": "person",
+      "name": "伊恩·古德费洛",
+      "year": 2014,
+      "weight": 78,
+      "summary": "GAN 的提出者。他后来写了《深度学习》教科书，也长期批评这个领域对风险的忽视。",
+      "tags": [
+        "人物",
+        "生成"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ian_Goodfellow"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "seq2seq",
+      "type": "paper",
+      "name": "序列到序列",
+      "year": 2014,
+      "weight": 80,
+      "summary": "用一个网络把整句话编码，再用另一个网络解码出另一句话。机器翻译从此不再需要逐词对齐。",
+      "tags": [
+        "论文",
+        "语言"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1409.3215"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "attention-mechanism",
+      "type": "concept",
+      "name": "注意力机制",
+      "year": 2014,
+      "weight": 92,
+      "summary": "解码时回头看输入的每个位置，按相关度分配权重。这个小改动后来吞掉了整个序列建模，成为大模型的核心部件。",
+      "tags": [
+        "概念",
+        "架构"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1409.0473"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "vgg",
+      "type": "model",
+      "name": "VGG",
+      "year": 2014,
+      "weight": 74,
+      "summary": "把卷积网络堆到十六层，证明「更深」本身就是一种能力。结构简单到几乎是个教科书，被引用得极多。",
+      "tags": [
+        "模型",
+        "视觉"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1409.1556"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "adam-optimizer",
+      "type": "paper",
+      "name": "Adam 优化器",
+      "year": 2014,
+      "weight": 78,
+      "summary": "给每个参数自适应地调学习率。它不一定最优，但几乎总是能用，成了十年里默认的训练选择。",
+      "tags": [
+        "论文",
+        "训练"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1412.6980"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "dqn",
+      "type": "model",
+      "name": "DQN",
+      "year": 2015,
+      "weight": 84,
+      "summary": "DeepMind 让神经网络直接看屏幕像素学会打 49 个雅达利游戏。同一个网络、同一套参数，没有为游戏写规则。",
+      "tags": [
+        "模型",
+        "强化学习"
+      ],
+      "sources": [
+        "https://www.nature.com/articles/nature14236"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "resnet",
+      "type": "model",
+      "name": "ResNet",
+      "year": 2015,
+      "weight": 92,
+      "summary": "加一条恒等捷径，让梯度能直接穿过上百层。深度从此不再是训练的障碍，这个残差结构今天到处都是。",
+      "tags": [
+        "模型",
+        "视觉",
+        "架构"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1512.03385"
+      ],
+      "degree": 5
+    },
+    {
+      "id": "kaiming-he",
+      "type": "person",
+      "name": "何恺明",
+      "year": 2015,
+      "weight": 86,
+      "summary": "ResNet 作者，也是 Faster R-CNN、Mask R-CNN 的核心贡献者。他在视觉领域的三篇论文被引用次数都超过十万。",
+      "tags": [
+        "人物",
+        "视觉",
+        "华人"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kaiming_He"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "batch-normalization",
+      "type": "paper",
+      "name": "批量归一化",
+      "year": 2015,
+      "weight": 72,
+      "summary": "每层输入都归一化一下，训练就能用更大的学习率、更快收敛。它让深网络从「能训」变成「好训」。",
+      "tags": [
+        "论文",
+        "训练"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1502.03167"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "tensorflow",
+      "type": "concept",
+      "name": "TensorFlow",
+      "year": 2015,
+      "weight": 78,
+      "summary": "谷歌开源的深度学习框架。它把工业界的工程习惯带进了研究，也让「静态图」这个词流行了好几年。",
+      "tags": [
+        "工具",
+        "框架"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/TensorFlow"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "openai",
+      "type": "org",
+      "name": "OpenAI",
+      "year": 2015,
+      "weight": 96,
+      "summary": "以「确保通用人工智能造福全人类」为旗号成立。它用 GPT 系列把大模型从论文推成了全民产品。",
+      "tags": [
+        "机构",
+        "企业"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/OpenAI"
+      ],
+      "degree": 5
+    },
+    {
+      "id": "alphago",
+      "type": "model",
+      "name": "AlphaGo",
+      "year": 2016,
+      "weight": 96,
+      "summary": "4 比 1 击败李世石。围棋曾被认为是机器十年也攻不下的堡垒，它靠策略网络加蒙特卡洛树搜索翻了过去。",
+      "tags": [
+        "模型",
+        "强化学习",
+        "里程碑"
+      ],
+      "sources": [
+        "https://www.nature.com/articles/nature16961"
+      ],
+      "degree": 6
+    },
+    {
+      "id": "demis-hassabis",
+      "type": "person",
+      "name": "戴密斯·哈萨比斯",
+      "year": 2016,
+      "weight": 84,
+      "summary": "DeepMind 的创始人，神经科学与游戏背景。他把「先在游戏里赢，再解决科学问题」变成了可执行的研究纲领。",
+      "tags": [
+        "人物",
+        "强化学习"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Demis_Hassabis"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "pytorch",
+      "type": "concept",
+      "name": "PyTorch",
+      "year": 2016,
+      "weight": 82,
+      "summary": "定义即运行，调试像写普通 Python。它先赢得研究者，再随着研究者的迁移赢得工业界。",
+      "tags": [
+        "工具",
+        "框架"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/PyTorch"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "transformer",
+      "type": "model",
+      "name": "Transformer",
+      "year": 2017,
+      "weight": 99,
+      "summary": "只用注意力，不用循环。训练可以完全并行，于是模型能堆到前所未有的规模。此后所有大模型都建在它上面。",
+      "tags": [
+        "模型",
+        "架构",
+        "里程碑"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1706.03762"
+      ],
+      "degree": 14
+    },
+    {
+      "id": "ashish-vaswani",
+      "type": "person",
+      "name": "阿希什·瓦斯瓦尼",
+      "year": 2017,
+      "weight": 74,
+      "summary": "《Attention Is All You Need》的第一作者。这篇论文的八位作者后来全部离开谷歌创业，成了 AI 创业潮的一股力量。",
+      "tags": [
+        "人物",
+        "架构"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1706.03762"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "alphazero",
+      "type": "model",
+      "name": "AlphaZero",
+      "year": 2017,
+      "weight": 86,
+      "summary": "只告诉它规则，不给任何人类棋谱，几小时自我对弈就超过所有人类程序。它证明了搜索加学习可以完全脱离人的经验。",
+      "tags": [
+        "模型",
+        "强化学习"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1712.01815"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "rlhf",
+      "type": "concept",
+      "name": "基于人类反馈的强化学习",
+      "year": 2017,
+      "weight": 88,
+      "summary": "让人给模型的回答排序，再拿这个偏好训练奖励模型。ChatGPT 之所以「会说话」，靠的就是这一步对齐。",
+      "tags": [
+        "概念",
+        "对齐"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1706.03741"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "bert",
+      "type": "model",
+      "name": "BERT",
+      "year": 2018,
+      "weight": 92,
+      "family": "google",
+      "summary": "双向读整句、遮住词让它猜。它在十一项自然语言任务上刷新纪录，随后两年几乎成了 NLP 的默认底座。",
+      "tags": [
+        "模型",
+        "语言"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1810.04805"
+      ],
+      "degree": 5
+    },
+    {
+      "id": "gpt",
+      "type": "model",
+      "name": "GPT",
+      "year": 2018,
+      "weight": 88,
+      "family": "openai",
+      "summary": "只做一件事：预测下一个词，然后不断放大。这条路线当时看起来简单得可疑，后来成了唯一走通的那条。",
+      "tags": [
+        "模型",
+        "语言"
+      ],
+      "sources": [
+        "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
+      ],
+      "degree": 7
+    },
+    {
+      "id": "gpt-2",
+      "type": "model",
+      "name": "GPT-2",
+      "year": 2019,
+      "weight": 86,
+      "family": "openai",
+      "summary": "十五亿参数，能续写出像模像样的段落。OpenAI 一度以「太危险」为由不公开权重，引发了延续至今的开源之争。",
+      "tags": [
+        "模型",
+        "语言"
+      ],
+      "sources": [
+        "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "sam-altman",
+      "type": "person",
+      "name": "山姆·奥特曼",
+      "year": 2019,
+      "weight": 82,
+      "summary": "OpenAI 的 CEO。他把一个研究实验室变成了产品公司，也让「AI 安全」和「商业扩张」的矛盾摆到了台面上。",
+      "tags": [
+        "人物",
+        "企业"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sam_Altman"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "gpt-3",
+      "type": "model",
+      "name": "GPT-3",
+      "year": 2020,
+      "weight": 96,
+      "family": "openai",
+      "summary": "一千七百五十亿参数。它没为任何任务专门训练，却靠「把任务写进提示词」就能做很多事，上下文学习从此成了常识。",
+      "tags": [
+        "模型",
+        "大模型",
+        "里程碑"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2005.14165"
+      ],
+      "degree": 11
+    },
+    {
+      "id": "scaling-laws",
+      "type": "paper",
+      "name": "规模定律",
+      "year": 2020,
+      "weight": 90,
+      "summary": "参数量、数据量、算力与损失之间是平滑的幂律关系。它把「把模型做大」从赌博变成了可以预算的工程决策。",
+      "tags": [
+        "论文",
+        "理论",
+        "大模型"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2001.08361"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "vit",
+      "type": "model",
+      "name": "ViT",
+      "year": 2020,
+      "weight": 82,
+      "summary": "把图片切成小块，当成词一样喂给 Transformer。视觉与语言从此共用一套架构，多模态的门就这么开了。",
+      "tags": [
+        "模型",
+        "视觉",
+        "架构"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2010.11929"
+      ],
+      "degree": 4
+    },
+    {
+      "id": "ddpm",
+      "type": "paper",
+      "name": "扩散模型",
+      "year": 2020,
+      "weight": 82,
+      "summary": "先一步步加噪把图毁掉，再学着一步步去噪还原。它取代 GAN 成为生成图像的主流，稳定得多。",
+      "tags": [
+        "论文",
+        "生成"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2006.11239"
+      ],
+      "degree": 5
+    },
+    {
+      "id": "alphafold2",
+      "type": "model",
+      "name": "AlphaFold 2",
+      "year": 2020,
+      "weight": 90,
+      "family": "google",
+      "summary": "从氨基酸序列直接预测蛋白质三维结构，精度接近实验方法。它被称作「解决了生物学五十年的问题」。",
+      "tags": [
+        "模型",
+        "科学",
+        "里程碑"
+      ],
+      "sources": [
+        "https://www.nature.com/articles/s41586-021-03819-2"
+      ],
+      "degree": 4
+    },
+    {
+      "id": "clip",
+      "type": "model",
+      "name": "CLIP",
+      "year": 2021,
+      "weight": 88,
+      "summary": "用四亿对图文把图片和文字对齐到同一个空间。它让「用一句话找图」和后来的文生图都成了可能。",
+      "tags": [
+        "模型",
+        "多模态"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2103.00020"
+      ],
+      "degree": 4
+    },
+    {
+      "id": "dall-e",
+      "type": "model",
+      "name": "DALL·E",
+      "year": 2021,
+      "weight": 82,
+      "family": "openai",
+      "summary": "把文字描述变成图像。第一版还很粗糙，但它让公众第一次直观感到「模型能创造不存在的东西」。",
+      "tags": [
+        "模型",
+        "生成",
+        "多模态"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2102.12092"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "anthropic",
+      "type": "org",
+      "name": "Anthropic",
+      "year": 2021,
+      "weight": 86,
+      "summary": "由一批 OpenAI 前成员创办，主打「可解释与可控」。它提出的宪法式对齐，成了另一条与 RLHF 并行的安全路线。",
+      "tags": [
+        "机构",
+        "企业"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Anthropic"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "stable-diffusion",
+      "type": "model",
+      "name": "Stable Diffusion",
+      "year": 2022,
+      "weight": 87,
+      "family": "stability",
+      "summary": "把扩散过程压到潜空间里跑，一张消费级显卡就能出图，权重还公开。AI 绘画从这时起彻底出圈。",
+      "tags": [
+        "模型",
+        "生成",
+        "开源"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2112.10752"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "instructgpt",
+      "type": "paper",
+      "name": "InstructGPT",
+      "year": 2022,
+      "weight": 86,
+      "family": "openai",
+      "summary": "用人类偏好把「会续写的模型」调成「会听话的助手」。参数只有 GPT-3 的百分之一，却更受人喜欢。",
+      "tags": [
+        "论文",
+        "对齐"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2203.02155"
+      ],
+      "degree": 4
+    },
+    {
+      "id": "chatgpt",
+      "type": "model",
+      "name": "ChatGPT",
+      "year": 2022,
+      "weight": 99,
+      "family": "openai",
+      "summary": "一个对话框，五天一百万用户，两个月一亿。它没有新技术，只是把已有的能力包成了普通人能用的形状。",
+      "tags": [
+        "模型",
+        "产品",
+        "里程碑"
+      ],
+      "sources": [
+        "https://openai.com/index/chatgpt/"
+      ],
+      "degree": 6
+    },
+    {
+      "id": "gpt-4",
+      "type": "model",
+      "name": "GPT-4",
+      "year": 2023,
+      "weight": 96,
+      "family": "openai",
+      "summary": "能看图、能考试、能在很多专业测试上接近人类前列。技术报告里第一次几乎不写模型细节，理由是竞争与安全。",
+      "tags": [
+        "模型",
+        "大模型",
+        "多模态"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2303.08774"
+      ],
+      "degree": 6
+    },
+    {
+      "id": "llama",
+      "type": "model",
+      "name": "LLaMA",
+      "year": 2023,
+      "weight": 90,
+      "family": "meta",
+      "summary": "Meta 放出的开源权重模型。它的泄漏与后续版本催生了整个开源生态，让「自己部署一个大模型」成为常态。",
+      "tags": [
+        "模型",
+        "开源",
+        "大模型"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2302.13971"
+      ],
+      "degree": 10
+    },
+    {
+      "id": "claude",
+      "type": "model",
+      "name": "Claude",
+      "year": 2023,
+      "weight": 88,
+      "family": "anthropic",
+      "summary": "Anthropic 的助手模型，以长文本和写作见长。它把「模型可以有稳定的价值观」当作产品差异点。",
+      "tags": [
+        "模型",
+        "大模型"
+      ],
+      "sources": [
+        "https://www.anthropic.com/claude"
+      ],
+      "degree": 4
+    },
+    {
+      "id": "gemini",
+      "type": "model",
+      "name": "Gemini",
+      "year": 2023,
+      "weight": 82,
+      "family": "google",
+      "summary": "谷歌把 DeepMind 与大脑团队合并后推出的多模态模型。它要回答的问题是：搜索公司怎么在对话时代活下去。",
+      "tags": [
+        "模型",
+        "多模态"
+      ],
+      "sources": [
+        "https://deepmind.google/technologies/gemini/"
+      ],
+      "degree": 5
+    },
+    {
+      "id": "mamba",
+      "type": "paper",
+      "name": "Mamba",
+      "year": 2023,
+      "weight": 78,
+      "summary": "用状态空间模型替代注意力，把计算量从平方降到线性。它是「Transformer 之后」最被认真对待的候选之一。",
+      "tags": [
+        "论文",
+        "架构"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2312.00752"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "ai-agent",
+      "type": "concept",
+      "name": "AI Agent",
+      "year": 2023,
+      "weight": 86,
+      "summary": "不只回答，还会自己拆任务、调工具、看结果再改下一步。它把大模型从「会说话」推向「会办事」。",
+      "tags": [
+        "概念",
+        "智能体"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Intelligent_agent"
+      ],
+      "degree": 8
+    },
+    {
+      "id": "deepseek",
+      "type": "org",
+      "name": "深度求索",
+      "year": 2023,
+      "weight": 88,
+      "family": "deepseek",
+      "summary": "杭州的团队，用远低于同行的成本训练出第一梯队模型，并把权重开源。它改变了这个行业对「需要多少钱」的估计。",
+      "tags": [
+        "机构",
+        "企业",
+        "中国"
+      ],
+      "sources": [
+        "https://www.deepseek.com/"
+      ],
+      "degree": 4
+    },
+    {
+      "id": "sora",
+      "type": "model",
+      "name": "Sora",
+      "year": 2024,
+      "weight": 86,
+      "family": "openai",
+      "summary": "从一句话直接生成一分钟视频，物理与镜头运动都还像那么回事。它被拿来讨论「世界模型」到底意味着什么。",
+      "tags": [
+        "模型",
+        "视频",
+        "多模态"
+      ],
+      "sources": [
+        "https://openai.com/index/video-generation-models-as-world-simulators/"
+      ],
+      "degree": 4
+    },
+    {
+      "id": "o1",
+      "type": "model",
+      "name": "OpenAI o1",
+      "year": 2024,
+      "weight": 88,
+      "family": "openai",
+      "summary": "回答前先在心里推演一大段，用更多推理时间换正确率。它开启了「测试时计算」这条新的扩展方向。",
+      "tags": [
+        "模型",
+        "推理"
+      ],
+      "sources": [
+        "https://openai.com/index/learning-to-reason-with-llms/"
+      ],
+      "degree": 4
+    },
+    {
+      "id": "deepseek-v3",
+      "type": "model",
+      "name": "DeepSeek-V3",
+      "year": 2024,
+      "weight": 88,
+      "family": "deepseek",
+      "summary": "六千七百亿参数的混合专家模型，训练成本公开写在论文里。它让「大模型很贵」这个前提第一次被认真质疑。",
+      "tags": [
+        "模型",
+        "大模型",
+        "中国"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2412.19437"
+      ],
+      "degree": 6
+    },
+    {
+      "id": "mcp",
+      "type": "concept",
+      "name": "模型上下文协议",
+      "year": 2024,
+      "weight": 80,
+      "summary": "给模型接外部工具定一个统一接口，免得每个应用各写一套。协议本身很小，但它决定了智能体能不能规模化。",
+      "tags": [
+        "概念",
+        "协议",
+        "智能体"
+      ],
+      "sources": [
+        "https://www.anthropic.com/news/model-context-protocol"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "deepseek-r1",
+      "type": "model",
+      "name": "DeepSeek-R1",
+      "year": 2025,
+      "weight": 92,
+      "family": "deepseek",
+      "summary": "用强化学习让模型自己长出长链推理，权重开源、成本公开。它把「推理模型」从少数公司的特权变成公共品。",
+      "tags": [
+        "模型",
+        "推理",
+        "开源",
+        "中国"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2501.12948"
+      ],
+      "degree": 6
+    },
+    {
+      "id": "reasoning-model",
+      "type": "concept",
+      "name": "推理模型",
+      "year": 2025,
+      "weight": 88,
+      "summary": "把算力花在「想」上而不是「答」上。这条路线让模型在数学与代码上跳了一档，也带来了新的成本与可控性问题。",
+      "tags": [
+        "概念",
+        "推理"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2501.12948"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "agentic-coding",
+      "type": "concept",
+      "name": "智能体编程",
+      "year": 2025,
+      "weight": 80,
+      "summary": "模型直接读写代码库、跑测试、自己改到通过。写代码的方式正在从「人写、机器补全」变成「人说、机器执行」。",
+      "tags": [
+        "概念",
+        "智能体",
+        "工程"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Intelligent_agent"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "deepseek-harness",
+      "type": "project",
+      "name": "DeepSeek Harness",
+      "year": 2026,
+      "weight": 74,
+      "family": "deepseek",
+      "summary": "把模型、工具、插件装进同一个可编排环境的开源框架。社区围绕它长出了近六千个插件，是这张图上唯一的「生态星团」。",
+      "tags": [
+        "工具",
+        "智能体",
+        "工程",
+        "生态"
+      ],
+      "sources": [
+        "https://github.com/deepseek-ai/deepseek-harness"
+      ],
+      "degree": 4
+    },
+    {
+      "id": "zhipu-qingyan",
+      "type": "project",
+      "name": "智谱清言",
+      "year": 2023,
+      "weight": 58,
+      "family": "zhipu",
+      "summary": "智谱的对话 App，国内最早一批把大模型做成手机端产品的。它也是很多人第一次用上中文大模型的入口。",
+      "tags": [
+        "应用",
+        "生态",
+        "中文"
+      ],
+      "sources": [
+        "https://chatglm.cn/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "codegeex",
+      "type": "project",
+      "name": "CodeGeeX",
+      "year": 2022,
+      "weight": 60,
+      "family": "zhipu",
+      "summary": "智谱的代码助手，开源过模型权重也做过 IDE 插件。国内编程辅助里做得最早的一批。",
+      "tags": [
+        "应用",
+        "代码",
+        "生态"
+      ],
+      "sources": [
+        "https://codegeex.cn/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "kimi-app",
+      "type": "project",
+      "name": "Kimi 智能助手",
+      "year": 2023,
+      "weight": 62,
+      "family": "moonshot",
+      "summary": "用长文本把「一次读完几十份 PDF」做成卖点的产品。它在国内把「长上下文」这个需求第一次验证了。",
+      "tags": [
+        "应用",
+        "生态",
+        "中文"
+      ],
+      "sources": [
+        "https://kimi.moonshot.cn/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "ernie-bot",
+      "type": "project",
+      "name": "文心一言",
+      "year": 2023,
+      "weight": 66,
+      "family": "baidu",
+      "summary": "国内第一个大规模开放公测的对话产品。发布当天服务器被挤爆，也第一次让普通人感到「这东西真能用」。",
+      "tags": [
+        "应用",
+        "生态",
+        "中文"
+      ],
+      "sources": [
+        "https://yiyan.baidu.com/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "qianfan",
+      "type": "project",
+      "name": "千帆大模型平台",
+      "year": 2023,
+      "weight": 58,
+      "family": "baidu",
+      "summary": "百度的模型服务平台，除了自家文心也接第三方模型。它的角色是把模型变成可调用的 API。",
+      "tags": [
+        "平台",
+        "生态"
+      ],
+      "sources": [
+        "https://qianfan.cloud.baidu.com/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "comate",
+      "type": "project",
+      "name": "文心快码",
+      "year": 2023,
+      "weight": 52,
+      "family": "baidu",
+      "summary": "百度的编程助手，接在 VS Code 与 JetBrains 里。",
+      "tags": [
+        "应用",
+        "代码",
+        "生态"
+      ],
+      "sources": [
+        "https://comate.baidu.com/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "yuanbao",
+      "type": "project",
+      "name": "腾讯元宝",
+      "year": 2024,
+      "weight": 58,
+      "family": "tencent",
+      "summary": "腾讯的 AI 助手 App，直接接在微信生态里。它的优势不是模型，是入口。",
+      "tags": [
+        "应用",
+        "生态",
+        "中文"
+      ],
+      "sources": [
+        "https://yuanbao.tencent.com/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "hunyuan-image",
+      "type": "project",
+      "name": "混元生图",
+      "year": 2024,
+      "weight": 54,
+      "family": "tencent",
+      "summary": "腾讯的生图产品，接在元宝与云服务里。国内开源生图模型里它也是少数持续更新的。",
+      "tags": [
+        "应用",
+        "生成",
+        "生态"
+      ],
+      "sources": [
+        "https://hunyuan.tencent.com/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "doubao-app",
+      "type": "project",
+      "name": "豆包 App",
+      "year": 2023,
+      "weight": 64,
+      "family": "bytedance",
+      "summary": "字节的对话助手，靠极低价格与大量投放迅速做到国内用户量前列。",
+      "tags": [
+        "应用",
+        "生态",
+        "中文"
+      ],
+      "sources": [
+        "https://www.doubao.com/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "volcengine-ark",
+      "type": "project",
+      "name": "火山方舟",
+      "year": 2023,
+      "weight": 60,
+      "family": "bytedance",
+      "summary": "字节的模型服务平台，豆包系列模型从这里调用。它把「模型即服务」做成了标准品的形态。",
+      "tags": [
+        "平台",
+        "生态"
+      ],
+      "sources": [
+        "https://www.volcengine.com/product/ark"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "coze",
+      "type": "project",
+      "name": "扣子 Coze",
+      "year": 2024,
+      "weight": 62,
+      "family": "bytedance",
+      "summary": "不用写代码就能搭一个智能体，再一键发到微信、飞书、Discord。国内智能体平台里做得最完整的一个。",
+      "tags": [
+        "平台",
+        "智能体",
+        "生态"
+      ],
+      "sources": [
+        "https://www.coze.cn/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "tongyi-app",
+      "type": "project",
+      "name": "通义千问 App",
+      "year": 2023,
+      "weight": 60,
+      "family": "qwen",
+      "summary": "阿里的对话助手，与钉钉、夸克、高德等自家产品打通。",
+      "tags": [
+        "应用",
+        "生态",
+        "中文"
+      ],
+      "sources": [
+        "https://tongyi.aliyun.com/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "tongyi-lingma",
+      "type": "project",
+      "name": "通义灵码",
+      "year": 2023,
+      "weight": 58,
+      "family": "qwen",
+      "summary": "阿里的编程助手，在 IDE 里做补全与问答。国内开发者用得最多的编程助手之一。",
+      "tags": [
+        "应用",
+        "代码",
+        "生态"
+      ],
+      "sources": [
+        "https://lingma.aliyun.com/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "modelscope",
+      "type": "project",
+      "name": "魔搭 ModelScope",
+      "year": 2022,
+      "weight": 66,
+      "family": "qwen",
+      "summary": "阿里的模型社区，开放权重模型的下载与推理入口。国内开源模型生态很大一部分长在这里。",
+      "tags": [
+        "平台",
+        "开源",
+        "生态"
+      ],
+      "sources": [
+        "https://modelscope.cn/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "hailuo",
+      "type": "project",
+      "name": "海螺 AI",
+      "year": 2024,
+      "weight": 54,
+      "family": "minimax",
+      "summary": "MiniMax 的对话与语音产品，语音合成是它最强的一块。",
+      "tags": [
+        "应用",
+        "语音",
+        "生态"
+      ],
+      "sources": [
+        "https://hailuoai.com/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "xingye",
+      "type": "project",
+      "name": "星野",
+      "year": 2023,
+      "weight": 52,
+      "family": "minimax",
+      "summary": "AI 角色扮演应用，用户自己捏角色聊天。国内这类产品里它做得最早。",
+      "tags": [
+        "应用",
+        "生态"
+      ],
+      "sources": [
+        "https://xingye.me/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "sensenchat",
+      "type": "project",
+      "name": "商量 SenseChat",
+      "year": 2023,
+      "weight": 52,
+      "family": "sensetime",
+      "summary": "商汤的对话产品，背后是日日新大模型。",
+      "tags": [
+        "应用",
+        "生态",
+        "中文"
+      ],
+      "sources": [
+        "https://chat.sensetime.com/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "miaohua",
+      "type": "project",
+      "name": "秒画",
+      "year": 2023,
+      "weight": 50,
+      "family": "sensetime",
+      "summary": "商汤的生图产品，走的是「人人能画」的路线。",
+      "tags": [
+        "应用",
+        "生成",
+        "生态"
+      ],
+      "sources": [
+        "https://miaohua.sensetime.com/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "spark-app",
+      "type": "project",
+      "name": "讯飞星火 App",
+      "year": 2023,
+      "weight": 54,
+      "family": "iflytek",
+      "summary": "讯飞的对话助手，语音输入是它的默认交互方式。",
+      "tags": [
+        "应用",
+        "语音",
+        "生态"
+      ],
+      "sources": [
+        "https://xinghuo.xfyun.cn/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "modelarts",
+      "type": "project",
+      "name": "ModelArts",
+      "year": 2018,
+      "weight": 56,
+      "family": "huawei",
+      "summary": "华为云的模型训练与部署平台。盘古系列都从这里出来，也是国内算力受限环境下最常被选的一条路。",
+      "tags": [
+        "平台",
+        "生态"
+      ],
+      "sources": [
+        "https://www.huaweicloud.com/product/modelarts.html"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "baixiaoying",
+      "type": "project",
+      "name": "百小应",
+      "year": 2024,
+      "weight": 48,
+      "family": "baichuan",
+      "summary": "百川智能的对话助手，主打医疗与搜索场景。",
+      "tags": [
+        "应用",
+        "生态",
+        "中文"
+      ],
+      "sources": [
+        "https://ying.baichuan-ai.com/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "wanzhi",
+      "type": "project",
+      "name": "万知",
+      "year": 2024,
+      "weight": 46,
+      "family": "yi",
+      "summary": "零一万物的 AI 助手，主打文档阅读与写作。",
+      "tags": [
+        "应用",
+        "生态",
+        "中文"
+      ],
+      "sources": [
+        "https://www.wanzhi.com/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "yuewen",
+      "type": "project",
+      "name": "跃问",
+      "year": 2024,
+      "weight": 46,
+      "family": "stepfun",
+      "summary": "阶跃星辰的对话产品，主打多模态理解。",
+      "tags": [
+        "应用",
+        "生态",
+        "中文"
+      ],
+      "sources": [
+        "https://yuewen.cn/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "luca",
+      "type": "project",
+      "name": "面壁露卡",
+      "year": 2024,
+      "weight": 44,
+      "family": "modelbest",
+      "summary": "面壁智能的端侧助手，跑在本地而不是云端。",
+      "tags": [
+        "应用",
+        "端侧",
+        "生态"
+      ],
+      "sources": [
+        "https://luca.cn/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "phi-1",
+      "type": "model",
+      "name": "Phi-1",
+      "year": 2023,
+      "weight": 70,
+      "family": "microsoft",
+      "summary": "十三亿参数，专攻代码。用教科书级的高质量合成数据训练，证明了数据质量可以替代一部分参数量。",
+      "tags": [
+        "模型",
+        "小模型",
+        "代码"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2306.11644"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "phi-3",
+      "type": "model",
+      "name": "Phi-3",
+      "year": 2024,
+      "weight": 72,
+      "family": "microsoft",
+      "summary": "三十八亿参数，在手机上就能跑，多项测试接近十倍大的模型。端侧模型从这时开始被认为真的可用。",
+      "tags": [
+        "模型",
+        "小模型",
+        "端侧"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2404.14219"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "phi-4",
+      "type": "model",
+      "name": "Phi-4",
+      "year": 2024,
+      "weight": 70,
+      "family": "microsoft",
+      "summary": "一百四十亿参数，重点放在数学推理上。微软用它说明：小模型不必只是大模型的廉价替代品。",
+      "tags": [
+        "模型",
+        "小模型",
+        "推理"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2412.08905"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "nemotron-4",
+      "type": "model",
+      "name": "Nemotron-4",
+      "year": 2024,
+      "weight": 68,
+      "family": "nvidia",
+      "summary": "英伟达自己训练的模型，主要用途是生成合成数据。卖铲子的人开始顺手卖原料。",
+      "tags": [
+        "模型",
+        "数据"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2406.11704"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "titan",
+      "type": "model",
+      "name": "Amazon Titan",
+      "year": 2023,
+      "weight": 64,
+      "family": "amazon",
+      "summary": "AWS 的自研模型，藏在 Bedrock 里按调用收费。它的价值不在能力，在于让企业客户不用自己运维。",
+      "tags": [
+        "模型",
+        "云服务"
+      ],
+      "sources": [
+        "https://aws.amazon.com/bedrock/titan/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "nova",
+      "type": "model",
+      "name": "Amazon Nova",
+      "year": 2024,
+      "weight": 64,
+      "family": "amazon",
+      "summary": "一整套多模态模型，从纯文本到视频生成都有。亚马逊第一次把模型做成完整的产品线。",
+      "tags": [
+        "模型",
+        "多模态"
+      ],
+      "sources": [
+        "https://aws.amazon.com/ai/generative-ai/nova/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "command-r",
+      "type": "model",
+      "name": "Command R",
+      "year": 2024,
+      "weight": 66,
+      "family": "cohere",
+      "summary": "主打企业检索增强（RAG）与工具调用，上下文拉到十二万八。它不做通用聊天，只做企业落地。",
+      "tags": [
+        "模型",
+        "企业",
+        "检索"
+      ],
+      "sources": [
+        "https://cohere.com/command"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "jamba",
+      "type": "model",
+      "name": "Jamba",
+      "year": 2024,
+      "weight": 68,
+      "family": "ai21",
+      "summary": "把 Transformer 和状态空间模型混在一起，上下文能到二十五万。架构混合是它最大的卖点。",
+      "tags": [
+        "模型",
+        "架构"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2403.19887"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "pi",
+      "type": "model",
+      "name": "Pi",
+      "year": 2023,
+      "weight": 62,
+      "family": "inflection",
+      "summary": "主打情绪陪伴的对话模型。它证明模型可以卖「性格」而不是卖跑分，但商业上没能撑住。",
+      "tags": [
+        "模型",
+        "对话"
+      ],
+      "sources": [
+        "https://inflection.ai/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "olmo",
+      "type": "model",
+      "name": "OLMo",
+      "year": 2024,
+      "weight": 70,
+      "family": "allenai",
+      "summary": "完全开放：权重、训练数据、训练代码、日志全部公开。它是研究「模型到底怎么学会的」的底本。",
+      "tags": [
+        "模型",
+        "开源",
+        "研究"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2402.00838"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "pythia",
+      "type": "model",
+      "name": "Pythia",
+      "year": 2023,
+      "weight": 66,
+      "family": "eleuther",
+      "summary": "一整套同数据、同顺序、只改规模的小模型，专门用来研究训练过程。做可解释性研究的人几乎都用它。",
+      "tags": [
+        "模型",
+        "开源",
+        "研究"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2304.01373"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "gen-3",
+      "type": "model",
+      "name": "Gen-3 Alpha",
+      "year": 2024,
+      "weight": 68,
+      "family": "runway",
+      "summary": "面向影视制作的视频生成模型，强调镜头运动与一致性。它把 AI 视频从演示推到了能用。",
+      "tags": [
+        "模型",
+        "视频",
+        "生成"
+      ],
+      "sources": [
+        "https://runwayml.com/research/introducing-gen-3-alpha"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "doubao",
+      "type": "model",
+      "name": "豆包大模型",
+      "year": 2023,
+      "weight": 74,
+      "family": "bytedance",
+      "summary": "字节的模型家族，主打极低的调用价格。它把国内大模型的 API 价格直接打下来一个数量级。",
+      "tags": [
+        "模型",
+        "中文",
+        "大模型"
+      ],
+      "sources": [
+        "https://www.volcengine.com/product/doubao"
+      ],
+      "degree": 4
+    },
+    {
+      "id": "seed-1-6",
+      "type": "model",
+      "name": "Seed 1.6",
+      "year": 2025,
+      "weight": 70,
+      "family": "bytedance",
+      "summary": "字节的推理模型，长链思考加多模态。豆包从「便宜」转向「也能打硬题」。",
+      "tags": [
+        "模型",
+        "推理",
+        "中文"
+      ],
+      "sources": [
+        "https://www.volcengine.com/product/doubao"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "hunyuan-large",
+      "type": "model",
+      "name": "混元 Large",
+      "year": 2024,
+      "weight": 70,
+      "family": "tencent",
+      "summary": "三千八百九十亿参数的混合专家模型，开放权重。腾讯第一次把自家最大的模型放出来。",
+      "tags": [
+        "模型",
+        "开源",
+        "中文"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2411.02265"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "hunyuan-video",
+      "type": "model",
+      "name": "混元视频",
+      "year": 2024,
+      "weight": 72,
+      "family": "tencent",
+      "summary": "开源视频生成模型，画面稳定性和运动幅度在当时是开源里最好的之一。",
+      "tags": [
+        "模型",
+        "视频",
+        "开源"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2412.03603"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "minimax-01",
+      "type": "model",
+      "name": "MiniMax-01",
+      "year": 2025,
+      "weight": 72,
+      "family": "minimax",
+      "summary": "用线性注意力把上下文推到四百万 token，训练成本却压得很低。长上下文是它唯一的赌注，也是全部卖点。",
+      "tags": [
+        "模型",
+        "长文本",
+        "开源"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2501.08313"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "ernie-1",
+      "type": "model",
+      "name": "文心 ERNIE 1.0",
+      "year": 2019,
+      "weight": 70,
+      "family": "baidu",
+      "summary": "国内最早把预训练模型做成产品的一批。它把知识增强写进架构，做中文理解时确实受益。",
+      "tags": [
+        "模型",
+        "中文",
+        "预训练"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1904.09223"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "ernie-4",
+      "type": "model",
+      "name": "文心 ERNIE 4.0",
+      "year": 2023,
+      "weight": 72,
+      "family": "baidu",
+      "summary": "百度的旗舰模型，接在搜索与文库上。它的优势不是跑分，是背后有真实的中文语料与产品入口。",
+      "tags": [
+        "模型",
+        "中文",
+        "大模型"
+      ],
+      "sources": [
+        "https://yiyan.baidu.com/"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "sensenova",
+      "type": "model",
+      "name": "日日新 SenseNova",
+      "year": 2023,
+      "weight": 62,
+      "family": "sensetime",
+      "summary": "商汤的模型体系，从视觉起家再补语言。它的路线是把模型塞进城市与汽车的摄像头里。",
+      "tags": [
+        "模型",
+        "视觉",
+        "中文"
+      ],
+      "sources": [
+        "https://www.sensetime.com/cn/sensenova"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "spark",
+      "type": "model",
+      "name": "讯飞星火",
+      "year": 2023,
+      "weight": 66,
+      "family": "iflytek",
+      "summary": "语音起家的公司做的大模型，强项是语音输入与教育场景。它在国产芯片上跑通了自己的训练。",
+      "tags": [
+        "模型",
+        "语音",
+        "中文"
+      ],
+      "sources": [
+        "https://xinghuo.xfyun.cn/"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "baichuan-2",
+      "type": "model",
+      "name": "Baichuan 2",
+      "year": 2023,
+      "weight": 66,
+      "family": "baichuan",
+      "summary": "开源的中文大模型，一百三十亿与七百亿两档。它是国内开源社区微调最常用的底模之一。",
+      "tags": [
+        "模型",
+        "开源",
+        "中文"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2309.10305"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "yi",
+      "type": "model",
+      "name": "Yi",
+      "year": 2023,
+      "weight": 64,
+      "family": "yi",
+      "summary": "李开复团队的模型，从 6B 到 34B 全线开源。它在中文榜单上一度是开源里最强的。",
+      "tags": [
+        "模型",
+        "开源",
+        "中文"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2403.04652"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "step-1",
+      "type": "model",
+      "name": "Step-1",
+      "year": 2024,
+      "weight": 62,
+      "family": "stepfun",
+      "summary": "阶跃星辰的千亿级模型，主打多模态与智能体。它把「终端」当作主要落地点。",
+      "tags": [
+        "模型",
+        "多模态",
+        "中文"
+      ],
+      "sources": [
+        "https://www.stepfun.com/"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "internlm",
+      "type": "model",
+      "name": "InternLM",
+      "year": 2023,
+      "weight": 70,
+      "family": "shanghai-ai-lab",
+      "summary": "书生·浦语，高校与实验室联合开源的中文模型。它培养了一大批国内做模型微调的人。",
+      "tags": [
+        "模型",
+        "开源",
+        "中文"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2403.17297"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "internvl",
+      "type": "model",
+      "name": "InternVL",
+      "year": 2024,
+      "weight": 70,
+      "family": "shanghai-ai-lab",
+      "summary": "开源多模态模型，在图文理解上长期排开源第一梯队。它是国内视觉语言模型的主要底座之一。",
+      "tags": [
+        "模型",
+        "多模态",
+        "开源"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2312.14238"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "minicpm",
+      "type": "model",
+      "name": "MiniCPM",
+      "year": 2024,
+      "weight": 66,
+      "family": "modelbest",
+      "summary": "二十多亿参数，能跑在手机上，还能看图。它把「端侧多模态」做成了可下载的产品。",
+      "tags": [
+        "模型",
+        "小模型",
+        "端侧"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2404.06395"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "pangu",
+      "type": "model",
+      "name": "盘古大模型",
+      "year": 2020,
+      "weight": 70,
+      "family": "huawei",
+      "summary": "华为的模型体系，重点是行业落地：气象、矿山、制造。它走的是「不做通用聊天，只做行业」的路。",
+      "tags": [
+        "模型",
+        "行业",
+        "中文"
+      ],
+      "sources": [
+        "https://www.huaweicloud.com/product/pangu.html"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "luminous",
+      "type": "model",
+      "name": "Luminous",
+      "year": 2022,
+      "weight": 58,
+      "family": "aleph-alpha",
+      "summary": "德国最有名的自主大模型，主打欧洲主权 AI 与可解释性。能力不算顶尖，但它是欧洲「不用美国模型」的象征。",
+      "tags": [
+        "模型",
+        "欧洲"
+      ],
+      "sources": [
+        "https://aleph-alpha.com/luminous/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "bloom",
+      "type": "model",
+      "name": "BLOOM",
+      "year": 2022,
+      "weight": 74,
+      "family": "bigscience",
+      "summary": "一千多人协作训练的一千七百六十亿参数开源模型，覆盖四十六种语言。它是「大模型也能众筹着做」的证明。",
+      "tags": [
+        "模型",
+        "开源",
+        "多语言"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2211.05100"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "falcon",
+      "type": "model",
+      "name": "Falcon",
+      "year": 2023,
+      "weight": 70,
+      "family": "uae",
+      "summary": "阿联酋国家队做的开源模型，一度是开源榜第一。它让「非中美也能训练大模型」变成了事实。",
+      "tags": [
+        "模型",
+        "开源"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2311.16867"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "falcon-3",
+      "type": "model",
+      "name": "Falcon 3",
+      "year": 2024,
+      "weight": 62,
+      "family": "uae",
+      "summary": "小参数家族，从 1B 到 10B，主打在单张显卡上跑。阿联酋的路线转向了轻量。",
+      "tags": [
+        "模型",
+        "小模型",
+        "开源"
+      ],
+      "sources": [
+        "https://falconllm.tii.ae/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "jais",
+      "type": "model",
+      "name": "Jais",
+      "year": 2023,
+      "weight": 58,
+      "family": "uae",
+      "summary": "专攻阿拉伯语的开源模型，覆盖阿拉伯语与英语双语。小语种模型里它是做得最认真的一批。",
+      "tags": [
+        "模型",
+        "开源",
+        "多语言"
+      ],
+      "sources": [
+        "https://www.jais.chat/"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "sarvam-1",
+      "type": "model",
+      "name": "Sarvam-1",
+      "year": 2023,
+      "weight": 54,
+      "family": "sarvam",
+      "summary": "印度团队的印地语与多语言模型，专注本地语言。它代表的是「非英语世界的模型主权」这条线。",
+      "tags": [
+        "模型",
+        "多语言"
+      ],
+      "sources": [
+        "https://www.sarvam.ai/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "hyperclova-x",
+      "type": "model",
+      "name": "HyperCLOVA X",
+      "year": 2023,
+      "weight": 60,
+      "family": "korea",
+      "summary": "韩国最大的搜索公司做的模型，韩语数据量是它的护城河。它没打算跟美国模型比英文。",
+      "tags": [
+        "模型",
+        "多语言"
+      ],
+      "sources": [
+        "https://clova.ai/hyperclova"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "exaone",
+      "type": "model",
+      "name": "EXAONE",
+      "year": 2024,
+      "weight": 58,
+      "family": "korea",
+      "summary": "LG 的开源模型，韩英双语，权重可下载。韩国的第二家押注，路线更偏研究与开源。",
+      "tags": [
+        "模型",
+        "开源",
+        "多语言"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2408.03560"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "rakuten-ai",
+      "type": "model",
+      "name": "Rakuten AI 7B",
+      "year": 2023,
+      "weight": 54,
+      "family": "japan",
+      "summary": "乐天做的日语模型，开放权重。日本的大模型投入比中美小得多，但一直没停。",
+      "tags": [
+        "模型",
+        "多语言"
+      ],
+      "sources": [
+        "https://huggingface.co/Rakuten/RakutenAI-7B"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "tsuzumi",
+      "type": "model",
+      "name": "tsuzumi",
+      "year": 2023,
+      "weight": 52,
+      "family": "japan",
+      "summary": "NTT 的日语模型，主打轻量与商业可用。它代表日本「用自家数据做自家模型」的路径。",
+      "tags": [
+        "模型",
+        "多语言"
+      ],
+      "sources": [
+        "https://www.ntt.com/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "yalm",
+      "type": "model",
+      "name": "YaLM",
+      "year": 2023,
+      "weight": 54,
+      "family": "russia",
+      "summary": "Yandex 的俄语模型，开放权重。在制裁与算力受限的条件下做出来的东西。",
+      "tags": [
+        "模型",
+        "多语言"
+      ],
+      "sources": [
+        "https://huggingface.co/yandex/yalm"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "gigachat",
+      "type": "model",
+      "name": "GigaChat",
+      "year": 2023,
+      "weight": 52,
+      "family": "russia",
+      "summary": "俄罗斯联邦储蓄银行的模型，接进本国政务与银行系统。它更像是国家级基础设施而非产品。",
+      "tags": [
+        "模型",
+        "多语言"
+      ],
+      "sources": [
+        "https://giga.chat/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "allam",
+      "type": "model",
+      "name": "ALLaM",
+      "year": 2024,
+      "weight": 52,
+      "family": "allam",
+      "summary": "沙特阿美等机构做的阿拉伯语模型。能源国家开始把石油收入往模型上投。",
+      "tags": [
+        "模型",
+        "多语言"
+      ],
+      "sources": [
+        "https://huggingface.co/ALLaM-AI/ALLaM-7B-Instruct-preview"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "gpt-4o",
+      "type": "model",
+      "name": "GPT-4o",
+      "year": 2024,
+      "weight": 90,
+      "family": "openai",
+      "summary": "把文本、图像、语音放进同一个模型里，语音对话延迟降到接近真人。openai 第一次把「实时」当卖点。",
+      "tags": [
+        "模型",
+        "多模态",
+        "大模型"
+      ],
+      "sources": [
+        "https://openai.com/index/hello-gpt-4o/"
+      ],
+      "degree": 7
+    },
+    {
+      "id": "o3",
+      "type": "model",
+      "name": "OpenAI o3",
+      "year": 2025,
+      "weight": 82,
+      "family": "openai",
+      "summary": "在数学与编程竞赛题上把分数推到接近满分，代价是单次回答可能要花掉大量推理算力。",
+      "tags": [
+        "模型",
+        "推理"
+      ],
+      "sources": [
+        "https://openai.com/index/introducing-o3-and-o4-mini/"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "whisper",
+      "type": "model",
+      "name": "Whisper",
+      "year": 2022,
+      "weight": 78,
+      "family": "openai",
+      "summary": "用六十八万小时的多语种音频训练，开源权重。它让「本地跑一个很好的语音识别」第一次变得普通。",
+      "tags": [
+        "模型",
+        "语音",
+        "开源"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2212.04356"
+      ],
+      "degree": 4
+    },
+    {
+      "id": "codex",
+      "type": "model",
+      "name": "Codex",
+      "year": 2021,
+      "weight": 80,
+      "family": "openai",
+      "summary": "GitHub Copilot 背后的模型。它把「写代码时有人补全」变成了一件理所当然的事。",
+      "tags": [
+        "模型",
+        "代码"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2107.03374"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "claude-2",
+      "type": "model",
+      "name": "Claude 2",
+      "year": 2023,
+      "weight": 74,
+      "family": "anthropic",
+      "summary": "把上下文拉到十万 token，能一次读完几百页文档。长文本从此成了 Anthropic 的招牌。",
+      "tags": [
+        "模型",
+        "长文本"
+      ],
+      "sources": [
+        "https://www.anthropic.com/news/claude-2"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "claude-3",
+      "type": "model",
+      "name": "Claude 3",
+      "year": 2024,
+      "weight": 84,
+      "family": "anthropic",
+      "summary": "一次发布三档模型（Haiku / Sonnet / Opus），第一次在部分测试上超过 GPT-4。多档位成为行业惯例。",
+      "tags": [
+        "模型",
+        "多模态"
+      ],
+      "sources": [
+        "https://www.anthropic.com/news/claude-3-family"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "claude-3-5-sonnet",
+      "type": "model",
+      "name": "Claude 3.5 Sonnet",
+      "year": 2024,
+      "weight": 86,
+      "family": "anthropic",
+      "summary": "编程能力被大量开发者认可，成了那一年写代码最常用的模型之一。它让 Anthropic 从「第二选择」变成主力。",
+      "tags": [
+        "模型",
+        "编程"
+      ],
+      "sources": [
+        "https://www.anthropic.com/news/claude-3-5-sonnet"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "claude-4",
+      "type": "model",
+      "name": "Claude 4",
+      "year": 2025,
+      "weight": 84,
+      "family": "anthropic",
+      "summary": "把重点放在长任务的连续执行上，能自己跑几小时的 agent 工作流，这是它与其他模型拉开差距的地方。",
+      "tags": [
+        "模型",
+        "智能体"
+      ],
+      "sources": [
+        "https://www.anthropic.com/news/claude-4"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "constitutional-ai",
+      "type": "paper",
+      "name": "宪法式 AI",
+      "year": 2022,
+      "weight": 76,
+      "family": "anthropic",
+      "summary": "不靠大量人工标注，而是给模型一份写下来的原则，让它自己批评自己。这是与 RLHF 并行的另一条对齐路线。",
+      "tags": [
+        "论文",
+        "对齐"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2212.08073"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "t5",
+      "type": "model",
+      "name": "T5",
+      "year": 2019,
+      "weight": 78,
+      "family": "google",
+      "summary": "把所有自然语言任务都改写成「文本到文本」，一套框架通吃翻译、摘要、问答。",
+      "tags": [
+        "模型",
+        "语言"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/1910.10683"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "palm",
+      "type": "model",
+      "name": "PaLM",
+      "year": 2022,
+      "weight": 76,
+      "family": "google",
+      "summary": "五千四百亿参数的密集模型，第一次在训练规模上压过同时期的 OpenAI。它证明谷歌的算力是真的多。",
+      "tags": [
+        "模型",
+        "大模型"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2204.02311"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "lamda",
+      "type": "model",
+      "name": "LaMDA",
+      "year": 2021,
+      "weight": 68,
+      "family": "google",
+      "summary": "专为对话训练的语言模型。一名工程师公开说它有感知，这件事后来变成了 AI 伦理讨论的经典案例。",
+      "tags": [
+        "模型",
+        "对话"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2201.08239"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "gemini-1-5",
+      "type": "model",
+      "name": "Gemini 1.5",
+      "year": 2024,
+      "weight": 82,
+      "family": "google",
+      "summary": "用混合专家架构把上下文推到一百万 token，能一次吞下一整本书或一段长视频。",
+      "tags": [
+        "模型",
+        "长文本",
+        "多模态"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2403.05530"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "gemma",
+      "type": "model",
+      "name": "Gemma",
+      "year": 2024,
+      "weight": 74,
+      "family": "google",
+      "summary": "谷歌放出的开放权重小模型，能在笔记本上跑。它是大公司第一次认真做「可下载」的模型。",
+      "tags": [
+        "模型",
+        "开源"
+      ],
+      "sources": [
+        "https://blog.google/technology/developers/gemma-open-models/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "llama-2",
+      "type": "model",
+      "name": "Llama 2",
+      "year": 2023,
+      "weight": 84,
+      "family": "meta",
+      "summary": "第一个允许商用的开放权重模型。这一条改写了规则：企业可以自己部署，不必买 API。",
+      "tags": [
+        "模型",
+        "开源",
+        "大模型"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2307.09288"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "llama-3",
+      "type": "model",
+      "name": "Llama 3",
+      "year": 2024,
+      "weight": 84,
+      "family": "meta",
+      "summary": "用十五万亿 token 训练，开源模型第一次在通用能力上逼近闭源第一梯队。",
+      "tags": [
+        "模型",
+        "开源",
+        "大模型"
+      ],
+      "sources": [
+        "https://ai.meta.com/blog/meta-llama-3/"
+      ],
+      "degree": 4
+    },
+    {
+      "id": "sam",
+      "type": "model",
+      "name": "Segment Anything",
+      "year": 2023,
+      "weight": 80,
+      "family": "meta",
+      "summary": "点一下就能把图里的任何东西抠出来，十亿张掩码训出来的通用分割模型。视觉领域的基础设施。",
+      "tags": [
+        "模型",
+        "视觉",
+        "开源"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2304.02643"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "deepseek-coder",
+      "type": "model",
+      "name": "DeepSeek-Coder",
+      "year": 2023,
+      "weight": 70,
+      "family": "deepseek",
+      "summary": "深度求索最早打出名声的一批代码模型，开放权重、支持长上下文，被大量本地编程助手采用。",
+      "tags": [
+        "模型",
+        "代码",
+        "开源"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2401.14196"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "deepseek-v2",
+      "type": "model",
+      "name": "DeepSeek-V2",
+      "year": 2024,
+      "weight": 82,
+      "family": "deepseek",
+      "summary": "提出多头潜在注意力（MLA），把推理时的显存占用大幅压下来。它让「低成本推理」第一次有了具体的技术路径。",
+      "tags": [
+        "模型",
+        "架构",
+        "开源"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2405.04434"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "deepseek-v3-1",
+      "type": "model",
+      "name": "DeepSeek-V3.1",
+      "year": 2025,
+      "weight": 78,
+      "family": "deepseek",
+      "summary": "把「思考模式」和「非思考模式」放进同一个模型，按需切换。混合推理成为那一年开源模型的标配。",
+      "tags": [
+        "模型",
+        "推理",
+        "开源"
+      ],
+      "sources": [
+        "https://api-docs.deepseek.com/news/news250821"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "mistral-7b",
+      "type": "model",
+      "name": "Mistral 7B",
+      "year": 2023,
+      "weight": 78,
+      "family": "mistral",
+      "summary": "七十亿参数，在多项测试上打赢比自己大一倍的模型。它让「小模型也能用」成了共识。",
+      "tags": [
+        "模型",
+        "开源"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2310.06825"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "mixtral",
+      "type": "model",
+      "name": "Mixtral 8x7B",
+      "year": 2023,
+      "weight": 80,
+      "family": "mistral",
+      "summary": "稀疏混合专家，总参数四百七十亿但每次只激活一百三十亿。它把 MoE 从论文推成了可下载的产品。",
+      "tags": [
+        "模型",
+        "架构",
+        "开源"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2401.04088"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "mistral-large",
+      "type": "model",
+      "name": "Mistral Large",
+      "year": 2024,
+      "weight": 70,
+      "family": "mistral",
+      "summary": "面向商业闭源的高端型号，主打多语种与函数调用。欧洲终于有了自己的第一梯队模型。",
+      "tags": [
+        "模型",
+        "企业"
+      ],
+      "sources": [
+        "https://mistral.ai/news/mistral-large"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "qwen",
+      "type": "model",
+      "name": "Qwen",
+      "year": 2023,
+      "weight": 76,
+      "family": "qwen",
+      "summary": "阿里通义千问的第一代开放权重模型，配套了完整的中文评测。中文开源生态从这一批开始变厚。",
+      "tags": [
+        "模型",
+        "开源",
+        "中文"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2309.16609"
+      ],
+      "degree": 3
+    },
+    {
+      "id": "qwen2-5",
+      "type": "model",
+      "name": "Qwen2.5",
+      "year": 2024,
+      "weight": 78,
+      "family": "qwen",
+      "summary": "从 0.5B 到 72B 铺满整条产品线，还带视觉与代码版本。它是开源社区里被微调得最多的底模之一。",
+      "tags": [
+        "模型",
+        "开源",
+        "中文"
+      ],
+      "sources": [
+        "https://qwenlm.github.io/blog/qwen2.5/"
+      ],
+      "degree": 4
+    },
+    {
+      "id": "qwen3",
+      "type": "model",
+      "name": "Qwen3",
+      "year": 2025,
+      "weight": 78,
+      "family": "qwen",
+      "summary": "把推理模式与快速模式合并进一个模型，开放权重。开源阵营在 2025 年的主力之一。",
+      "tags": [
+        "模型",
+        "开源",
+        "中文"
+      ],
+      "sources": [
+        "https://qwenlm.github.io/blog/qwen3/"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "chatglm",
+      "type": "model",
+      "name": "ChatGLM",
+      "year": 2023,
+      "weight": 72,
+      "family": "zhipu",
+      "summary": "六十亿参数、能在消费级显卡上跑的中文对话模型。它让很多国内开发者第一次在自己电脑上跑通大模型。",
+      "tags": [
+        "模型",
+        "开源",
+        "中文"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2406.12793"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "glm-4",
+      "type": "model",
+      "name": "GLM-4",
+      "year": 2024,
+      "weight": 74,
+      "family": "zhipu",
+      "summary": "智谱的旗舰模型，主打中文理解与工具调用，配套完整的智能体平台。",
+      "tags": [
+        "模型",
+        "中文"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2406.12793"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "kimi",
+      "type": "model",
+      "name": "Kimi",
+      "year": 2023,
+      "weight": 72,
+      "family": "moonshot",
+      "summary": "用超长上下文切入市场，能一次读完几十份文档。长文本在国内成了第一个被验证的需求。",
+      "tags": [
+        "模型",
+        "长文本",
+        "中文"
+      ],
+      "sources": [
+        "https://www.moonshot.cn/"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "kimi-k2",
+      "type": "model",
+      "name": "Kimi K2",
+      "year": 2025,
+      "weight": 76,
+      "family": "moonshot",
+      "summary": "万亿参数级的开放权重模型，主打智能体任务，是 2025 年开源阵营里参数最大的一批之一。",
+      "tags": [
+        "模型",
+        "开源",
+        "智能体"
+      ],
+      "sources": [
+        "https://moonshotai.github.io/Kimi-K2/"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "sdxl",
+      "type": "model",
+      "name": "SDXL",
+      "year": 2023,
+      "weight": 76,
+      "family": "stability",
+      "summary": "Stable Diffusion 的大幅升级版，出图质量与分辨率都提升一档，成为本地生图的事实标准。",
+      "tags": [
+        "模型",
+        "生成",
+        "开源"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2307.01952"
+      ],
+      "degree": 2
+    },
+    {
+      "id": "sd3",
+      "type": "model",
+      "name": "Stable Diffusion 3",
+      "year": 2024,
+      "weight": 74,
+      "family": "stability",
+      "summary": "换成整流流架构，文字渲染和复杂构图明显改善。开源生图模型追平商业产品的一次尝试。",
+      "tags": [
+        "模型",
+        "生成",
+        "开源"
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2403.03206"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "grok-1",
+      "type": "model",
+      "name": "Grok-1",
+      "year": 2023,
+      "weight": 66,
+      "family": "xai",
+      "summary": "xAI 的第一个模型，接在社交平台上，风格更少过滤。它把「模型性格」当成了产品差异。",
+      "tags": [
+        "模型",
+        "对话"
+      ],
+      "sources": [
+        "https://x.ai/"
+      ],
+      "degree": 1
+    },
+    {
+      "id": "grok-2",
+      "type": "model",
+      "name": "Grok-2",
+      "year": 2024,
+      "weight": 68,
+      "family": "xai",
+      "summary": "加入图像理解与生图能力，训练用的算力规模在当年属于第一梯队。",
+      "tags": [
+        "模型",
+        "多模态"
+      ],
+      "sources": [
+        "https://x.ai/blog/grok-2"
+      ],
+      "degree": 1
+    }
+  ],
+  "links": [
+    {
+      "source": "warren-mcculloch",
+      "target": "mcculloch-pitts-neuron",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "walter-pitts",
+      "target": "mcculloch-pitts-neuron",
+      "relation": "合作",
+      "strength": 4
+    },
+    {
+      "source": "mcculloch-pitts-neuron",
+      "target": "neural-network",
+      "relation": "奠基",
+      "strength": 5
+    },
+    {
+      "source": "neural-network",
+      "target": "connectionism",
+      "relation": "奠基",
+      "strength": 5
+    },
+    {
+      "source": "donald-hebb",
+      "target": "hebbian-learning",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "hebbian-learning",
+      "target": "neural-network",
+      "relation": "奠基",
+      "strength": 4
+    },
+    {
+      "source": "alan-turing",
+      "target": "turing-test",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "claude-shannon",
+      "target": "alan-turing",
+      "relation": "影响",
+      "strength": 3
+    },
+    {
+      "source": "claude-shannon",
+      "target": "dartmouth-workshop",
+      "relation": "推动",
+      "strength": 3
+    },
+    {
+      "source": "john-mccarthy",
+      "target": "dartmouth-workshop",
+      "relation": "推动",
+      "strength": 5
+    },
+    {
+      "source": "marvin-minsky",
+      "target": "dartmouth-workshop",
+      "relation": "推动",
+      "strength": 5
+    },
+    {
+      "source": "dartmouth-workshop",
+      "target": "artificial-intelligence-term",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "turing-test",
+      "target": "artificial-intelligence-term",
+      "relation": "影响",
+      "strength": 3
+    },
+    {
+      "source": "dartmouth-workshop",
+      "target": "symbol-ai",
+      "relation": "奠基",
+      "strength": 5
+    },
+    {
+      "source": "john-mccarthy",
+      "target": "lisp",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "john-mccarthy",
+      "target": "mit-ai-lab",
+      "relation": "合作",
+      "strength": 4
+    },
+    {
+      "source": "marvin-minsky",
+      "target": "mit-ai-lab",
+      "relation": "合作",
+      "strength": 5
+    },
+    {
+      "source": "john-mccarthy",
+      "target": "stanford-ai-lab",
+      "relation": "合作",
+      "strength": 4
+    },
+    {
+      "source": "lisp",
+      "target": "symbol-ai",
+      "relation": "推动",
+      "strength": 4
+    },
+    {
+      "source": "symbol-ai",
+      "target": "expert-system",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "artificial-intelligence-term",
+      "target": "machine-learning-term",
+      "relation": "影响",
+      "strength": 3
+    },
+    {
+      "source": "frank-rosenblatt",
+      "target": "perceptron",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "perceptron",
+      "target": "neural-network",
+      "relation": "继承",
+      "strength": 5
+    },
+    {
+      "source": "perceptron",
+      "target": "machine-learning-term",
+      "relation": "推动",
+      "strength": 4
+    },
+    {
+      "source": "arthur-samuel",
+      "target": "machine-learning-term",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "ibm",
+      "target": "arthur-samuel",
+      "relation": "合作",
+      "strength": 3
+    },
+    {
+      "source": "marvin-minsky",
+      "target": "perceptrons-book",
+      "relation": "提出",
+      "strength": 4
+    },
+    {
+      "source": "seymour-papert",
+      "target": "perceptrons-book",
+      "relation": "合作",
+      "strength": 4
+    },
+    {
+      "source": "perceptrons-book",
+      "target": "perceptron",
+      "relation": "反驳",
+      "strength": 5
+    },
+    {
+      "source": "perceptrons-book",
+      "target": "neural-network",
+      "relation": "反驳",
+      "strength": 4
+    },
+    {
+      "source": "joseph-weizenbaum",
+      "target": "eliza",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "eliza",
+      "target": "eliza-effect",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "eliza",
+      "target": "turing-test",
+      "relation": "继承",
+      "strength": 3
+    },
+    {
+      "source": "shakey",
+      "target": "cmu-ai",
+      "relation": "合作",
+      "strength": 4
+    },
+    {
+      "source": "shakey",
+      "target": "symbol-ai",
+      "relation": "继承",
+      "strength": 3
+    },
+    {
+      "source": "first-ai-winter",
+      "target": "lighthill-report",
+      "relation": "推动",
+      "strength": 5
+    },
+    {
+      "source": "james-lighthill",
+      "target": "lighthill-report",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "edward-feigenbaum",
+      "target": "expert-system",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "expert-system",
+      "target": "mycin",
+      "relation": "继承",
+      "strength": 5
+    },
+    {
+      "source": "mycin",
+      "target": "expert-system",
+      "relation": "推动",
+      "strength": 4
+    },
+    {
+      "source": "expert-system",
+      "target": "xcon",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "fifth-generation",
+      "target": "expert-system",
+      "relation": "推动",
+      "strength": 3
+    },
+    {
+      "source": "second-ai-winter",
+      "target": "expert-system",
+      "relation": "反驳",
+      "strength": 4
+    },
+    {
+      "source": "second-ai-winter",
+      "target": "first-ai-winter",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "second-ai-winter",
+      "target": "fifth-generation",
+      "relation": "推动",
+      "strength": 3
+    },
+    {
+      "source": "backprop-1974",
+      "target": "backpropagation",
+      "relation": "奠基",
+      "strength": 4
+    },
+    {
+      "source": "paul-werbos",
+      "target": "backprop-1974",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "geoffrey-hinton",
+      "target": "backpropagation",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "david-rumelhart",
+      "target": "backpropagation",
+      "relation": "合作",
+      "strength": 5
+    },
+    {
+      "source": "backpropagation",
+      "target": "perceptron",
+      "relation": "改进",
+      "strength": 5
+    },
+    {
+      "source": "backpropagation",
+      "target": "neural-network",
+      "relation": "推动",
+      "strength": 5
+    },
+    {
+      "source": "backpropagation",
+      "target": "deep-belief-network",
+      "relation": "奠基",
+      "strength": 4
+    },
+    {
+      "source": "john-hopfield",
+      "target": "hopfield-network",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "hopfield-network",
+      "target": "neural-network",
+      "relation": "推动",
+      "strength": 4
+    },
+    {
+      "source": "kunihiko-fukushima",
+      "target": "neocognitron",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "neocognitron",
+      "target": "lenet",
+      "relation": "奠基",
+      "strength": 4
+    },
+    {
+      "source": "yann-lecun",
+      "target": "lenet",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "lenet",
+      "target": "backpropagation",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "lenet",
+      "target": "mnist",
+      "relation": "合作",
+      "strength": 4
+    },
+    {
+      "source": "lenet-5",
+      "target": "lenet",
+      "relation": "改进",
+      "strength": 5
+    },
+    {
+      "source": "lenet-5",
+      "target": "mnist",
+      "relation": "合作",
+      "strength": 5
+    },
+    {
+      "source": "rich-sutton",
+      "target": "td-learning",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "rich-sutton",
+      "target": "reinforcement-learning",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "td-learning",
+      "target": "reinforcement-learning",
+      "relation": "奠基",
+      "strength": 4
+    },
+    {
+      "source": "reinforcement-learning",
+      "target": "dqn",
+      "relation": "奠基",
+      "strength": 5
+    },
+    {
+      "source": "dqn",
+      "target": "alphago",
+      "relation": "推动",
+      "strength": 3
+    },
+    {
+      "source": "alphago",
+      "target": "reinforcement-learning",
+      "relation": "推动",
+      "strength": 5
+    },
+    {
+      "source": "alphazero",
+      "target": "alphago",
+      "relation": "改进",
+      "strength": 5
+    },
+    {
+      "source": "statistical-learning",
+      "target": "symbol-ai",
+      "relation": "竞争",
+      "strength": 4
+    },
+    {
+      "source": "vladimir-vapnik",
+      "target": "svm",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "svm",
+      "target": "statistical-learning",
+      "relation": "继承",
+      "strength": 5
+    },
+    {
+      "source": "boosting",
+      "target": "statistical-learning",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "random-forest",
+      "target": "boosting",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "leo-breiman",
+      "target": "random-forest",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "judea-pearl",
+      "target": "bayesian-network",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "bayesian-network",
+      "target": "statistical-learning",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "sepp-hochreiter",
+      "target": "lstm",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "jurgen-schmidhuber",
+      "target": "lstm",
+      "relation": "合作",
+      "strength": 4
+    },
+    {
+      "source": "lstm",
+      "target": "neural-network",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "lstm",
+      "target": "seq2seq",
+      "relation": "奠基",
+      "strength": 4
+    },
+    {
+      "source": "seq2seq",
+      "target": "attention-mechanism",
+      "relation": "改进",
+      "strength": 5
+    },
+    {
+      "source": "yoshua-bengio",
+      "target": "neural-probabilistic-language-model",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "neural-probabilistic-language-model",
+      "target": "neural-network",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "word2vec",
+      "target": "neural-probabilistic-language-model",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "tomas-mikolov",
+      "target": "word2vec",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "deep-blue",
+      "target": "ibm",
+      "relation": "合作",
+      "strength": 4
+    },
+    {
+      "source": "deep-blue",
+      "target": "symbol-ai",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "deep-blue",
+      "target": "reinforcement-learning",
+      "relation": "竞争",
+      "strength": 3
+    },
+    {
+      "source": "fei-fei-li",
+      "target": "imagenet",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "imagenet",
+      "target": "imagenet-challenge",
+      "relation": "推动",
+      "strength": 5
+    },
+    {
+      "source": "nvidia",
+      "target": "cuda",
+      "relation": "提出",
+      "strength": 4
+    },
+    {
+      "source": "cuda",
+      "target": "gpu-computing",
+      "relation": "推动",
+      "strength": 5
+    },
+    {
+      "source": "gpu-computing",
+      "target": "alexnet",
+      "relation": "推动",
+      "strength": 5
+    },
+    {
+      "source": "big-data",
+      "target": "imagenet",
+      "relation": "推动",
+      "strength": 4
+    },
+    {
+      "source": "geoffrey-hinton",
+      "target": "deep-belief-network",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "deep-belief-network",
+      "target": "deep-learning-term",
+      "relation": "推动",
+      "strength": 5
+    },
+    {
+      "source": "deep-belief-network",
+      "target": "alexnet",
+      "relation": "奠基",
+      "strength": 4
+    },
+    {
+      "source": "alex-krizhevsky",
+      "target": "alexnet",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "ilya-sutskever",
+      "target": "alexnet",
+      "relation": "合作",
+      "strength": 5
+    },
+    {
+      "source": "geoffrey-hinton",
+      "target": "alexnet",
+      "relation": "合作",
+      "strength": 4
+    },
+    {
+      "source": "alexnet",
+      "target": "imagenet-challenge",
+      "relation": "继承",
+      "strength": 5
+    },
+    {
+      "source": "alexnet",
+      "target": "deep-learning-term",
+      "relation": "推动",
+      "strength": 5
+    },
+    {
+      "source": "dropout",
+      "target": "alexnet",
+      "relation": "影响",
+      "strength": 4
+    },
+    {
+      "source": "alexnet",
+      "target": "vgg",
+      "relation": "推动",
+      "strength": 3
+    },
+    {
+      "source": "vgg",
+      "target": "resnet",
+      "relation": "推动",
+      "strength": 3
+    },
+    {
+      "source": "kaiming-he",
+      "target": "resnet",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "resnet",
+      "target": "alexnet",
+      "relation": "改进",
+      "strength": 4
+    },
+    {
+      "source": "batch-normalization",
+      "target": "resnet",
+      "relation": "影响",
+      "strength": 3
+    },
+    {
+      "source": "resnet",
+      "target": "vit",
+      "relation": "奠基",
+      "strength": 3
+    },
+    {
+      "source": "lenet-5",
+      "target": "alexnet",
+      "relation": "奠基",
+      "strength": 4
+    },
+    {
+      "source": "mnist",
+      "target": "alexnet",
+      "relation": "推动",
+      "strength": 3
+    },
+    {
+      "source": "ian-goodfellow",
+      "target": "gan",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "vae",
+      "target": "gan",
+      "relation": "竞争",
+      "strength": 3
+    },
+    {
+      "source": "ddpm",
+      "target": "vae",
+      "relation": "继承",
+      "strength": 3
+    },
+    {
+      "source": "ddpm",
+      "target": "gan",
+      "relation": "取代",
+      "strength": 4
+    },
+    {
+      "source": "stable-diffusion",
+      "target": "ddpm",
+      "relation": "继承",
+      "strength": 5
+    },
+    {
+      "source": "stable-diffusion",
+      "target": "clip",
+      "relation": "合作",
+      "strength": 4
+    },
+    {
+      "source": "dall-e",
+      "target": "clip",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "clip",
+      "target": "vit",
+      "relation": "继承",
+      "strength": 3
+    },
+    {
+      "source": "sora",
+      "target": "ddpm",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "sora",
+      "target": "vit",
+      "relation": "继承",
+      "strength": 3
+    },
+    {
+      "source": "demis-hassabis",
+      "target": "deepmind",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "deepmind",
+      "target": "alphago",
+      "relation": "合作",
+      "strength": 5
+    },
+    {
+      "source": "demis-hassabis",
+      "target": "alphago",
+      "relation": "推动",
+      "strength": 4
+    },
+    {
+      "source": "dqn",
+      "target": "deepmind",
+      "relation": "合作",
+      "strength": 4
+    },
+    {
+      "source": "alphafold2",
+      "target": "deepmind",
+      "relation": "合作",
+      "strength": 5
+    },
+    {
+      "source": "alphafold2",
+      "target": "transformer",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "attention-mechanism",
+      "target": "transformer",
+      "relation": "奠基",
+      "strength": 5
+    },
+    {
+      "source": "transformer",
+      "target": "seq2seq",
+      "relation": "取代",
+      "strength": 4
+    },
+    {
+      "source": "ashish-vaswani",
+      "target": "transformer",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "transformer",
+      "target": "bert",
+      "relation": "奠基",
+      "strength": 5
+    },
+    {
+      "source": "transformer",
+      "target": "gpt",
+      "relation": "奠基",
+      "strength": 5
+    },
+    {
+      "source": "transformer",
+      "target": "vit",
+      "relation": "奠基",
+      "strength": 4
+    },
+    {
+      "source": "transformer",
+      "target": "gpt-3",
+      "relation": "奠基",
+      "strength": 5
+    },
+    {
+      "source": "transformer",
+      "target": "llama",
+      "relation": "奠基",
+      "strength": 5
+    },
+    {
+      "source": "transformer",
+      "target": "mamba",
+      "relation": "竞争",
+      "strength": 4
+    },
+    {
+      "source": "bert",
+      "target": "gpt",
+      "relation": "竞争",
+      "strength": 4
+    },
+    {
+      "source": "gpt",
+      "target": "gpt-2",
+      "relation": "改进",
+      "strength": 5
+    },
+    {
+      "source": "gpt-2",
+      "target": "gpt-3",
+      "relation": "改进",
+      "strength": 5
+    },
+    {
+      "source": "scaling-laws",
+      "target": "gpt-3",
+      "relation": "推动",
+      "strength": 5
+    },
+    {
+      "source": "gpt-3",
+      "target": "chatgpt",
+      "relation": "奠基",
+      "strength": 5
+    },
+    {
+      "source": "ilya-sutskever",
+      "target": "gpt",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "openai",
+      "target": "gpt",
+      "relation": "发布",
+      "strength": 5
+    },
+    {
+      "source": "sam-altman",
+      "target": "openai",
+      "relation": "合作",
+      "strength": 5
+    },
+    {
+      "source": "ilya-sutskever",
+      "target": "openai",
+      "relation": "合作",
+      "strength": 4
+    },
+    {
+      "source": "google-brain",
+      "target": "transformer",
+      "relation": "合作",
+      "strength": 4
+    },
+    {
+      "source": "andrew-ng",
+      "target": "google-brain",
+      "relation": "提出",
+      "strength": 4
+    },
+    {
+      "source": "google-brain",
+      "target": "deep-learning-term",
+      "relation": "推动",
+      "strength": 4
+    },
+    {
+      "source": "tensorflow",
+      "target": "deep-learning-term",
+      "relation": "推动",
+      "strength": 4
+    },
+    {
+      "source": "pytorch",
+      "target": "tensorflow",
+      "relation": "竞争",
+      "strength": 4
+    },
+    {
+      "source": "pytorch",
+      "target": "gpt",
+      "relation": "推动",
+      "strength": 3
+    },
+    {
+      "source": "rlhf",
+      "target": "instructgpt",
+      "relation": "奠基",
+      "strength": 5
+    },
+    {
+      "source": "instructgpt",
+      "target": "gpt-3",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "instructgpt",
+      "target": "chatgpt",
+      "relation": "奠基",
+      "strength": 5
+    },
+    {
+      "source": "chatgpt",
+      "target": "gpt-4",
+      "relation": "改进",
+      "strength": 5
+    },
+    {
+      "source": "gpt-4",
+      "target": "gpt-3",
+      "relation": "改进",
+      "strength": 5
+    },
+    {
+      "source": "anthropic",
+      "target": "claude",
+      "relation": "发布",
+      "strength": 5
+    },
+    {
+      "source": "claude",
+      "target": "rlhf",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "anthropic",
+      "target": "openai",
+      "relation": "竞争",
+      "strength": 4
+    },
+    {
+      "source": "anthropic",
+      "target": "rlhf",
+      "relation": "竞争",
+      "strength": 3
+    },
+    {
+      "source": "llama",
+      "target": "gpt",
+      "relation": "竞争",
+      "strength": 4
+    },
+    {
+      "source": "llama",
+      "target": "ai-agent",
+      "relation": "推动",
+      "strength": 3
+    },
+    {
+      "source": "gemini",
+      "target": "deepmind",
+      "relation": "合作",
+      "strength": 4
+    },
+    {
+      "source": "gemini",
+      "target": "alphago",
+      "relation": "继承",
+      "strength": 3
+    },
+    {
+      "source": "gpt-4",
+      "target": "gemini",
+      "relation": "竞争",
+      "strength": 3
+    },
+    {
+      "source": "deepseek",
+      "target": "deepseek-v3",
+      "relation": "发布",
+      "strength": 5
+    },
+    {
+      "source": "deepseek-v3",
+      "target": "scaling-laws",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "deepseek-r1",
+      "target": "deepseek-v3",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "deepseek-r1",
+      "target": "reasoning-model",
+      "relation": "提出",
+      "strength": 5
+    },
+    {
+      "source": "deepseek-r1",
+      "target": "llama",
+      "relation": "竞争",
+      "strength": 3
+    },
+    {
+      "source": "deepseek",
+      "target": "openai",
+      "relation": "竞争",
+      "strength": 4
+    },
+    {
+      "source": "nvidia",
+      "target": "gpt-3",
+      "relation": "推动",
+      "strength": 5
+    },
+    {
+      "source": "big-data",
+      "target": "gpt-3",
+      "relation": "推动",
+      "strength": 4
+    },
+    {
+      "source": "reasoning-model",
+      "target": "o1",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "o1",
+      "target": "scaling-laws",
+      "relation": "改进",
+      "strength": 4
+    },
+    {
+      "source": "chatgpt",
+      "target": "ai-agent",
+      "relation": "推动",
+      "strength": 4
+    },
+    {
+      "source": "ai-agent",
+      "target": "reinforcement-learning",
+      "relation": "继承",
+      "strength": 3
+    },
+    {
+      "source": "ai-agent",
+      "target": "mcp",
+      "relation": "推动",
+      "strength": 4
+    },
+    {
+      "source": "agentic-coding",
+      "target": "ai-agent",
+      "relation": "继承",
+      "strength": 5
+    },
+    {
+      "source": "ai-agent",
+      "target": "gpt-4",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "edinburgh-ai",
+      "target": "symbol-ai",
+      "relation": "继承",
+      "strength": 3
+    },
+    {
+      "source": "adam-optimizer",
+      "target": "backpropagation",
+      "relation": "改进",
+      "strength": 4
+    },
+    {
+      "source": "deepseek-harness",
+      "target": "ai-agent",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "deepseek-harness",
+      "target": "deepseek",
+      "relation": "合作",
+      "strength": 4
+    },
+    {
+      "source": "deepseek-harness",
+      "target": "mcp",
+      "relation": "推动",
+      "strength": 3
+    },
+    {
+      "source": "gpt-3",
+      "target": "gpt-4o",
+      "relation": "改进",
+      "strength": 4
+    },
+    {
+      "source": "gpt-4o",
+      "target": "o3",
+      "relation": "改进",
+      "strength": 4
+    },
+    {
+      "source": "chatgpt",
+      "target": "gpt-4o",
+      "relation": "继承",
+      "strength": 4
+    },
+    {
+      "source": "gpt-4",
+      "target": "gpt-4o",
+      "relation": "改进",
+      "strength": 5
+    },
+    {
+      "source": "gpt-3",
+      "target": "codex",
+      "relation": "奠基",
+      "strength": 3
+    },
+    {
+      "source": "whisper",
+      "target": "gpt-4o",
+      "relation": "推动",
+      "strength": 3
+    },
+    {
+      "source": "claude",
+      "target": "claude-2",
+      "relation": "改进",
+      "strength": 4
+    },
+    {
+      "source": "claude-2",
+      "target": "claude-3",
+      "relation": "改进",
+      "strength": 4
+    },
+    {
+      "source": "claude-3",
+      "target": "claude-3-5-sonnet",
+      "relation": "改进",
+      "strength": 5
+    },
+    {
+      "source": "claude-3-5-sonnet",
+      "target": "claude-4",
+      "relation": "改进",
+      "strength": 4
+    },
+    {
+      "source": "constitutional-ai",
+      "target": "claude",
+      "relation": "奠基",
+      "strength": 4
+    },
+    {
+      "source": "bert",
+      "target": "t5",
+      "relation": "改进",
+      "strength": 4
+    },
+    {
+      "source": "t5",
+      "target": "palm",
+      "relation": "奠基",
+      "strength": 3
+    },
+    {
+      "source": "palm",
+      "target": "lamda",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "palm",
+      "target": "gemini",
+      "relation": "奠基",
+      "strength": 4
+    },
+    {
+      "source": "gemini",
+      "target": "gemini-1-5",
+      "relation": "改进",
+      "strength": 4
+    },
+    {
+      "source": "gemini-1-5",
+      "target": "gemma",
+      "relation": "影响",
+      "strength": 3
+    },
+    {
+      "source": "llama",
+      "target": "llama-2",
+      "relation": "改进",
+      "strength": 5
+    },
+    {
+      "source": "llama-2",
+      "target": "llama-3",
+      "relation": "改进",
+      "strength": 5
+    },
+    {
+      "source": "llama-3",
+      "target": "qwen2-5",
+      "relation": "影响",
+      "strength": 3
+    },
+    {
+      "source": "sam",
+      "target": "clip",
+      "relation": "继承",
+      "strength": 3
+    },
+    {
+      "source": "deepseek-v3",
+      "target": "deepseek-v3-1",
+      "relation": "改进",
+      "strength": 4
+    },
+    {
+      "source": "deepseek-coder",
+      "target": "deepseek-v2",
+      "relation": "继承",
+      "strength": 3
+    },
+    {
+      "source": "deepseek-v2",
+      "target": "deepseek-v3",
+      "relation": "改进",
+      "strength": 4
+    },
+    {
+      "source": "deepseek-r1",
+      "target": "kimi-k2",
+      "relation": "影响",
+      "strength": 3
+    },
+    {
+      "source": "mistral-7b",
+      "target": "mixtral",
+      "relation": "改进",
+      "strength": 4
+    },
+    {
+      "source": "mixtral",
+      "target": "mistral-large",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "qwen",
+      "target": "qwen2-5",
+      "relation": "改进",
+      "strength": 4
+    },
+    {
+      "source": "qwen2-5",
+      "target": "qwen3",
+      "relation": "改进",
+      "strength": 4
+    },
+    {
+      "source": "chatglm",
+      "target": "glm-4",
+      "relation": "改进",
+      "strength": 4
+    },
+    {
+      "source": "kimi",
+      "target": "kimi-k2",
+      "relation": "改进",
+      "strength": 4
+    },
+    {
+      "source": "stable-diffusion",
+      "target": "sdxl",
+      "relation": "改进",
+      "strength": 4
+    },
+    {
+      "source": "sdxl",
+      "target": "sd3",
+      "relation": "改进",
+      "strength": 4
+    },
+    {
+      "source": "grok-1",
+      "target": "grok-2",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "llama-3",
+      "target": "deepseek-v3",
+      "relation": "竞争",
+      "strength": 3
+    },
+    {
+      "source": "claude-3-5-sonnet",
+      "target": "gpt-4o",
+      "relation": "竞争",
+      "strength": 3
+    },
+    {
+      "source": "qwen3",
+      "target": "deepseek-r1",
+      "relation": "竞争",
+      "strength": 3
+    },
+    {
+      "source": "t5",
+      "target": "alphafold2",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "alphafold2",
+      "target": "lamda",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "codex",
+      "target": "dall-e",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "dall-e",
+      "target": "chatgpt",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "instructgpt",
+      "target": "whisper",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "whisper",
+      "target": "gpt-4",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "gpt-4o",
+      "target": "o1",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "o1",
+      "target": "sora",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "sora",
+      "target": "o3",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "llama-2",
+      "target": "sam",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "sam",
+      "target": "llama-3",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "deepseek",
+      "target": "deepseek-coder",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "deepseek-r1",
+      "target": "deepseek-v3-1",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "deepseek-v3-1",
+      "target": "deepseek-harness",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "phi-1",
+      "target": "phi-3",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "phi-3",
+      "target": "phi-4",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "titan",
+      "target": "nova",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "doubao",
+      "target": "seed-1-6",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "hunyuan-large",
+      "target": "hunyuan-video",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "ernie-1",
+      "target": "ernie-4",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "internlm",
+      "target": "internvl",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "falcon",
+      "target": "jais",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "jais",
+      "target": "falcon-3",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "hyperclova-x",
+      "target": "exaone",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "rakuten-ai",
+      "target": "tsuzumi",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "gigachat",
+      "target": "yalm",
+      "relation": "改进",
+      "strength": 3
+    },
+    {
+      "source": "nemotron-4",
+      "target": "nvidia",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "command-r",
+      "target": "transformer",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "jamba",
+      "target": "transformer",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "pi",
+      "target": "eliza-effect",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "olmo",
+      "target": "llama",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "pythia",
+      "target": "transformer",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "gen-3",
+      "target": "ddpm",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "minimax-01",
+      "target": "attention-mechanism",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "sensenova",
+      "target": "alexnet",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "spark",
+      "target": "whisper",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "baichuan-2",
+      "target": "llama",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "yi",
+      "target": "llama",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "step-1",
+      "target": "ai-agent",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "minicpm",
+      "target": "llama",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "pangu",
+      "target": "expert-system",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "luminous",
+      "target": "gpt-3",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "bloom",
+      "target": "llama",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "sarvam-1",
+      "target": "bert",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "allam",
+      "target": "bert",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "zhipu-qingyan",
+      "target": "glm-4",
+      "relation": "发布",
+      "strength": 3
+    },
+    {
+      "source": "codegeex",
+      "target": "chatglm",
+      "relation": "继承",
+      "strength": 3
+    },
+    {
+      "source": "kimi-app",
+      "target": "kimi",
+      "relation": "发布",
+      "strength": 3
+    },
+    {
+      "source": "ernie-bot",
+      "target": "ernie-4",
+      "relation": "发布",
+      "strength": 4
+    },
+    {
+      "source": "qianfan",
+      "target": "ernie-4",
+      "relation": "推动",
+      "strength": 3
+    },
+    {
+      "source": "comate",
+      "target": "ernie-1",
+      "relation": "继承",
+      "strength": 2
+    },
+    {
+      "source": "yuanbao",
+      "target": "hunyuan-large",
+      "relation": "发布",
+      "strength": 3
+    },
+    {
+      "source": "hunyuan-image",
+      "target": "hunyuan-video",
+      "relation": "继承",
+      "strength": 3
+    },
+    {
+      "source": "doubao-app",
+      "target": "doubao",
+      "relation": "发布",
+      "strength": 4
+    },
+    {
+      "source": "volcengine-ark",
+      "target": "doubao",
+      "relation": "推动",
+      "strength": 3
+    },
+    {
+      "source": "coze",
+      "target": "doubao",
+      "relation": "继承",
+      "strength": 3
+    },
+    {
+      "source": "tongyi-app",
+      "target": "qwen",
+      "relation": "发布",
+      "strength": 4
+    },
+    {
+      "source": "tongyi-lingma",
+      "target": "qwen2-5",
+      "relation": "继承",
+      "strength": 3
+    },
+    {
+      "source": "modelscope",
+      "target": "qwen",
+      "relation": "推动",
+      "strength": 4
+    },
+    {
+      "source": "hailuo",
+      "target": "minimax-01",
+      "relation": "发布",
+      "strength": 3
+    },
+    {
+      "source": "xingye",
+      "target": "minimax-01",
+      "relation": "继承",
+      "strength": 3
+    },
+    {
+      "source": "sensenchat",
+      "target": "sensenova",
+      "relation": "发布",
+      "strength": 3
+    },
+    {
+      "source": "miaohua",
+      "target": "sensenova",
+      "relation": "继承",
+      "strength": 3
+    },
+    {
+      "source": "spark-app",
+      "target": "spark",
+      "relation": "发布",
+      "strength": 3
+    },
+    {
+      "source": "modelarts",
+      "target": "pangu",
+      "relation": "推动",
+      "strength": 3
+    },
+    {
+      "source": "baixiaoying",
+      "target": "baichuan-2",
+      "relation": "发布",
+      "strength": 3
+    },
+    {
+      "source": "wanzhi",
+      "target": "yi",
+      "relation": "发布",
+      "strength": 3
+    },
+    {
+      "source": "yuewen",
+      "target": "step-1",
+      "relation": "发布",
+      "strength": 3
+    },
+    {
+      "source": "luca",
+      "target": "minicpm",
+      "relation": "发布",
+      "strength": 3
+    }
+  ],
+  "meta": {
+    "generatedAt": "2026-10-18T10:10:08.241Z",
+    "nodeCount": 237,
+    "linkCount": 291,
+    "years": [
+      1943,
+      2026
+    ]
+  }
+}

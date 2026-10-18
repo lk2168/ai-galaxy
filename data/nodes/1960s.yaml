@@ -1,0 +1,73 @@
+# 1960s —— 会聊天的程序，和被浇的第一盆冷水
+
+- id: eliza
+  type: model
+  name: ELIZA
+  year: 1966
+  weight: 82
+  summary: 一个模仿心理医生的聊天程序。它只做句式替换，却让不少人说出了心里话，也让作者自己被吓到了。
+  tags: [模型, 对话]
+  sources: ["https://en.wikipedia.org/wiki/ELIZA"]
+
+- id: joseph-weizenbaum
+  type: person
+  name: 约瑟夫·魏泽鲍姆
+  year: 1966
+  weight: 64
+  summary: ELIZA 的作者。他后来成了最激烈的批评者之一，写了《计算机能力与人类理性》，提醒人别把机器的回应当理解。
+  tags: [人物, 批判]
+  sources: ["https://en.wikipedia.org/wiki/Joseph_Weizenbaum"]
+
+- id: eliza-effect
+  type: concept
+  name: ELIZA 效应
+  year: 1966
+  weight: 78
+  summary: 人会把机器的输出自动补成「它懂我」。今天每个聊天机器人都在赚这个效应的红利，也都在冒它的风险。
+  tags: [概念, 人机交互]
+  sources: ["https://en.wikipedia.org/wiki/ELIZA_effect"]
+
+- id: shakey
+  type: model
+  name: Shakey 机器人
+  year: 1966
+  weight: 68
+  summary: 第一个能自己规划路线、搬东西的移动机器人。它走一米要算半天，但把感知、规划、行动串成了一条完整链路。
+  tags: [机器人, 具身]
+  sources: ["https://en.wikipedia.org/wiki/Shakey_the_robot"]
+
+- id: perceptrons-book
+  type: paper
+  name: 《感知机》
+  year: 1969
+  weight: 84
+  summary: 明斯基与佩珀特用数学证明单层感知机连异或都学不会。结论本身没错，但被读成了「神经网络这条路走不通」。
+  tags: [论文, 争议]
+  sources: ["https://en.wikipedia.org/wiki/Perceptrons_(book)"]
+
+- id: seymour-papert
+  type: person
+  name: 西摩·佩珀特
+  year: 1969
+  weight: 58
+  summary: 与明斯基合著《感知机》。后来转向教育，发明 Logo 语言，相信孩子可以通过编程学会思考。
+  tags: [人物, 教育]
+  sources: ["https://en.wikipedia.org/wiki/Seymour_Papert"]
+
+- id: stanford-ai-lab
+  type: org
+  name: 斯坦福 AI 实验室
+  year: 1963
+  weight: 86
+  summary: 麦卡锡从 MIT 过来创办。后来与视觉实验室合并成 SAIL，是深度学习时代人才与论文的主要源头之一。
+  tags: [机构, 学术]
+  sources: ["https://en.wikipedia.org/wiki/Stanford_Artificial_Intelligence_Laboratory"]
+
+- id: edinburgh-ai
+  type: org
+  name: 爱丁堡大学 AI 系
+  year: 1963
+  weight: 62
+  summary: 欧洲最早的一批 AI 研究据点之一，唐纳德·米基在这里做机器人与学习研究。后来成了英国 AI 的根据地。
+  tags: [机构, 学术]
+  sources: ["https://en.wikipedia.org/wiki/School_of_Informatics,_University_of_Edinburgh"]

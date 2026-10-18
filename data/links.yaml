@@ -1,0 +1,343 @@
+# 骨架层的连线：人物、论文、模型、机构、概念之间的关系
+# source / target 必须是 data/nodes/*.yaml 里存在的 id
+# strength 1-5，越大线越粗；无向，同一对只写一次
+#
+# relation 取值：提出 | 奠基 | 继承 | 改进 | 合作 | 发布 | 推动 | 竞争 | 反驳
+
+# ── 起源：从神经元到"人工智能"这个名字 ──────────────────────────────
+- { source: warren-mcculloch, target: mcculloch-pitts-neuron, relation: 提出, strength: 5 }
+- { source: walter-pitts, target: mcculloch-pitts-neuron, relation: 合作, strength: 4 }
+- { source: mcculloch-pitts-neuron, target: neural-network, relation: 奠基, strength: 5 }
+- { source: neural-network, target: connectionism, relation: 奠基, strength: 5 }
+- { source: donald-hebb, target: hebbian-learning, relation: 提出, strength: 5 }
+- { source: hebbian-learning, target: neural-network, relation: 奠基, strength: 4 }
+- { source: alan-turing, target: turing-test, relation: 提出, strength: 5 }
+- { source: claude-shannon, target: alan-turing, relation: 影响, strength: 3 }
+- { source: claude-shannon, target: dartmouth-workshop, relation: 推动, strength: 3 }
+- { source: john-mccarthy, target: dartmouth-workshop, relation: 推动, strength: 5 }
+- { source: marvin-minsky, target: dartmouth-workshop, relation: 推动, strength: 5 }
+- { source: dartmouth-workshop, target: artificial-intelligence-term, relation: 提出, strength: 5 }
+- { source: turing-test, target: artificial-intelligence-term, relation: 影响, strength: 3 }
+- { source: dartmouth-workshop, target: symbol-ai, relation: 奠基, strength: 5 }
+- { source: john-mccarthy, target: lisp, relation: 提出, strength: 5 }
+- { source: john-mccarthy, target: mit-ai-lab, relation: 合作, strength: 4 }
+- { source: marvin-minsky, target: mit-ai-lab, relation: 合作, strength: 5 }
+- { source: john-mccarthy, target: stanford-ai-lab, relation: 合作, strength: 4 }
+- { source: lisp, target: symbol-ai, relation: 推动, strength: 4 }
+- { source: symbol-ai, target: expert-system, relation: 继承, strength: 4 }
+- { source: artificial-intelligence-term, target: machine-learning-term, relation: 影响, strength: 3 }
+
+# ── 感知机：一次被压住的希望 ────────────────────────────────────────
+- { source: frank-rosenblatt, target: perceptron, relation: 提出, strength: 5 }
+- { source: perceptron, target: neural-network, relation: 继承, strength: 5 }
+- { source: perceptron, target: machine-learning-term, relation: 推动, strength: 4 }
+- { source: arthur-samuel, target: machine-learning-term, relation: 提出, strength: 5 }
+- { source: ibm, target: arthur-samuel, relation: 合作, strength: 3 }
+- { source: marvin-minsky, target: perceptrons-book, relation: 提出, strength: 4 }
+- { source: seymour-papert, target: perceptrons-book, relation: 合作, strength: 4 }
+- { source: perceptrons-book, target: perceptron, relation: 反驳, strength: 5 }
+- { source: perceptrons-book, target: neural-network, relation: 反驳, strength: 4 }
+
+# ── 会聊天的程序与第一台会走路的机器 ────────────────────────────────
+- { source: joseph-weizenbaum, target: eliza, relation: 提出, strength: 5 }
+- { source: eliza, target: eliza-effect, relation: 提出, strength: 5 }
+- { source: eliza, target: turing-test, relation: 继承, strength: 3 }
+- { source: shakey, target: cmu-ai, relation: 合作, strength: 4 }
+- { source: shakey, target: symbol-ai, relation: 继承, strength: 3 }
+
+# ── 第一次寒冬：专家系统的兴起与断裂 ────────────────────────────────
+- { source: first-ai-winter, target: lighthill-report, relation: 推动, strength: 5 }
+- { source: james-lighthill, target: lighthill-report, relation: 提出, strength: 5 }
+- { source: edward-feigenbaum, target: expert-system, relation: 提出, strength: 5 }
+- { source: expert-system, target: mycin, relation: 继承, strength: 5 }
+- { source: mycin, target: expert-system, relation: 推动, strength: 4 }
+- { source: expert-system, target: xcon, relation: 继承, strength: 4 }
+- { source: fifth-generation, target: expert-system, relation: 推动, strength: 3 }
+- { source: second-ai-winter, target: expert-system, relation: 反驳, strength: 4 }
+- { source: second-ai-winter, target: first-ai-winter, relation: 继承, strength: 4 }
+- { source: second-ai-winter, target: fifth-generation, relation: 推动, strength: 3 }
+- { source: backprop-1974, target: backpropagation, relation: 奠基, strength: 4 }
+- { source: paul-werbos, target: backprop-1974, relation: 提出, strength: 5 }
+
+# ── 连接主义复活：反向传播与卷积 ────────────────────────────────────
+- { source: geoffrey-hinton, target: backpropagation, relation: 提出, strength: 5 }
+- { source: david-rumelhart, target: backpropagation, relation: 合作, strength: 5 }
+- { source: backpropagation, target: perceptron, relation: 改进, strength: 5 }
+- { source: backpropagation, target: neural-network, relation: 推动, strength: 5 }
+- { source: backpropagation, target: deep-belief-network, relation: 奠基, strength: 4 }
+- { source: john-hopfield, target: hopfield-network, relation: 提出, strength: 5 }
+- { source: hopfield-network, target: neural-network, relation: 推动, strength: 4 }
+- { source: kunihiko-fukushima, target: neocognitron, relation: 提出, strength: 5 }
+- { source: neocognitron, target: lenet, relation: 奠基, strength: 4 }
+- { source: yann-lecun, target: lenet, relation: 提出, strength: 5 }
+- { source: lenet, target: backpropagation, relation: 继承, strength: 4 }
+- { source: lenet, target: mnist, relation: 合作, strength: 4 }
+- { source: lenet-5, target: lenet, relation: 改进, strength: 5 }
+- { source: lenet-5, target: mnist, relation: 合作, strength: 5 }
+
+# ── 强化学习：另一条不靠标注的路 ────────────────────────────────────
+- { source: rich-sutton, target: td-learning, relation: 提出, strength: 5 }
+- { source: rich-sutton, target: reinforcement-learning, relation: 提出, strength: 5 }
+- { source: td-learning, target: reinforcement-learning, relation: 奠基, strength: 4 }
+- { source: reinforcement-learning, target: dqn, relation: 奠基, strength: 5 }
+- { source: dqn, target: alphago, relation: 推动, strength: 3 }
+- { source: alphago, target: reinforcement-learning, relation: 推动, strength: 5 }
+- { source: alphazero, target: alphago, relation: 改进, strength: 5 }
+
+# ── 统计学习上台 ────────────────────────────────────────────────────
+- { source: statistical-learning, target: symbol-ai, relation: 竞争, strength: 4 }
+- { source: vladimir-vapnik, target: svm, relation: 提出, strength: 5 }
+- { source: svm, target: statistical-learning, relation: 继承, strength: 5 }
+- { source: boosting, target: statistical-learning, relation: 继承, strength: 4 }
+- { source: random-forest, target: boosting, relation: 改进, strength: 3 }
+- { source: leo-breiman, target: random-forest, relation: 提出, strength: 5 }
+- { source: judea-pearl, target: bayesian-network, relation: 提出, strength: 5 }
+- { source: bayesian-network, target: statistical-learning, relation: 继承, strength: 4 }
+
+# ── 序列建模 ────────────────────────────────────────────────────────
+- { source: sepp-hochreiter, target: lstm, relation: 提出, strength: 5 }
+- { source: jurgen-schmidhuber, target: lstm, relation: 合作, strength: 4 }
+- { source: lstm, target: neural-network, relation: 继承, strength: 4 }
+- { source: lstm, target: seq2seq, relation: 奠基, strength: 4 }
+- { source: seq2seq, target: attention-mechanism, relation: 改进, strength: 5 }
+- { source: yoshua-bengio, target: neural-probabilistic-language-model, relation: 提出, strength: 5 }
+- { source: neural-probabilistic-language-model, target: neural-network, relation: 继承, strength: 4 }
+- { source: word2vec, target: neural-probabilistic-language-model, relation: 继承, strength: 4 }
+- { source: tomas-mikolov, target: word2vec, relation: 提出, strength: 5 }
+
+# ── 深蓝：符号主义的高光与终点 ──────────────────────────────────────
+- { source: deep-blue, target: ibm, relation: 合作, strength: 4 }
+- { source: deep-blue, target: symbol-ai, relation: 继承, strength: 4 }
+- { source: deep-blue, target: reinforcement-learning, relation: 竞争, strength: 3 }
+
+# ── 2012：算力、数据、算法三样凑齐 ──────────────────────────────────
+- { source: fei-fei-li, target: imagenet, relation: 提出, strength: 5 }
+- { source: imagenet, target: imagenet-challenge, relation: 推动, strength: 5 }
+- { source: nvidia, target: cuda, relation: 提出, strength: 4 }
+- { source: cuda, target: gpu-computing, relation: 推动, strength: 5 }
+- { source: gpu-computing, target: alexnet, relation: 推动, strength: 5 }
+- { source: big-data, target: imagenet, relation: 推动, strength: 4 }
+- { source: geoffrey-hinton, target: deep-belief-network, relation: 提出, strength: 5 }
+- { source: deep-belief-network, target: deep-learning-term, relation: 推动, strength: 5 }
+- { source: deep-belief-network, target: alexnet, relation: 奠基, strength: 4 }
+- { source: alex-krizhevsky, target: alexnet, relation: 提出, strength: 5 }
+- { source: ilya-sutskever, target: alexnet, relation: 合作, strength: 5 }
+- { source: geoffrey-hinton, target: alexnet, relation: 合作, strength: 4 }
+- { source: alexnet, target: imagenet-challenge, relation: 继承, strength: 5 }
+- { source: alexnet, target: deep-learning-term, relation: 推动, strength: 5 }
+- { source: dropout, target: alexnet, relation: 影响, strength: 4 }
+- { source: alexnet, target: vgg, relation: 推动, strength: 3 }
+- { source: vgg, target: resnet, relation: 推动, strength: 3 }
+- { source: kaiming-he, target: resnet, relation: 提出, strength: 5 }
+- { source: resnet, target: alexnet, relation: 改进, strength: 4 }
+- { source: batch-normalization, target: resnet, relation: 影响, strength: 3 }
+- { source: resnet, target: vit, relation: 奠基, strength: 3 }
+- { source: lenet-5, target: alexnet, relation: 奠基, strength: 4 }
+- { source: mnist, target: alexnet, relation: 推动, strength: 3 }
+
+# ── 生成模型 ────────────────────────────────────────────────────────
+- { source: ian-goodfellow, target: gan, relation: 提出, strength: 5 }
+- { source: vae, target: gan, relation: 竞争, strength: 3 }
+- { source: ddpm, target: vae, relation: 继承, strength: 3 }
+- { source: ddpm, target: gan, relation: 取代, strength: 4 }
+- { source: stable-diffusion, target: ddpm, relation: 继承, strength: 5 }
+- { source: stable-diffusion, target: clip, relation: 合作, strength: 4 }
+- { source: dall-e, target: clip, relation: 继承, strength: 4 }
+- { source: clip, target: vit, relation: 继承, strength: 3 }
+- { source: sora, target: ddpm, relation: 继承, strength: 4 }
+- { source: sora, target: vit, relation: 继承, strength: 3 }
+
+# ── 强化学习里程碑 ──────────────────────────────────────────────────
+- { source: demis-hassabis, target: deepmind, relation: 提出, strength: 5 }
+- { source: deepmind, target: alphago, relation: 合作, strength: 5 }
+- { source: demis-hassabis, target: alphago, relation: 推动, strength: 4 }
+- { source: dqn, target: deepmind, relation: 合作, strength: 4 }
+- { source: alphafold2, target: deepmind, relation: 合作, strength: 5 }
+- { source: alphafold2, target: transformer, relation: 继承, strength: 4 }
+
+# ── Transformer：奇点 ───────────────────────────────────────────────
+- { source: attention-mechanism, target: transformer, relation: 奠基, strength: 5 }
+- { source: transformer, target: seq2seq, relation: 取代, strength: 4 }
+- { source: ashish-vaswani, target: transformer, relation: 提出, strength: 5 }
+- { source: transformer, target: bert, relation: 奠基, strength: 5 }
+- { source: transformer, target: gpt, relation: 奠基, strength: 5 }
+- { source: transformer, target: vit, relation: 奠基, strength: 4 }
+- { source: transformer, target: gpt-3, relation: 奠基, strength: 5 }
+- { source: transformer, target: llama, relation: 奠基, strength: 5 }
+- { source: transformer, target: mamba, relation: 竞争, strength: 4 }
+
+# ── 预训练语言模型 ──────────────────────────────────────────────────
+- { source: bert, target: gpt, relation: 竞争, strength: 4 }
+- { source: gpt, target: gpt-2, relation: 改进, strength: 5 }
+- { source: gpt-2, target: gpt-3, relation: 改进, strength: 5 }
+- { source: scaling-laws, target: gpt-3, relation: 推动, strength: 5 }
+- { source: gpt-3, target: chatgpt, relation: 奠基, strength: 5 }
+- { source: ilya-sutskever, target: gpt, relation: 提出, strength: 5 }
+- { source: openai, target: gpt, relation: 发布, strength: 5 }
+- { source: sam-altman, target: openai, relation: 合作, strength: 5 }
+- { source: ilya-sutskever, target: openai, relation: 合作, strength: 4 }
+- { source: google-brain, target: transformer, relation: 合作, strength: 4 }
+- { source: andrew-ng, target: google-brain, relation: 提出, strength: 4 }
+- { source: google-brain, target: deep-learning-term, relation: 推动, strength: 4 }
+- { source: tensorflow, target: deep-learning-term, relation: 推动, strength: 4 }
+- { source: pytorch, target: tensorflow, relation: 竞争, strength: 4 }
+- { source: pytorch, target: gpt, relation: 推动, strength: 3 }
+
+# ── 对齐 ────────────────────────────────────────────────────────────
+- { source: rlhf, target: instructgpt, relation: 奠基, strength: 5 }
+- { source: instructgpt, target: gpt-3, relation: 继承, strength: 4 }
+- { source: instructgpt, target: chatgpt, relation: 奠基, strength: 5 }
+- { source: chatgpt, target: gpt-4, relation: 改进, strength: 5 }
+- { source: gpt-4, target: gpt-3, relation: 改进, strength: 5 }
+
+# ── 大模型阵营 ──────────────────────────────────────────────────────
+- { source: anthropic, target: claude, relation: 发布, strength: 5 }
+- { source: claude, target: rlhf, relation: 继承, strength: 4 }
+- { source: anthropic, target: openai, relation: 竞争, strength: 4 }
+- { source: anthropic, target: rlhf, relation: 竞争, strength: 3 }
+- { source: llama, target: gpt, relation: 竞争, strength: 4 }
+- { source: llama, target: ai-agent, relation: 推动, strength: 3 }
+- { source: gemini, target: deepmind, relation: 合作, strength: 4 }
+- { source: gemini, target: alphago, relation: 继承, strength: 3 }
+- { source: gpt-4, target: gemini, relation: 竞争, strength: 3 }
+
+# ── 中国与开源（按技术路线归属，不按国籍） ──────────────────────────
+- { source: deepseek, target: deepseek-v3, relation: 发布, strength: 5 }
+- { source: deepseek-v3, target: scaling-laws, relation: 继承, strength: 4 }
+- { source: deepseek-r1, target: deepseek-v3, relation: 继承, strength: 4 }
+- { source: deepseek-r1, target: reasoning-model, relation: 提出, strength: 5 }
+- { source: deepseek-r1, target: llama, relation: 竞争, strength: 3 }
+- { source: deepseek, target: openai, relation: 竞争, strength: 4 }
+- { source: nvidia, target: gpt-3, relation: 推动, strength: 5 }
+- { source: big-data, target: gpt-3, relation: 推动, strength: 4 }
+
+# ── 推理模型与智能体 ────────────────────────────────────────────────
+- { source: reasoning-model, target: o1, relation: 继承, strength: 4 }
+- { source: o1, target: scaling-laws, relation: 改进, strength: 4 }
+- { source: chatgpt, target: ai-agent, relation: 推动, strength: 4 }
+- { source: ai-agent, target: reinforcement-learning, relation: 继承, strength: 3 }
+- { source: ai-agent, target: mcp, relation: 推动, strength: 4 }
+- { source: agentic-coding, target: ai-agent, relation: 继承, strength: 5 }
+- { source: ai-agent, target: gpt-4, relation: 继承, strength: 4 }
+
+- { source: edinburgh-ai, target: symbol-ai, relation: 继承, strength: 3 }
+- { source: adam-optimizer, target: backpropagation, relation: 改进, strength: 4 }
+- { source: deepseek-harness, target: ai-agent, relation: 继承, strength: 4 }
+- { source: deepseek-harness, target: deepseek, relation: 合作, strength: 4 }
+- { source: deepseek-harness, target: mcp, relation: 推动, strength: 3 }
+
+# ── 家族内部的模型演进链 ────────────────────────────────────────────
+- { source: gpt-3, target: gpt-4o, relation: 改进, strength: 4 }
+- { source: gpt-4o, target: o3, relation: 改进, strength: 4 }
+- { source: chatgpt, target: gpt-4o, relation: 继承, strength: 4 }
+- { source: gpt-4, target: gpt-4o, relation: 改进, strength: 5 }
+- { source: gpt-3, target: codex, relation: 奠基, strength: 3 }
+- { source: whisper, target: gpt-4o, relation: 推动, strength: 3 }
+- { source: claude, target: claude-2, relation: 改进, strength: 4 }
+- { source: claude-2, target: claude-3, relation: 改进, strength: 4 }
+- { source: claude-3, target: claude-3-5-sonnet, relation: 改进, strength: 5 }
+- { source: claude-3-5-sonnet, target: claude-4, relation: 改进, strength: 4 }
+- { source: constitutional-ai, target: claude, relation: 奠基, strength: 4 }
+- { source: bert, target: t5, relation: 改进, strength: 4 }
+- { source: t5, target: palm, relation: 奠基, strength: 3 }
+- { source: palm, target: lamda, relation: 改进, strength: 3 }
+- { source: palm, target: gemini, relation: 奠基, strength: 4 }
+- { source: gemini, target: gemini-1-5, relation: 改进, strength: 4 }
+- { source: gemini-1-5, target: gemma, relation: 影响, strength: 3 }
+- { source: llama, target: llama-2, relation: 改进, strength: 5 }
+- { source: llama-2, target: llama-3, relation: 改进, strength: 5 }
+- { source: llama-3, target: qwen2-5, relation: 影响, strength: 3 }
+- { source: sam, target: clip, relation: 继承, strength: 3 }
+- { source: deepseek-v3, target: deepseek-v3-1, relation: 改进, strength: 4 }
+- { source: deepseek-coder, target: deepseek-v2, relation: 继承, strength: 3 }
+- { source: deepseek-v2, target: deepseek-v3, relation: 改进, strength: 4 }
+- { source: deepseek-r1, target: kimi-k2, relation: 影响, strength: 3 }
+- { source: mistral-7b, target: mixtral, relation: 改进, strength: 4 }
+- { source: mixtral, target: mistral-large, relation: 改进, strength: 3 }
+- { source: qwen, target: qwen2-5, relation: 改进, strength: 4 }
+- { source: qwen2-5, target: qwen3, relation: 改进, strength: 4 }
+- { source: chatglm, target: glm-4, relation: 改进, strength: 4 }
+- { source: kimi, target: kimi-k2, relation: 改进, strength: 4 }
+- { source: stable-diffusion, target: sdxl, relation: 改进, strength: 4 }
+- { source: sdxl, target: sd3, relation: 改进, strength: 4 }
+- { source: grok-1, target: grok-2, relation: 改进, strength: 3 }
+- { source: llama-3, target: deepseek-v3, relation: 竞争, strength: 3 }
+- { source: claude-3-5-sonnet, target: gpt-4o, relation: 竞争, strength: 3 }
+- { source: qwen3, target: deepseek-r1, relation: 竞争, strength: 3 }
+
+
+# ── 自动生成的家族演进链（同家族按年份串联）─────────────────────
+- { source: t5, target: alphafold2, relation: 改进, strength: 3 }
+- { source: alphafold2, target: lamda, relation: 改进, strength: 3 }
+- { source: codex, target: dall-e, relation: 改进, strength: 3 }
+- { source: dall-e, target: chatgpt, relation: 改进, strength: 3 }
+- { source: instructgpt, target: whisper, relation: 改进, strength: 3 }
+- { source: whisper, target: gpt-4, relation: 改进, strength: 3 }
+- { source: gpt-4o, target: o1, relation: 改进, strength: 3 }
+- { source: o1, target: sora, relation: 改进, strength: 3 }
+- { source: sora, target: o3, relation: 改进, strength: 3 }
+- { source: llama-2, target: sam, relation: 改进, strength: 3 }
+- { source: sam, target: llama-3, relation: 改进, strength: 3 }
+- { source: deepseek, target: deepseek-coder, relation: 改进, strength: 3 }
+- { source: deepseek-r1, target: deepseek-v3-1, relation: 改进, strength: 3 }
+- { source: deepseek-v3-1, target: deepseek-harness, relation: 改进, strength: 3 }
+- { source: phi-1, target: phi-3, relation: 改进, strength: 3 }
+- { source: phi-3, target: phi-4, relation: 改进, strength: 3 }
+- { source: titan, target: nova, relation: 改进, strength: 3 }
+- { source: doubao, target: seed-1-6, relation: 改进, strength: 3 }
+- { source: hunyuan-large, target: hunyuan-video, relation: 改进, strength: 3 }
+- { source: ernie-1, target: ernie-4, relation: 改进, strength: 3 }
+- { source: internlm, target: internvl, relation: 改进, strength: 3 }
+- { source: falcon, target: jais, relation: 改进, strength: 3 }
+- { source: jais, target: falcon-3, relation: 改进, strength: 3 }
+- { source: hyperclova-x, target: exaone, relation: 改进, strength: 3 }
+- { source: rakuten-ai, target: tsuzumi, relation: 改进, strength: 3 }
+- { source: gigachat, target: yalm, relation: 改进, strength: 3 }
+
+
+# ── 独苗家族挂到主盘上的血缘 ──────────────────────────────────
+- { source: nemotron-4, target: nvidia, relation: 继承, strength: 2 }
+- { source: command-r, target: transformer, relation: 继承, strength: 2 }
+- { source: jamba, target: transformer, relation: 继承, strength: 2 }
+- { source: pi, target: eliza-effect, relation: 继承, strength: 2 }
+- { source: olmo, target: llama, relation: 继承, strength: 2 }
+- { source: pythia, target: transformer, relation: 继承, strength: 2 }
+- { source: gen-3, target: ddpm, relation: 继承, strength: 2 }
+- { source: minimax-01, target: attention-mechanism, relation: 继承, strength: 2 }
+- { source: sensenova, target: alexnet, relation: 继承, strength: 2 }
+- { source: spark, target: whisper, relation: 继承, strength: 2 }
+- { source: baichuan-2, target: llama, relation: 继承, strength: 2 }
+- { source: yi, target: llama, relation: 继承, strength: 2 }
+- { source: step-1, target: ai-agent, relation: 继承, strength: 2 }
+- { source: minicpm, target: llama, relation: 继承, strength: 2 }
+- { source: pangu, target: expert-system, relation: 继承, strength: 2 }
+- { source: luminous, target: gpt-3, relation: 继承, strength: 2 }
+- { source: bloom, target: llama, relation: 继承, strength: 2 }
+- { source: sarvam-1, target: bert, relation: 继承, strength: 2 }
+- { source: allam, target: bert, relation: 继承, strength: 2 }
+
+# ── 中国厂商的应用层：产品挂在模型下面 ──────────────────────────────
+- { source: zhipu-qingyan, target: glm-4, relation: 发布, strength: 3 }
+- { source: codegeex, target: chatglm, relation: 继承, strength: 3 }
+- { source: kimi-app, target: kimi, relation: 发布, strength: 3 }
+- { source: ernie-bot, target: ernie-4, relation: 发布, strength: 4 }
+- { source: qianfan, target: ernie-4, relation: 推动, strength: 3 }
+- { source: comate, target: ernie-1, relation: 继承, strength: 2 }
+- { source: yuanbao, target: hunyuan-large, relation: 发布, strength: 3 }
+- { source: hunyuan-image, target: hunyuan-video, relation: 继承, strength: 3 }
+- { source: doubao-app, target: doubao, relation: 发布, strength: 4 }
+- { source: volcengine-ark, target: doubao, relation: 推动, strength: 3 }
+- { source: coze, target: doubao, relation: 继承, strength: 3 }
+- { source: tongyi-app, target: qwen, relation: 发布, strength: 4 }
+- { source: tongyi-lingma, target: qwen2-5, relation: 继承, strength: 3 }
+- { source: modelscope, target: qwen, relation: 推动, strength: 4 }
+- { source: hailuo, target: minimax-01, relation: 发布, strength: 3 }
+- { source: xingye, target: minimax-01, relation: 继承, strength: 3 }
+- { source: sensenchat, target: sensenova, relation: 发布, strength: 3 }
+- { source: miaohua, target: sensenova, relation: 继承, strength: 3 }
+- { source: spark-app, target: spark, relation: 发布, strength: 3 }
+- { source: modelarts, target: pangu, relation: 推动, strength: 3 }
+- { source: baixiaoying, target: baichuan-2, relation: 发布, strength: 3 }
+- { source: wanzhi, target: yi, relation: 发布, strength: 3 }
+- { source: yuewen, target: step-1, relation: 发布, strength: 3 }
+- { source: luca, target: minicpm, relation: 发布, strength: 3 }

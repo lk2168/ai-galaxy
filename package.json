@@ -1,0 +1,30 @@
+{
+  "name": "ai-galaxy",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "AI 发展星图：把人工智能七十年的历史画成一片可以一起添星的星系",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b --noEmit && vite build",
+    "preview": "vite preview",
+    "check:data": "node scripts/validate.mjs",
+    "export": "node scripts/export-graph.mjs"
+  },
+  "dependencies": {
+    "3d-force-graph": "^1.79.0",
+    "js-yaml": "^4.1.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@types/three": "^0.180.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0"
+  }
+}

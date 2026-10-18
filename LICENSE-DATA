@@ -1,0 +1,30 @@
+# 数据许可：CC BY 4.0
+
+本仓库 `data/` 目录下的全部结构化数据（节点、连线、简介、标签、影响力评估），
+以及由这些数据生成的 `public/graph*.json`，采用
+[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.zh-hans) 许可。
+
+## 你可以
+
+- **共享** —— 以任何媒介或格式复制、发行本数据
+- **演绎** —— 修改、转换、基于本数据创作，包括商业用途
+
+## 条件是
+
+- **署名** —— 必须给出适当的署名，提供指向本许可的链接，并说明是否作了修改。
+  建议的署名格式：
+
+  > 数据来源：AI 星图（AI Galaxy），
+  > https://github.com/lk2168/ai-galaxy ，CC BY 4.0
+
+## 注意
+
+外部数据层的原始版权属于各自来源：
+
+- 论文元数据：[Crossref](https://www.crossref.org/)（开放元数据）
+- 开源项目元数据：GitHub API
+- 模型元数据：HuggingFace
+- DSH 插件目录：[awesome-dsh-plugin](https://awesome-dsh-plugin.com/)
+
+这些原始元数据的版权归原平台，本仓库只做聚合与展示。
+如果某个数据源要求删除，请提 issue，我们会移除对应条目。

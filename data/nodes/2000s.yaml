@@ -1,0 +1,91 @@
+# 2000s —— 算力、数据、算法三样凑齐前的准备期
+
+- id: deep-belief-network
+  type: paper
+  name: 深度信念网络
+  year: 2006
+  weight: 86
+  summary: 辛顿用逐层预训练让深层网络重新训得动，并把这件事命名为「深度学习」。这一年通常被当作复兴的起点。
+  tags: [论文, 深度学习]
+  sources: ["https://www.cs.toronto.edu/~hinton/absps/fastnc.pdf"]
+
+- id: deep-learning-term
+  type: concept
+  name: 深度学习（这个词）
+  year: 2006
+  weight: 88
+  summary: 从「神经网络」改叫「深度学习」，不只是换名字。新名字强调的是层数带来的表示能力，也更容易拿到资助。
+  tags: [命名, 思想]
+  sources: ["https://en.wikipedia.org/wiki/Deep_learning"]
+
+- id: imagenet
+  type: concept
+  name: ImageNet
+  year: 2009
+  weight: 94
+  summary: 一千四百多万张人工标注的图片，两万多个类别。没有它，2012 年那次突破根本无从谈起。
+  tags: [数据集, 视觉]
+  sources: ["https://en.wikipedia.org/wiki/ImageNet"]
+
+- id: fei-fei-li
+  type: person
+  name: 李飞飞
+  year: 2009
+  weight: 92
+  summary: 用众包把 ImageNet 标出来。她当时被同行劝「这种苦活没人做」，但正是这份数据把视觉研究推过了临界点。
+  tags: [人物, 数据, 华人]
+  sources: ["https://en.wikipedia.org/wiki/Fei-Fei_Li"]
+
+- id: nvidia
+  type: org
+  name: 英伟达
+  year: 2006
+  weight: 88
+  summary: 做显卡的公司。它把并行计算接口开放给通用计算，十年后成了整个 AI 行业唯一绕不开的硬件供应商。
+  tags: [机构, 硬件]
+  sources: ["https://en.wikipedia.org/wiki/Nvidia"]
+
+- id: cuda
+  type: concept
+  name: CUDA
+  year: 2007
+  weight: 84
+  summary: 让程序员用类 C 的语法直接在显卡上跑通用计算。训练神经网络的算力，从这一步开始变得便宜。
+  tags: [工具, 硬件]
+  sources: ["https://en.wikipedia.org/wiki/CUDA"]
+
+- id: gpu-computing
+  type: concept
+  name: GPU 计算
+  year: 2007
+  weight: 86
+  summary: 图像处理器天生擅长大量重复的乘加运算，而神经网络训练正好就是这件事。算力的形状刚好对上了算法的形状。
+  tags: [概念, 硬件]
+  sources: ["https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units"]
+
+- id: random-forest
+  type: model
+  name: 随机森林
+  year: 2001
+  weight: 72
+  summary: 训练很多棵决策树再投票。它在表格数据上又稳又省事，直到今天仍是最常用的基线之一。
+  tags: [模型, 集成]
+  sources: ["https://en.wikipedia.org/wiki/Random_forest"]
+
+- id: leo-breiman
+  type: person
+  name: 利奥·布雷曼
+  year: 2001
+  weight: 58
+  summary: 统计学家，随机森林的作者。他一生做出 CART、bagging、随机森林三件在工业界被用烂了的东西。
+  tags: [人物, 统计学习]
+  sources: ["https://en.wikipedia.org/wiki/Leo_Breiman"]
+
+- id: big-data
+  type: concept
+  name: 大数据
+  year: 2008
+  weight: 70
+  summary: 互联网把可标注的数据量推高了好几个数量级。深度学习的胜负手从来不只是模型结构，还有能不能喂饱它。
+  tags: [概念, 数据]
+  sources: ["https://en.wikipedia.org/wiki/Big_data"]

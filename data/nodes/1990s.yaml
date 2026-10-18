@@ -1,0 +1,109 @@
+# 1990s —— 统计学习上台，神经网络退到角落
+
+- id: statistical-learning
+  type: concept
+  name: 统计学习
+  year: 1995
+  weight: 82
+  summary: 用概率和凸优化做学习，强调泛化误差有界。它统治了 1990 年代的机器学习，也让「调模型」有了理论依据。
+  tags: [概念, 学派]
+  sources: ["https://en.wikipedia.org/wiki/Statistical_learning_theory"]
+
+- id: svm
+  type: model
+  name: 支持向量机
+  year: 1995
+  weight: 84
+  summary: 找一个间隔最大的分界面，再用核函数把它弯到高维。1990 年代到 2000 年代初，它是最能打的分类器。
+  tags: [模型, 统计学习]
+  sources: ["https://en.wikipedia.org/wiki/Support_vector_machine"]
+
+- id: vladimir-vapnik
+  type: person
+  name: 弗拉基米尔·万普尼克
+  year: 1995
+  weight: 76
+  summary: 统计学习理论的主要建立者，SVM 出自他手。他坚持「不要用比数据复杂度更高的模型」，与深度学习立场相反。
+  tags: [人物, 统计学习]
+  sources: ["https://en.wikipedia.org/wiki/Vladimir_Vapnik"]
+
+- id: boosting
+  type: model
+  name: AdaBoost
+  year: 1997
+  weight: 74
+  summary: 把一堆很弱的分类器加权组合成强分类器。思路简单到可以手算，却在很多表格数据上赢了神经网络二十年。
+  tags: [模型, 集成]
+  sources: ["https://en.wikipedia.org/wiki/AdaBoost"]
+
+- id: lstm
+  type: model
+  name: LSTM
+  year: 1997
+  weight: 92
+  summary: 给循环网络加了门控，让它能记住很久以前的信息。此后近二十年，它是语音识别和机器翻译的主力。
+  tags: [模型, 序列]
+  sources: ["https://www.bioinf.jku.at/publications/older/2604.pdf"]
+
+- id: sepp-hochreiter
+  type: person
+  name: 塞普·霍赫赖特
+  year: 1997
+  weight: 68
+  summary: LSTM 的第一作者。他在论文里就写清了梯度消失问题，这一条后来被 Transformer 用另一种方式绕开。
+  tags: [人物, 序列]
+  sources: ["https://en.wikipedia.org/wiki/Sepp_Hochreiter"]
+
+- id: jurgen-schmidhuber
+  type: person
+  name: 于尔根·施密德胡伯
+  year: 1997
+  weight: 70
+  summary: LSTM 的合作者之一，也是「深度学习早就有」的最积极主张者。他对功劳归属的争论很有名。
+  tags: [人物, 序列]
+  sources: ["https://en.wikipedia.org/wiki/J%C3%BCrgen_Schmidhuber"]
+
+- id: deep-blue
+  type: event
+  name: 深蓝战胜卡斯帕罗夫
+  year: 1997
+  weight: 86
+  summary: IBM 的专用机器在六局比赛里赢了国际象棋世界冠军。它靠的是暴力搜索加人工评估，不是学习。
+  tags: [事件, 里程碑]
+  sources: ["https://en.wikipedia.org/wiki/Deep_Blue_versus_Garry_Kasparov"]
+
+- id: lenet-5
+  type: model
+  name: LeNet-5
+  year: 1998
+  weight: 78
+  summary: 七层的卷积网络，能稳定识别手写数字。它证明了卷积加梯度训练这套组合真的能上生产线。
+  tags: [模型, 卷积]
+  sources: ["https://en.wikipedia.org/wiki/LeNet"]
+
+- id: mnist
+  type: concept
+  name: MNIST
+  year: 1998
+  weight: 76
+  summary: 六万张手写数字的数据集。此后二十年，它是每个入门者跑通的第一个模型，也是模型论文的标准靶子。
+  tags: [数据集, 评测]
+  sources: ["https://en.wikipedia.org/wiki/MNIST_database"]
+
+- id: yoshua-bengio
+  type: person
+  name: 约书亚·本吉奥
+  year: 2003
+  weight: 90
+  summary: 把神经网络拉回语言领域的人。2003 年用神经网络做语言模型，后来与辛顿、乐昆同获 2018 年图灵奖。
+  tags: [人物, 语言]
+  sources: ["https://en.wikipedia.org/wiki/Yoshua_Bengio"]
+
+- id: neural-probabilistic-language-model
+  type: paper
+  name: 神经概率语言模型
+  year: 2003
+  weight: 82
+  summary: 用神经网络预测下一个词，第一次让词向量和学习绑在一起。今天所有大语言模型做的都是同一件事，只是规模不同。
+  tags: [论文, 语言]
+  sources: ["https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf"]

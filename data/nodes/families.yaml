@@ -1,0 +1,353 @@
+# 模型家族：每个家族在主星系外侧自成一个卫星星团
+# family 字段决定它挂在哪颗星团上；界面里每个家族是一团自己的星云
+
+# ── OpenAI ────────────────────────────────────────────────────────────
+- id: gpt-4o
+  type: model
+  name: GPT-4o
+  year: 2024
+  weight: 90
+  family: openai
+  summary: 把文本、图像、语音放进同一个模型里，语音对话延迟降到接近真人。openai 第一次把「实时」当卖点。
+  tags: [模型, 多模态, 大模型]
+  sources: ["https://openai.com/index/hello-gpt-4o/"]
+
+- id: o3
+  type: model
+  name: OpenAI o3
+  year: 2025
+  weight: 82
+  family: openai
+  summary: 在数学与编程竞赛题上把分数推到接近满分，代价是单次回答可能要花掉大量推理算力。
+  tags: [模型, 推理]
+  sources: ["https://openai.com/index/introducing-o3-and-o4-mini/"]
+
+- id: whisper
+  type: model
+  name: Whisper
+  year: 2022
+  weight: 78
+  family: openai
+  summary: 用六十八万小时的多语种音频训练，开源权重。它让「本地跑一个很好的语音识别」第一次变得普通。
+  tags: [模型, 语音, 开源]
+  sources: ["https://arxiv.org/abs/2212.04356"]
+
+- id: codex
+  type: model
+  name: Codex
+  year: 2021
+  weight: 80
+  family: openai
+  summary: GitHub Copilot 背后的模型。它把「写代码时有人补全」变成了一件理所当然的事。
+  tags: [模型, 代码]
+  sources: ["https://arxiv.org/abs/2107.03374"]
+
+# ── Anthropic ─────────────────────────────────────────────────────────
+- id: claude-2
+  type: model
+  name: Claude 2
+  year: 2023
+  weight: 74
+  family: anthropic
+  summary: 把上下文拉到十万 token，能一次读完几百页文档。长文本从此成了 Anthropic 的招牌。
+  tags: [模型, 长文本]
+  sources: ["https://www.anthropic.com/news/claude-2"]
+
+- id: claude-3
+  type: model
+  name: Claude 3
+  year: 2024
+  weight: 84
+  family: anthropic
+  summary: 一次发布三档模型（Haiku / Sonnet / Opus），第一次在部分测试上超过 GPT-4。多档位成为行业惯例。
+  tags: [模型, 多模态]
+  sources: ["https://www.anthropic.com/news/claude-3-family"]
+
+- id: claude-3-5-sonnet
+  type: model
+  name: Claude 3.5 Sonnet
+  year: 2024
+  weight: 86
+  family: anthropic
+  summary: 编程能力被大量开发者认可，成了那一年写代码最常用的模型之一。它让 Anthropic 从「第二选择」变成主力。
+  tags: [模型, 编程]
+  sources: ["https://www.anthropic.com/news/claude-3-5-sonnet"]
+
+- id: claude-4
+  type: model
+  name: Claude 4
+  year: 2025
+  weight: 84
+  family: anthropic
+  summary: 把重点放在长任务的连续执行上，能自己跑几小时的 agent 工作流，这是它与其他模型拉开差距的地方。
+  tags: [模型, 智能体]
+  sources: ["https://www.anthropic.com/news/claude-4"]
+
+- id: constitutional-ai
+  type: paper
+  name: 宪法式 AI
+  year: 2022
+  weight: 76
+  family: anthropic
+  summary: 不靠大量人工标注，而是给模型一份写下来的原则，让它自己批评自己。这是与 RLHF 并行的另一条对齐路线。
+  tags: [论文, 对齐]
+  sources: ["https://arxiv.org/abs/2212.08073"]
+
+# ── Google ────────────────────────────────────────────────────────────
+- id: t5
+  type: model
+  name: T5
+  year: 2019
+  weight: 78
+  family: google
+  summary: 把所有自然语言任务都改写成「文本到文本」，一套框架通吃翻译、摘要、问答。
+  tags: [模型, 语言]
+  sources: ["https://arxiv.org/abs/1910.10683"]
+
+- id: palm
+  type: model
+  name: PaLM
+  year: 2022
+  weight: 76
+  family: google
+  summary: 五千四百亿参数的密集模型，第一次在训练规模上压过同时期的 OpenAI。它证明谷歌的算力是真的多。
+  tags: [模型, 大模型]
+  sources: ["https://arxiv.org/abs/2204.02311"]
+
+- id: lamda
+  type: model
+  name: LaMDA
+  year: 2021
+  weight: 68
+  family: google
+  summary: 专为对话训练的语言模型。一名工程师公开说它有感知，这件事后来变成了 AI 伦理讨论的经典案例。
+  tags: [模型, 对话]
+  sources: ["https://arxiv.org/abs/2201.08239"]
+
+- id: gemini-1-5
+  type: model
+  name: Gemini 1.5
+  year: 2024
+  weight: 82
+  family: google
+  summary: 用混合专家架构把上下文推到一百万 token，能一次吞下一整本书或一段长视频。
+  tags: [模型, 长文本, 多模态]
+  sources: ["https://arxiv.org/abs/2403.05530"]
+
+- id: gemma
+  type: model
+  name: Gemma
+  year: 2024
+  weight: 74
+  family: google
+  summary: 谷歌放出的开放权重小模型，能在笔记本上跑。它是大公司第一次认真做「可下载」的模型。
+  tags: [模型, 开源]
+  sources: ["https://blog.google/technology/developers/gemma-open-models/"]
+
+# ── Meta ──────────────────────────────────────────────────────────────
+- id: llama-2
+  type: model
+  name: Llama 2
+  year: 2023
+  weight: 84
+  family: meta
+  summary: 第一个允许商用的开放权重模型。这一条改写了规则：企业可以自己部署，不必买 API。
+  tags: [模型, 开源, 大模型]
+  sources: ["https://arxiv.org/abs/2307.09288"]
+
+- id: llama-3
+  type: model
+  name: Llama 3
+  year: 2024
+  weight: 84
+  family: meta
+  summary: 用十五万亿 token 训练，开源模型第一次在通用能力上逼近闭源第一梯队。
+  tags: [模型, 开源, 大模型]
+  sources: ["https://ai.meta.com/blog/meta-llama-3/"]
+
+- id: sam
+  type: model
+  name: Segment Anything
+  year: 2023
+  weight: 80
+  family: meta
+  summary: 点一下就能把图里的任何东西抠出来，十亿张掩码训出来的通用分割模型。视觉领域的基础设施。
+  tags: [模型, 视觉, 开源]
+  sources: ["https://arxiv.org/abs/2304.02643"]
+
+# ── DeepSeek ──────────────────────────────────────────────────────────
+- id: deepseek-coder
+  type: model
+  name: DeepSeek-Coder
+  year: 2023
+  weight: 70
+  family: deepseek
+  summary: 深度求索最早打出名声的一批代码模型，开放权重、支持长上下文，被大量本地编程助手采用。
+  tags: [模型, 代码, 开源]
+  sources: ["https://arxiv.org/abs/2401.14196"]
+
+- id: deepseek-v2
+  type: model
+  name: DeepSeek-V2
+  year: 2024
+  weight: 82
+  family: deepseek
+  summary: 提出多头潜在注意力（MLA），把推理时的显存占用大幅压下来。它让「低成本推理」第一次有了具体的技术路径。
+  tags: [模型, 架构, 开源]
+  sources: ["https://arxiv.org/abs/2405.04434"]
+
+- id: deepseek-v3-1
+  type: model
+  name: DeepSeek-V3.1
+  year: 2025
+  weight: 78
+  family: deepseek
+  summary: 把「思考模式」和「非思考模式」放进同一个模型，按需切换。混合推理成为那一年开源模型的标配。
+  tags: [模型, 推理, 开源]
+  sources: ["https://api-docs.deepseek.com/news/news250821"]
+
+# ── Mistral ───────────────────────────────────────────────────────────
+- id: mistral-7b
+  type: model
+  name: Mistral 7B
+  year: 2023
+  weight: 78
+  family: mistral
+  summary: 七十亿参数，在多项测试上打赢比自己大一倍的模型。它让「小模型也能用」成了共识。
+  tags: [模型, 开源]
+  sources: ["https://arxiv.org/abs/2310.06825"]
+
+- id: mixtral
+  type: model
+  name: Mixtral 8x7B
+  year: 2023
+  weight: 80
+  family: mistral
+  summary: 稀疏混合专家，总参数四百七十亿但每次只激活一百三十亿。它把 MoE 从论文推成了可下载的产品。
+  tags: [模型, 架构, 开源]
+  sources: ["https://arxiv.org/abs/2401.04088"]
+
+- id: mistral-large
+  type: model
+  name: Mistral Large
+  year: 2024
+  weight: 70
+  family: mistral
+  summary: 面向商业闭源的高端型号，主打多语种与函数调用。欧洲终于有了自己的第一梯队模型。
+  tags: [模型, 企业]
+  sources: ["https://mistral.ai/news/mistral-large"]
+
+# ── 阿里 Qwen ─────────────────────────────────────────────────────────
+- id: qwen
+  type: model
+  name: Qwen
+  year: 2023
+  weight: 76
+  family: qwen
+  summary: 阿里通义千问的第一代开放权重模型，配套了完整的中文评测。中文开源生态从这一批开始变厚。
+  tags: [模型, 开源, 中文]
+  sources: ["https://arxiv.org/abs/2309.16609"]
+
+- id: qwen2-5
+  type: model
+  name: Qwen2.5
+  year: 2024
+  weight: 78
+  family: qwen
+  summary: 从 0.5B 到 72B 铺满整条产品线，还带视觉与代码版本。它是开源社区里被微调得最多的底模之一。
+  tags: [模型, 开源, 中文]
+  sources: ["https://qwenlm.github.io/blog/qwen2.5/"]
+
+- id: qwen3
+  type: model
+  name: Qwen3
+  year: 2025
+  weight: 78
+  family: qwen
+  summary: 把推理模式与快速模式合并进一个模型，开放权重。开源阵营在 2025 年的主力之一。
+  tags: [模型, 开源, 中文]
+  sources: ["https://qwenlm.github.io/blog/qwen3/"]
+
+# ── 智谱 GLM ──────────────────────────────────────────────────────────
+- id: chatglm
+  type: model
+  name: ChatGLM
+  year: 2023
+  weight: 72
+  family: zhipu
+  summary: 六十亿参数、能在消费级显卡上跑的中文对话模型。它让很多国内开发者第一次在自己电脑上跑通大模型。
+  tags: [模型, 开源, 中文]
+  sources: ["https://arxiv.org/abs/2406.12793"]
+
+- id: glm-4
+  type: model
+  name: GLM-4
+  year: 2024
+  weight: 74
+  family: zhipu
+  summary: 智谱的旗舰模型，主打中文理解与工具调用，配套完整的智能体平台。
+  tags: [模型, 中文]
+  sources: ["https://arxiv.org/abs/2406.12793"]
+
+# ── 月之暗面 Kimi ──────────────────────────────────────────────────────
+- id: kimi
+  type: model
+  name: Kimi
+  year: 2023
+  weight: 72
+  family: moonshot
+  summary: 用超长上下文切入市场，能一次读完几十份文档。长文本在国内成了第一个被验证的需求。
+  tags: [模型, 长文本, 中文]
+  sources: ["https://www.moonshot.cn/"]
+
+- id: kimi-k2
+  type: model
+  name: Kimi K2
+  year: 2025
+  weight: 76
+  family: moonshot
+  summary: 万亿参数级的开放权重模型，主打智能体任务，是 2025 年开源阵营里参数最大的一批之一。
+  tags: [模型, 开源, 智能体]
+  sources: ["https://moonshotai.github.io/Kimi-K2/"]
+
+# ── Stability ─────────────────────────────────────────────────────────
+- id: sdxl
+  type: model
+  name: SDXL
+  year: 2023
+  weight: 76
+  family: stability
+  summary: Stable Diffusion 的大幅升级版，出图质量与分辨率都提升一档，成为本地生图的事实标准。
+  tags: [模型, 生成, 开源]
+  sources: ["https://arxiv.org/abs/2307.01952"]
+
+- id: sd3
+  type: model
+  name: Stable Diffusion 3
+  year: 2024
+  weight: 74
+  family: stability
+  summary: 换成整流流架构，文字渲染和复杂构图明显改善。开源生图模型追平商业产品的一次尝试。
+  tags: [模型, 生成, 开源]
+  sources: ["https://arxiv.org/abs/2403.03206"]
+
+# ── xAI ───────────────────────────────────────────────────────────────
+- id: grok-1
+  type: model
+  name: Grok-1
+  year: 2023
+  weight: 66
+  family: xai
+  summary: xAI 的第一个模型，接在社交平台上，风格更少过滤。它把「模型性格」当成了产品差异。
+  tags: [模型, 对话]
+  sources: ["https://x.ai/"]
+
+- id: grok-2
+  type: model
+  name: Grok-2
+  year: 2024
+  weight: 68
+  family: xai
+  summary: 加入图像理解与生图能力，训练用的算力规模在当年属于第一梯队。
+  tags: [模型, 多模态]
+  sources: ["https://x.ai/blog/grok-2"]

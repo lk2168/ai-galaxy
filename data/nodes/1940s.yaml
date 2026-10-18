@@ -1,0 +1,75 @@
+# 1940s —— 思想的起点
+# weight = 0-100 的历史影响力评估（社群主观值，不是客观指标）
+# 一个人物节点的 year 取他做出主要贡献的那一年，不是出生年
+
+- id: neural-network
+  type: concept
+  name: 神经网络
+  year: 1943
+  weight: 96
+  summary: 用大量简单单元互相连接来计算的思路。此后八十年，AI 的每一次起落几乎都绕着它转。
+  tags: [连接主义, 思想]
+  sources: ["https://en.wikipedia.org/wiki/Artificial_neural_network"]
+
+- id: mcculloch-pitts-neuron
+  type: paper
+  name: 麦卡洛克-皮茨神经元
+  year: 1943
+  weight: 88
+  summary: 把神经细胞抽象成一个阈值开关，证明这种开关组成的网络能实现逻辑运算。第一个可计算的神经元模型。
+  tags: [论文, 奠基]
+  sources: ["https://en.wikipedia.org/wiki/Artificial_neuron"]
+
+- id: warren-mcculloch
+  type: person
+  name: 沃伦·麦卡洛克
+  year: 1943
+  weight: 68
+  summary: 神经生理学家，与皮茨一起写下第一个神经元数学模型。他关心的是大脑怎么算，不是机器怎么算。
+  tags: [人物, 奠基]
+  sources: ["https://en.wikipedia.org/wiki/Warren_Sturgis_McCulloch"]
+
+- id: walter-pitts
+  type: person
+  name: 沃尔特·皮茨
+  year: 1943
+  weight: 62
+  summary: 二十岁出头就给出神经元的逻辑模型。后来与麦卡洛克分道扬镳，贡献长期被低估。
+  tags: [人物, 奠基]
+  sources: ["https://en.wikipedia.org/wiki/Walter_Pitts"]
+
+- id: connectionism
+  type: concept
+  name: 连接主义
+  year: 1943
+  weight: 90
+  summary: 认为智能来自大量单元的连接方式，而不是符号规则。与符号主义争了半个世纪，2012 年后胜出。
+  tags: [思想, 学派]
+  sources: ["https://en.wikipedia.org/wiki/Connectionism"]
+
+- id: claude-shannon
+  type: person
+  name: 克劳德·香农
+  year: 1948
+  weight: 90
+  summary: 信息论之父。他在 1950 年那篇讲下棋程序的论文里，第一次把「让机器思考」写成了工程问题。
+  tags: [人物, 信息论]
+  sources: ["https://en.wikipedia.org/wiki/Claude_Shannon"]
+
+- id: hebbian-learning
+  type: concept
+  name: 赫布学习规则
+  year: 1949
+  weight: 78
+  summary: 「一起放电的神经元会连得更紧」。第一个说得清的学习机制，今天所有神经网络的训练都还带着它的影子。
+  tags: [学习规则, 思想]
+  sources: ["https://en.wikipedia.org/wiki/Hebbian_theory"]
+
+- id: donald-hebb
+  type: person
+  name: 唐纳德·赫布
+  year: 1949
+  weight: 58
+  summary: 加拿大心理学家。他从行为实验推出学习发生在突触上，给了后来的神经网络一个可实现的假设。
+  tags: [人物, 心理学]
+  sources: ["https://en.wikipedia.org/wiki/Donald_O._Hebb"]

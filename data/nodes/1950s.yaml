@@ -1,0 +1,127 @@
+# 1950s —— 命名、会议与第一台会学习的机器
+
+- id: alan-turing
+  type: person
+  name: 艾伦·图灵
+  year: 1950
+  weight: 97
+  summary: 1936 年给出「可计算」的定义，1950 年又问「机器能思考吗」。AI 的问题意识基本由他设定。
+  tags: [人物, 奠基]
+  sources: ["https://en.wikipedia.org/wiki/Alan_Turing"]
+
+- id: turing-test
+  type: concept
+  name: 图灵测试
+  year: 1950
+  weight: 92
+  summary: 把「机器有没有智能」换成一个可操作的问题：人隔着屏幕分不清对面是人是机器，就算它通过了。
+  tags: [思想, 评测]
+  sources: ["https://academic.oup.com/mind/article/LIX/236/433/986238"]
+
+- id: dartmouth-workshop
+  type: event
+  name: 达特茅斯会议
+  year: 1956
+  weight: 95
+  summary: 十来个年轻人在夏天聚了两个月，给这门学科起了名字。会上并没有做出什么，但它把散落的想法变成了一个领域。
+  tags: [事件, 起源]
+  sources: ["https://en.wikipedia.org/wiki/Dartmouth_workshop"]
+
+- id: artificial-intelligence-term
+  type: concept
+  name: 人工智能（这个词）
+  year: 1956
+  weight: 86
+  summary: 麦卡锡坚持用 artificial intelligence 而不是 cybernetics，从此这门学科有了自己的招牌。
+  tags: [命名, 思想]
+  sources: ["https://en.wikipedia.org/wiki/Dartmouth_workshop"]
+
+- id: john-mccarthy
+  type: person
+  name: 约翰·麦卡锡
+  year: 1956
+  weight: 92
+  summary: 发明 LISP、提出「人工智能」这个名字、创办 MIT 与斯坦福的 AI 实验室。符号主义时代的组织者。
+  tags: [人物, 符号主义]
+  sources: ["https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)"]
+
+- id: marvin-minsky
+  type: person
+  name: 马文·明斯基
+  year: 1969
+  weight: 90
+  summary: MIT AI 实验室的联合创始人。写《感知机》一书压住了神经网络研究近十年，也因此背上「寒冬制造者」的名声。
+  tags: [人物, 符号主义]
+  sources: ["https://en.wikipedia.org/wiki/Marvin_Minsky"]
+
+- id: symbol-ai
+  type: concept
+  name: 符号主义
+  year: 1956
+  weight: 88
+  summary: 认为智能就是符号操作，把知识写成规则再推理。从 1956 年统治到 1980 年代末，然后被统计方法取代。
+  tags: [思想, 学派]
+  sources: ["https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence"]
+
+- id: perceptron
+  type: model
+  name: 感知机
+  year: 1958
+  weight: 91
+  summary: 第一个能从数据里自己学出权重的分类器。它能学会线性可分的东西，但学不会异或，这个局限后来被放大成一场误会。
+  tags: [模型, 奠基]
+  sources: ["https://en.wikipedia.org/wiki/Perceptron"]
+
+- id: frank-rosenblatt
+  type: person
+  name: 弗兰克·罗森布拉特
+  year: 1958
+  weight: 80
+  summary: 造出感知机并用硬件实现。他相信这已经摸到了智能的门，可惜 1971 年意外去世，方向随之冷掉。
+  tags: [人物, 连接主义]
+  sources: ["https://en.wikipedia.org/wiki/Frank_Rosenblatt"]
+
+- id: lisp
+  type: concept
+  name: LISP
+  year: 1958
+  weight: 76
+  summary: 为符号推理设计的语言，代码即数据。之后三十年 AI 程序几乎都用它写，也顺手发明了垃圾回收。
+  tags: [语言, 工具]
+  sources: ["https://en.wikipedia.org/wiki/Lisp_(programming_language)"]
+
+- id: machine-learning-term
+  type: concept
+  name: 机器学习（这个词）
+  year: 1959
+  weight: 88
+  summary: 塞缪尔在跳棋程序里提出「不靠人写规则，让程序自己从经验里变强」。这句话后来成了整个领域的路线。
+  tags: [命名, 思想]
+  sources: ["https://en.wikipedia.org/wiki/Machine_learning"]
+
+- id: arthur-samuel
+  type: person
+  name: 亚瑟·塞缪尔
+  year: 1959
+  weight: 66
+  summary: IBM 工程师。他写的跳棋程序能打败自己，也是「机器学习」这个词的出处。
+  tags: [人物, 机器学习]
+  sources: ["https://en.wikipedia.org/wiki/Arthur_Samuel"]
+
+- id: mit-ai-lab
+  type: org
+  name: MIT 人工智能实验室
+  year: 1959
+  weight: 84
+  summary: 麦卡锡与明斯基创立，符号主义的大本营。后来与计算机科学实验室合并，成为今天的 CSAIL。
+  tags: [机构, 学术]
+  sources: ["https://en.wikipedia.org/wiki/MIT_Computer_Science_and_Artificial_Intelligence_Laboratory"]
+
+- id: ibm
+  type: org
+  name: IBM
+  year: 1956
+  weight: 82
+  summary: 从塞缪尔的跳棋到深蓝，再到沃森。企业研究院养了 AI 很多年，也两次在寒冬里裁员砍项目。
+  tags: [机构, 企业]
+  sources: ["https://en.wikipedia.org/wiki/IBM"]

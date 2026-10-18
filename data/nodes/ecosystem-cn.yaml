@@ -1,0 +1,253 @@
+# 中国厂商的生态节点：这些是真实存在的产品与平台，但不在 GitHub 上
+# 补它们是为了让「家族星团」看起来完整——模型是核，配套的应用与平台才是它被使用的方式
+
+# —— 智谱 GLM ——
+- id: zhipu-qingyan
+  type: project
+  name: 智谱清言
+  year: 2023
+  weight: 58
+  family: zhipu
+  summary: 智谱的对话 App，国内最早一批把大模型做成手机端产品的。它也是很多人第一次用上中文大模型的入口。
+  tags: [应用, 生态, 中文]
+  sources: ["https://chatglm.cn/"]
+
+- id: codegeex
+  type: project
+  name: CodeGeeX
+  year: 2022
+  weight: 60
+  family: zhipu
+  summary: 智谱的代码助手，开源过模型权重也做过 IDE 插件。国内编程辅助里做得最早的一批。
+  tags: [应用, 代码, 生态]
+  sources: ["https://codegeex.cn/"]
+
+# —— 月之暗面 Kimi ——
+- id: kimi-app
+  type: project
+  name: Kimi 智能助手
+  year: 2023
+  weight: 62
+  family: moonshot
+  summary: 用长文本把「一次读完几十份 PDF」做成卖点的产品。它在国内把「长上下文」这个需求第一次验证了。
+  tags: [应用, 生态, 中文]
+  sources: ["https://kimi.moonshot.cn/"]
+
+# —— 百度文心 ——
+- id: ernie-bot
+  type: project
+  name: 文心一言
+  year: 2023
+  weight: 66
+  family: baidu
+  summary: 国内第一个大规模开放公测的对话产品。发布当天服务器被挤爆，也第一次让普通人感到「这东西真能用」。
+  tags: [应用, 生态, 中文]
+  sources: ["https://yiyan.baidu.com/"]
+
+- id: qianfan
+  type: project
+  name: 千帆大模型平台
+  year: 2023
+  weight: 58
+  family: baidu
+  summary: 百度的模型服务平台，除了自家文心也接第三方模型。它的角色是把模型变成可调用的 API。
+  tags: [平台, 生态]
+  sources: ["https://qianfan.cloud.baidu.com/"]
+
+- id: comate
+  type: project
+  name: 文心快码
+  year: 2023
+  weight: 52
+  family: baidu
+  summary: 百度的编程助手，接在 VS Code 与 JetBrains 里。
+  tags: [应用, 代码, 生态]
+  sources: ["https://comate.baidu.com/"]
+
+# —— 腾讯混元 ——
+- id: yuanbao
+  type: project
+  name: 腾讯元宝
+  year: 2024
+  weight: 58
+  family: tencent
+  summary: 腾讯的 AI 助手 App，直接接在微信生态里。它的优势不是模型，是入口。
+  tags: [应用, 生态, 中文]
+  sources: ["https://yuanbao.tencent.com/"]
+
+- id: hunyuan-image
+  type: project
+  name: 混元生图
+  year: 2024
+  weight: 54
+  family: tencent
+  summary: 腾讯的生图产品，接在元宝与云服务里。国内开源生图模型里它也是少数持续更新的。
+  tags: [应用, 生成, 生态]
+  sources: ["https://hunyuan.tencent.com/"]
+
+# —— 字节跳动 ——
+- id: doubao-app
+  type: project
+  name: 豆包 App
+  year: 2023
+  weight: 64
+  family: bytedance
+  summary: 字节的对话助手，靠极低价格与大量投放迅速做到国内用户量前列。
+  tags: [应用, 生态, 中文]
+  sources: ["https://www.doubao.com/"]
+
+- id: volcengine-ark
+  type: project
+  name: 火山方舟
+  year: 2023
+  weight: 60
+  family: bytedance
+  summary: 字节的模型服务平台，豆包系列模型从这里调用。它把「模型即服务」做成了标准品的形态。
+  tags: [平台, 生态]
+  sources: ["https://www.volcengine.com/product/ark"]
+
+- id: coze
+  type: project
+  name: 扣子 Coze
+  year: 2024
+  weight: 62
+  family: bytedance
+  summary: 不用写代码就能搭一个智能体，再一键发到微信、飞书、Discord。国内智能体平台里做得最完整的一个。
+  tags: [平台, 智能体, 生态]
+  sources: ["https://www.coze.cn/"]
+
+# —— 阿里 Qwen ——
+- id: tongyi-app
+  type: project
+  name: 通义千问 App
+  year: 2023
+  weight: 60
+  family: qwen
+  summary: 阿里的对话助手，与钉钉、夸克、高德等自家产品打通。
+  tags: [应用, 生态, 中文]
+  sources: ["https://tongyi.aliyun.com/"]
+
+- id: tongyi-lingma
+  type: project
+  name: 通义灵码
+  year: 2023
+  weight: 58
+  family: qwen
+  summary: 阿里的编程助手，在 IDE 里做补全与问答。国内开发者用得最多的编程助手之一。
+  tags: [应用, 代码, 生态]
+  sources: ["https://lingma.aliyun.com/"]
+
+- id: modelscope
+  type: project
+  name: 魔搭 ModelScope
+  year: 2022
+  weight: 66
+  family: qwen
+  summary: 阿里的模型社区，开放权重模型的下载与推理入口。国内开源模型生态很大一部分长在这里。
+  tags: [平台, 开源, 生态]
+  sources: ["https://modelscope.cn/"]
+
+# —— MiniMax ——
+- id: hailuo
+  type: project
+  name: 海螺 AI
+  year: 2024
+  weight: 54
+  family: minimax
+  summary: MiniMax 的对话与语音产品，语音合成是它最强的一块。
+  tags: [应用, 语音, 生态]
+  sources: ["https://hailuoai.com/"]
+
+- id: xingye
+  type: project
+  name: 星野
+  year: 2023
+  weight: 52
+  family: minimax
+  summary: AI 角色扮演应用，用户自己捏角色聊天。国内这类产品里它做得最早。
+  tags: [应用, 生态]
+  sources: ["https://xingye.me/"]
+
+# —— 商汤 ——
+- id: sensenchat
+  type: project
+  name: 商量 SenseChat
+  year: 2023
+  weight: 52
+  family: sensetime
+  summary: 商汤的对话产品，背后是日日新大模型。
+  tags: [应用, 生态, 中文]
+  sources: ["https://chat.sensetime.com/"]
+
+- id: miaohua
+  type: project
+  name: 秒画
+  year: 2023
+  weight: 50
+  family: sensetime
+  summary: 商汤的生图产品，走的是「人人能画」的路线。
+  tags: [应用, 生成, 生态]
+  sources: ["https://miaohua.sensetime.com/"]
+
+# —— 讯飞 ——
+- id: spark-app
+  type: project
+  name: 讯飞星火 App
+  year: 2023
+  weight: 54
+  family: iflytek
+  summary: 讯飞的对话助手，语音输入是它的默认交互方式。
+  tags: [应用, 语音, 生态]
+  sources: ["https://xinghuo.xfyun.cn/"]
+
+# —— 华为 ——
+- id: modelarts
+  type: project
+  name: ModelArts
+  year: 2018
+  weight: 56
+  family: huawei
+  summary: 华为云的模型训练与部署平台。盘古系列都从这里出来，也是国内算力受限环境下最常被选的一条路。
+  tags: [平台, 生态]
+  sources: ["https://www.huaweicloud.com/product/modelarts.html"]
+
+# —— 其他中国厂商的产品 ——
+- id: baixiaoying
+  type: project
+  name: 百小应
+  year: 2024
+  weight: 48
+  family: baichuan
+  summary: 百川智能的对话助手，主打医疗与搜索场景。
+  tags: [应用, 生态, 中文]
+  sources: ["https://ying.baichuan-ai.com/"]
+
+- id: wanzhi
+  type: project
+  name: 万知
+  year: 2024
+  weight: 46
+  family: yi
+  summary: 零一万物的 AI 助手，主打文档阅读与写作。
+  tags: [应用, 生态, 中文]
+  sources: ["https://www.wanzhi.com/"]
+
+- id: yuewen
+  type: project
+  name: 跃问
+  year: 2024
+  weight: 46
+  family: stepfun
+  summary: 阶跃星辰的对话产品，主打多模态理解。
+  tags: [应用, 生态, 中文]
+  sources: ["https://yuewen.cn/"]
+
+- id: luca
+  type: project
+  name: 面壁露卡
+  year: 2024
+  weight: 44
+  family: modelbest
+  summary: 面壁智能的端侧助手，跑在本地而不是云端。
+  tags: [应用, 端侧, 生态]
+  sources: ["https://luca.cn/"]

@@ -1,0 +1,310 @@
+# 2010s —— 深度学习十年：从一次比赛到一场产业
+
+- id: deepmind
+  type: org
+  name: DeepMind
+  year: 2010
+  weight: 90
+  summary: 伦敦的实验室，2014 年被谷歌收购。它的路线一直很清楚：先让智能在游戏里学会，再推到科学问题上。
+  tags: [机构, 研究]
+  sources: ["https://en.wikipedia.org/wiki/Google_DeepMind"]
+
+- id: imagenet-challenge
+  type: event
+  name: ImageNet 竞赛
+  year: 2010
+  weight: 80
+  summary: 每年比一次图像分类的错误率。2012 年那个数字被砍掉近一半，整个领域的注意力就在那一届转了向。
+  tags: [事件, 评测]
+  sources: ["https://en.wikipedia.org/wiki/ImageNet"]
+
+- id: google-brain
+  type: org
+  name: Google Brain
+  year: 2011
+  weight: 84
+  summary: 谷歌内部做深度学习的团队。它把神经网络直接推进了搜索、翻译、相册这些几十亿人用的产品里。
+  tags: [机构, 工业]
+  sources: ["https://en.wikipedia.org/wiki/Google_Brain"]
+
+- id: andrew-ng
+  type: person
+  name: 吴恩达
+  year: 2011
+  weight: 80
+  summary: 谷歌大脑的联合创始人，后来在百度、Coursera 推动 AI 教育。他的机器学习课让一代人入了门。
+  tags: [人物, 教育, 华人]
+  sources: ["https://en.wikipedia.org/wiki/Andrew_Ng"]
+
+- id: alexnet
+  type: model
+  name: AlexNet
+  year: 2012
+  weight: 98
+  summary: 两块显卡训练八层卷积网络，在 ImageNet 上把错误率从 26% 压到 15%。这一届比赛之后，所有人都换了方向。
+  tags: [模型, 视觉, 里程碑]
+  sources: ["https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"]
+
+- id: alex-krizhevsky
+  type: person
+  name: 亚历克斯·克里热夫斯基
+  year: 2012
+  weight: 64
+  summary: AlexNet 的第一作者，辛顿的学生。他手写的那份 CUDA 卷积代码后来被无数人当作起点。
+  tags: [人物, 视觉]
+  sources: ["https://en.wikipedia.org/wiki/AlexNet"]
+
+- id: ilya-sutskever
+  type: person
+  name: 伊利亚·苏茨克维
+  year: 2012
+  weight: 90
+  summary: AlexNet 的合作者，后来成为 OpenAI 的首席科学家。他从 AlexNet 到 GPT 系列，一路都在赌「规模会赢」。
+  tags: [人物, 大模型]
+  sources: ["https://en.wikipedia.org/wiki/Ilya_Sutskever"]
+
+- id: dropout
+  type: paper
+  name: Dropout
+  year: 2012
+  weight: 72
+  summary: 训练时随机关掉一部分神经元，逼网络不依赖任何单点。这个粗暴的正则化方法至今还在用。
+  tags: [论文, 训练]
+  sources: ["https://arxiv.org/abs/1207.0580"]
+
+- id: word2vec
+  type: model
+  name: word2vec
+  year: 2013
+  weight: 88
+  summary: 用上下文把词压成向量，并且压出了语义关系：king 减 man 加 woman 约等于 queen。语言第一次变成了可以算的东西。
+  tags: [模型, 语言]
+  sources: ["https://arxiv.org/abs/1301.3781"]
+
+- id: tomas-mikolov
+  type: person
+  name: 托马斯·米科洛夫
+  year: 2013
+  weight: 62
+  summary: word2vec 的作者。他后来认为「把词压扁成静态向量」这条路已经走到头，转向了更长的上下文。
+  tags: [人物, 语言]
+  sources: ["https://en.wikipedia.org/wiki/Word2vec"]
+
+- id: vae
+  type: paper
+  name: 变分自编码器
+  year: 2013
+  weight: 74
+  summary: 把数据压进一个概率分布再采样重建。它是生成模型的基础方法之一，也是今天扩散模型之前最重要的一步。
+  tags: [论文, 生成]
+  sources: ["https://arxiv.org/abs/1312.6114"]
+
+- id: gan
+  type: model
+  name: 生成对抗网络
+  year: 2014
+  weight: 88
+  summary: 用两个网络互相骗：一个造假，一个鉴别。古德费洛在酒吧里想到这个点子，深度学习从此会「画」东西了。
+  tags: [模型, 生成]
+  sources: ["https://arxiv.org/abs/1406.2661"]
+
+- id: ian-goodfellow
+  type: person
+  name: 伊恩·古德费洛
+  year: 2014
+  weight: 78
+  summary: GAN 的提出者。他后来写了《深度学习》教科书，也长期批评这个领域对风险的忽视。
+  tags: [人物, 生成]
+  sources: ["https://en.wikipedia.org/wiki/Ian_Goodfellow"]
+
+- id: seq2seq
+  type: paper
+  name: 序列到序列
+  year: 2014
+  weight: 80
+  summary: 用一个网络把整句话编码，再用另一个网络解码出另一句话。机器翻译从此不再需要逐词对齐。
+  tags: [论文, 语言]
+  sources: ["https://arxiv.org/abs/1409.3215"]
+
+- id: attention-mechanism
+  type: concept
+  name: 注意力机制
+  year: 2014
+  weight: 92
+  summary: 解码时回头看输入的每个位置，按相关度分配权重。这个小改动后来吞掉了整个序列建模，成为大模型的核心部件。
+  tags: [概念, 架构]
+  sources: ["https://arxiv.org/abs/1409.0473"]
+
+- id: vgg
+  type: model
+  name: VGG
+  year: 2014
+  weight: 74
+  summary: 把卷积网络堆到十六层，证明「更深」本身就是一种能力。结构简单到几乎是个教科书，被引用得极多。
+  tags: [模型, 视觉]
+  sources: ["https://arxiv.org/abs/1409.1556"]
+
+- id: adam-optimizer
+  type: paper
+  name: Adam 优化器
+  year: 2014
+  weight: 78
+  summary: 给每个参数自适应地调学习率。它不一定最优，但几乎总是能用，成了十年里默认的训练选择。
+  tags: [论文, 训练]
+  sources: ["https://arxiv.org/abs/1412.6980"]
+
+- id: dqn
+  type: model
+  name: DQN
+  year: 2015
+  weight: 84
+  summary: DeepMind 让神经网络直接看屏幕像素学会打 49 个雅达利游戏。同一个网络、同一套参数，没有为游戏写规则。
+  tags: [模型, 强化学习]
+  sources: ["https://www.nature.com/articles/nature14236"]
+
+- id: resnet
+  type: model
+  name: ResNet
+  year: 2015
+  weight: 92
+  summary: 加一条恒等捷径，让梯度能直接穿过上百层。深度从此不再是训练的障碍，这个残差结构今天到处都是。
+  tags: [模型, 视觉, 架构]
+  sources: ["https://arxiv.org/abs/1512.03385"]
+
+- id: kaiming-he
+  type: person
+  name: 何恺明
+  year: 2015
+  weight: 86
+  summary: ResNet 作者，也是 Faster R-CNN、Mask R-CNN 的核心贡献者。他在视觉领域的三篇论文被引用次数都超过十万。
+  tags: [人物, 视觉, 华人]
+  sources: ["https://en.wikipedia.org/wiki/Kaiming_He"]
+
+- id: batch-normalization
+  type: paper
+  name: 批量归一化
+  year: 2015
+  weight: 72
+  summary: 每层输入都归一化一下，训练就能用更大的学习率、更快收敛。它让深网络从「能训」变成「好训」。
+  tags: [论文, 训练]
+  sources: ["https://arxiv.org/abs/1502.03167"]
+
+- id: tensorflow
+  type: concept
+  name: TensorFlow
+  year: 2015
+  weight: 78
+  summary: 谷歌开源的深度学习框架。它把工业界的工程习惯带进了研究，也让「静态图」这个词流行了好几年。
+  tags: [工具, 框架]
+  sources: ["https://en.wikipedia.org/wiki/TensorFlow"]
+
+- id: openai
+  type: org
+  name: OpenAI
+  year: 2015
+  weight: 96
+  summary: 以「确保通用人工智能造福全人类」为旗号成立。它用 GPT 系列把大模型从论文推成了全民产品。
+  tags: [机构, 企业]
+  sources: ["https://en.wikipedia.org/wiki/OpenAI"]
+
+- id: alphago
+  type: model
+  name: AlphaGo
+  year: 2016
+  weight: 96
+  summary: 4 比 1 击败李世石。围棋曾被认为是机器十年也攻不下的堡垒，它靠策略网络加蒙特卡洛树搜索翻了过去。
+  tags: [模型, 强化学习, 里程碑]
+  sources: ["https://www.nature.com/articles/nature16961"]
+
+- id: demis-hassabis
+  type: person
+  name: 戴密斯·哈萨比斯
+  year: 2016
+  weight: 84
+  summary: DeepMind 的创始人，神经科学与游戏背景。他把「先在游戏里赢，再解决科学问题」变成了可执行的研究纲领。
+  tags: [人物, 强化学习]
+  sources: ["https://en.wikipedia.org/wiki/Demis_Hassabis"]
+
+- id: pytorch
+  type: concept
+  name: PyTorch
+  year: 2016
+  weight: 82
+  summary: 定义即运行，调试像写普通 Python。它先赢得研究者，再随着研究者的迁移赢得工业界。
+  tags: [工具, 框架]
+  sources: ["https://en.wikipedia.org/wiki/PyTorch"]
+
+- id: transformer
+  type: model
+  name: Transformer
+  year: 2017
+  weight: 99
+  summary: 只用注意力，不用循环。训练可以完全并行，于是模型能堆到前所未有的规模。此后所有大模型都建在它上面。
+  tags: [模型, 架构, 里程碑]
+  sources: ["https://arxiv.org/abs/1706.03762"]
+
+- id: ashish-vaswani
+  type: person
+  name: 阿希什·瓦斯瓦尼
+  year: 2017
+  weight: 74
+  summary: 《Attention Is All You Need》的第一作者。这篇论文的八位作者后来全部离开谷歌创业，成了 AI 创业潮的一股力量。
+  tags: [人物, 架构]
+  sources: ["https://arxiv.org/abs/1706.03762"]
+
+- id: alphazero
+  type: model
+  name: AlphaZero
+  year: 2017
+  weight: 86
+  summary: 只告诉它规则，不给任何人类棋谱，几小时自我对弈就超过所有人类程序。它证明了搜索加学习可以完全脱离人的经验。
+  tags: [模型, 强化学习]
+  sources: ["https://arxiv.org/abs/1712.01815"]
+
+- id: rlhf
+  type: concept
+  name: 基于人类反馈的强化学习
+  year: 2017
+  weight: 88
+  summary: 让人给模型的回答排序，再拿这个偏好训练奖励模型。ChatGPT 之所以「会说话」，靠的就是这一步对齐。
+  tags: [概念, 对齐]
+  sources: ["https://arxiv.org/abs/1706.03741"]
+
+- id: bert
+  type: model
+  name: BERT
+  year: 2018
+  weight: 92
+  family: google
+  summary: 双向读整句、遮住词让它猜。它在十一项自然语言任务上刷新纪录，随后两年几乎成了 NLP 的默认底座。
+  tags: [模型, 语言]
+  sources: ["https://arxiv.org/abs/1810.04805"]
+
+- id: gpt
+  type: model
+  name: GPT
+  year: 2018
+  weight: 88
+  family: openai
+  summary: 只做一件事：预测下一个词，然后不断放大。这条路线当时看起来简单得可疑，后来成了唯一走通的那条。
+  tags: [模型, 语言]
+  sources: ["https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"]
+
+- id: gpt-2
+  type: model
+  name: GPT-2
+  year: 2019
+  weight: 86
+  family: openai
+  summary: 十五亿参数，能续写出像模像样的段落。OpenAI 一度以「太危险」为由不公开权重，引发了延续至今的开源之争。
+  tags: [模型, 语言]
+  sources: ["https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf"]
+
+- id: sam-altman
+  type: person
+  name: 山姆·奥特曼
+  year: 2019
+  weight: 82
+  summary: OpenAI 的 CEO。他把一个研究实验室变成了产品公司，也让「AI 安全」和「商业扩张」的矛盾摆到了台面上。
+  tags: [人物, 企业]
+  sources: ["https://en.wikipedia.org/wiki/Sam_Altman"]

@@ -1,0 +1,91 @@
+# 1970s —— 第一次寒冬：承诺太大，钱就断了
+
+- id: first-ai-winter
+  type: event
+  name: 第一次 AI 寒冬
+  year: 1974
+  weight: 80
+  summary: 英国 Lighthill 报告否定 AI 的进展，美国 DARPA 收紧资助。十年间这个领域的钱和人都退了大半。
+  tags: [事件, 寒冬]
+  sources: ["https://en.wikipedia.org/wiki/AI_winter"]
+
+- id: lighthill-report
+  type: paper
+  name: Lighthill 报告
+  year: 1973
+  weight: 72
+  summary: 英国政府委托的评估，结论是 AI 只在小玩具问题上成功，撑不起「组合爆炸」。直接导致英国大幅砍掉 AI 经费。
+  tags: [论文, 政策]
+  sources: ["https://en.wikipedia.org/wiki/Lighthill_report"]
+
+- id: james-lighthill
+  type: person
+  name: 詹姆斯·莱特希尔
+  year: 1973
+  weight: 52
+  summary: 流体力学出身的数学家，被请去评估 AI。他的判断在当时被同行骂，但资助方信了。
+  tags: [人物, 政策]
+  sources: ["https://en.wikipedia.org/wiki/James_Lighthill"]
+
+- id: expert-system
+  type: concept
+  name: 专家系统
+  year: 1976
+  weight: 84
+  summary: 把领域专家的判断写成几百条 if-then 规则。它在医学、地质勘探上真的赚到了钱，是符号主义最后一次大规模成功。
+  tags: [概念, 符号主义]
+  sources: ["https://en.wikipedia.org/wiki/Expert_system"]
+
+- id: mycin
+  type: model
+  name: MYCIN
+  year: 1976
+  weight: 74
+  summary: 斯坦福做的血液感染诊断系统，准确率超过一般医生。但它从没真正进过病房，因为没人愿意为它的错误负责。
+  tags: [模型, 专家系统]
+  sources: ["https://en.wikipedia.org/wiki/Mycin"]
+
+- id: edward-feigenbaum
+  type: person
+  name: 爱德华·费根鲍姆
+  year: 1976
+  weight: 66
+  summary: 专家系统之父。他把 AI 从「通用推理」拉向「灌知识」，也是「知识就是力量」这句口号在 AI 里的搬运工。
+  tags: [人物, 专家系统]
+  sources: ["https://en.wikipedia.org/wiki/Edward_Feigenbaum"]
+
+- id: backprop-1974
+  type: paper
+  name: 反向传播的雏形
+  year: 1974
+  weight: 70
+  summary: 沃博斯在博士论文里写出了多层网络求梯度的递推公式。当时没人重视，直到 1986 年才被重新发现。
+  tags: [论文, 训练]
+  sources: ["https://en.wikipedia.org/wiki/Backpropagation"]
+
+- id: paul-werbos
+  type: person
+  name: 保罗·沃博斯
+  year: 1974
+  weight: 58
+  summary: 他在论文里已经把反向传播写完了，但发表在一份没人读的报告里。AI 圈后来把这个功劳记给了别人。
+  tags: [人物, 训练]
+  sources: ["https://en.wikipedia.org/wiki/Paul_Werbos"]
+
+- id: cmu-ai
+  type: org
+  name: CMU 机器人研究所
+  year: 1979
+  weight: 76
+  summary: 美国最早的机器人研究机构之一。自动驾驶、语音识别、专家系统都有它的份，也是「AI 要能动手」这一派的据点。
+  tags: [机构, 学术]
+  sources: ["https://en.wikipedia.org/wiki/Robotics_Institute"]
+
+- id: xcon
+  type: model
+  name: XCON
+  year: 1980
+  weight: 62
+  summary: DEC 用来配置计算机订单的专家系统，每年替公司省下几千万美元。它证明了规则系统能挣钱，也暴露了维护成本。
+  tags: [模型, 商业化]
+  sources: ["https://en.wikipedia.org/wiki/Xcon"]
